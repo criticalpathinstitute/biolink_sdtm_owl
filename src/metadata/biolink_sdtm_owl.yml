@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/biolink_sdtm_owl
+
+idspace: BIOLINK_SDTM_OWL
+base_url: /obo/biolink_sdtm_owl
+
+products:
+- biolink_sdtm_owl.owl: https://raw.githubusercontent.com/criticalpathinstitute/biolink_sdtm_owl/main/biolink_sdtm_owl.owl
+- biolink_sdtm_owl.obo: https://raw.githubusercontent.com/criticalpathinstitute/biolink_sdtm_owl/main/biolink_sdtm_owl.obo
+
+term_browser: ontobee
+example_terms:
+- BIOLINK_SDTM_OWL_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/criticalpathinstitute/biolink_sdtm_owl/v
+
+- prefix: /tracker/
+  replacement: https://github.com/criticalpathinstitute/biolink_sdtm_owl/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/BIOLINK_SDTM_OWL?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/criticalpathinstitute/biolink_sdtm_owl/main/

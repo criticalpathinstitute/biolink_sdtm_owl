@@ -1,0 +1,47 @@
+allow_equivalents: all
+catalog_file: catalog-v001.xml
+components: null
+contact: rwalls@c-path.org
+contributors: ['Ian Braun']
+creators: null
+description: 'An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.'
+dosdp_tools_options: --obo-prefixes=true
+edit_format: owl
+exclude_tautologies: structural
+export_formats:
+- owl
+git_user: 'ramonawalls'
+github_org: criticalpathinstitute
+gzip_main: false
+id: biolink_sdtm_owl
+import_group:
+  directory: imports/
+  disabled: false
+  ids:
+  - obi
+import_pattern_ontology: false
+license: Unspecified
+namespaces: null
+obo_format_options: ''
+pattern_group: null
+pattern_pipelines_group: null
+primary_release: full
+public_release: none
+public_release_assets: null
+reasoner: ELK
+release_artefacts:
+- full
+- base
+release_date: false
+repo: biolink_sdtm_owl
+report_fail_on: null
+robot_java_args: ''
+robot_settings: null
+robot_version: null
+robotemplate_group: null
+subset_group: null
+title: BioCollections Ontology
+travis_emails: null
+uribase: http://purl.obolibrary.org/obo
+use_dosdps: false
+use_external_date: false
