@@ -1,35 +1,34 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/biolink_sdtm_owl.owl#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/biolink_sdtm_owl.owl>
-
-Import(<http://purl.obolibrary.org/obo/biolink_sdtm_owl/imports/obi_import.owl>)
-
-
-
+Import(<https://w3id.org/biolink/biolink-model>)
+Import(<https://w3id.org/cpath/biolink_sdtm_owl/modules/core_terms.owl>)
+Import(<https://w3id.org/cpath/biolink_sdtm_owl/modules/sdtm_dm.owl>)
+Annotation(dce:description "An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.")
 Annotation(dce:title "BioCollections Ontology")
 Annotation(dcterms:license <Unspecified>)
-Annotation(dce:description "An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BIOLINK_SDTM_OWL_00000000>))
+Declaration(AnnotationProperty(dce:description))
+Declaration(AnnotationProperty(dce:title))
+Declaration(AnnotationProperty(dcterms:license))
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/BIOLINK_SDTM_OWL_00000000>
+# Class: <http://purl.obolibrary.org/obo/BIOLINK_SDTM_OWL_00000000> (root node)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOLINK_SDTM_OWL_00000000> "root node"@en)
 
 
 )
-

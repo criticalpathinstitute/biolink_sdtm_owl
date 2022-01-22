@@ -1,0 +1,14 @@
+﻿Ontology ID,type,parent class,parent property,domain,range,label,definition,definition source,English syn.,sdtm_var_id,sdtm_domain_code,sdtm_domain_name
+ID,TYPE,SC %,SP %,DOMAIN,RANGE,AL rdfs:label@en,AL IAO:0000115@en,A IAO:0000119 SPLIT=|,AL oboInOwl:hasExactSynonym@en,A biolink_sdtm_owl:sdtm_var_id,A biolink_sdtm_owl:sdtm_domain_code,A biolink_sdtm_owl:sdtm_domain_name
+biolink_sdtm_owl:CLINSTUDY,class,biolink:Activity,,,,Clinical Study,To be defined.,RW,,,,
+biolink_sdtm_owl:STUDYID,object property,,biolink:id,biolink_sdtm_owl:CLINSTUDY,,Study Identifier,Unique identifier for a study.,SDTM,,STUDYID,DM,demographics
+biolink_sdtm_owl:SUBJECT,class,biolink:Case,,,,Subject,A person who participates in a clinical study.,RW,,,,
+biolink_sdtm_owl:STUDYSITE,class,biolink:GeographicLocation,,,,Study Site,A site within a study.,RW,,,,
+biolink_sdtm_owl:USUBJID,object property,,biolink:id,biolink_sdtm_owl:SUBJECT,,Unique Subject Identifier,"Identifier used to uniquely identify a subject across all studies for all applications or submissions involving the product. This must be a unique number, and could be a compound identifier formed by concatenating STUDYID-SITEID-SUBJID.",SDTM,,USUBJID,DM,demographics
+biolink_sdtm_owl:SITEID,object property,,biolink:id,biolink_sdtm_owl:STUDYSITE,,Study Site Identifier,Unique identifier for a site within a study.,SDTM,,SITEID,DM,demographics
+biolink_sdtm_owl:AGE,class,biolink:Attribute,,,,Age,"Age expressed in AGEU. May be derived from RFSTDTC and BRTHDTC,  but BRTHDTC may not be available in all cases (due to subject privacy concerns).",SDTM,,AGE,DM,demographics
+biolink_sdtm_owl:AGEU,class,biolink:Unit,,,,Age Units,Units associated with AGE.,SDTM,,AGEU,DM,demographics
+biolink_sdtm_owl:SEX,class,biolink:BiologicalSex,,,,Sex,Sex of the subject. Need to fill in with description from IG.,SDTM,,SEX,DM,demographics
+biolink_sdtm_owl:RACE,class,biolink:Attribute,,,,Race,"Race of the subject. Sponsors should refer to ""Collection of Race and Ethnicity Data in Clinical Trials"" (FDA, October, 2016) for guidance regarding the collection of race (https://www.fda.gov/downloads/regulatoryinformation/guidances/ucm126396.pdf). See Assumption below regarding RACE.",SDTM,,RACE,DM,demographics
+biolink_sdtm_owl:STUDYARM,class,biolink:Activity,,,,StudyArm,An arm within a study.,RW,,ARM,DM,demographics
+biolink_sdtm_owl:ARM,class,biolink:InformationContentEntity,,,,Description of Planned Arm,Description of Planned Arm,SDTM,,,,

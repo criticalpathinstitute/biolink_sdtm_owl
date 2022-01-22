@@ -15,7 +15,7 @@
 # ----------------------------------------
 # these can be overwritten on the command line
 
-URIBASE=                    http://purl.obolibrary.org/obo
+URIBASE=                    https://w3id.org/cpath
 ONT=                        biolink_sdtm_owl
 ONTBASE=                    $(URIBASE)/$(ONT)
 EDIT_FORMAT=                owl

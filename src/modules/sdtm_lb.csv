@@ -1,0 +1,61 @@
+﻿Ontology ID,type,parent class,parent property,domain,range,subclass axioms,label,definition,definition source,English syn.,sdtm_var_id,sdtm_domain_code,sdtm_domain_name,sdtm_label
+ID,TYPE,SC %,SP %,DOMAIN,RANGE,SC % SPLIT=|,AL rdfs:label@en,AL IAO:0000115@en,A IAO:0000119 SPLIT=|,AL oboInOwl:hasExactSynonym@en,A biolink_sdtm_owl:sdtm_var_id,A biolink_sdtm_owl:sdtm_domain_code,A biolink_sdtm_owl:sdtm_domain_name,A biolink_sdtm_owl:sdtm_label
+biolink_sdtm_owl:LBTEST,class,biolink:Procedure,,,,,laboratory test,,,,,LB,laboratory test results,Lab Test Name
+biolink_sdtm_owl:LBTSTRES,class,biolink:InformationContentEntity,,,,biolink_sdtm_owl:is_about some biolink:ClinicalMeasurement,lab test result,,,,,,,
+biolink_sdtm_owl:LBCAT,class,biolink:Procedure,,,,,lab test category,,,,,LB,laboratory test results,Category for Lab Test
+biolink_sdtm_owl:HEMATOLOGY,class,biolink_sdtm_owl:LBCAT,,,,,hematatology,,,,,,,
+biolink_sdtm_owl:CHEMISTRY,class,biolink_sdtm_owl:LBCAT,,,,,chemistry,,,,,,,
+biolink_sdtm_owl:URINALYSIS,class,biolink_sdtm_owl:LBCAT,,,,,urinalysis,,,,,,,
+biolink_sdtm_owl:in_lb_cat,data property,,,biolink_sdtm_owl:LBTEST,biolink_sdtm_owl:LBCAT,,in lab stest category,,,,,,,
+biolink_sdtm_owl:LBORRES,class,biolink_sdtm_owl:LBTSTRES,,,,,lab results in original units,,,,,LB,laboratory test results,Result or Finding in Original Units
+biolink_sdtm_owl:LBORRESU,object property,biolink:has_unit,,,,,has original units,,,,,LB,laboratory test results,Original Units
+biolink_sdtm_owl:LBREFRG,class,biolink:InformationContentEntity,,,,,reference range,,,,,,,
+biolink_sdtm_owl:LBORRNG,class,biolink_sdtm_owl:LBREFRG,,,,,reference range in original units,,,,,,,
+biolink_sdtm_owl:LBSTRNG,class,biolink_sdtm_owl:LBREFRG,,,,,reference range in standard units,,,,,,,
+biolink_sdtm_owl:LBORNRLO,,biolink:Value,,biolink_sdtm_owl:LBORRNG,,,has reference range lower limit in orig unit,,,,,LB,laboratory test results,Reference Range Lower Limit in Orig Unit
+biolink_sdtm_owl:LBORNRHI,,biolink:Value,,biolink_sdtm_owl:LBORRNG,,,has reference range upper limit in orig unit,,,,,LB,laboratory test results,Reference Range Upper Limit in Orig Unit
+biolink_sdtm_owl:LBSTRESC,object property,biolink_sdtm_owl:LBTSTRES,,,,,lab character result in standard format,,,,,LB,laboratory test results,Character Result-Finding in Std Format
+biolink_sdtm_owl:LBSTRESN,object property,biolink_sdtm_owl:LBTSTRES,,,,,lab numeric result in sandard units,,,,,LB,laboratory test results,Numeric Result-Finding in Standard Units
+biolink_sdtm_owl:LBSTRESU,object property,biolink:has_unit,,,,,has standard units,,,,,LB,laboratory test results,Standard Units
+biolink_sdtm_owl:LBSTNRLO,object property,biolink:Value,,biolink_sdtm_owl:LBSTRNG,,,has reference range lower ;imit in standard units,,,,,LB,laboratory test results,Reference Range Lower Limit-Std Units
+biolink_sdtm_owl:LBSTNRHI,object property,biolink:Value,,biolink_sdtm_owl:LBSTRNG,,,has reference range upper limit in standard units,,,,,LB,laboratory test results,Reference Range Upper Limit-Std Units
+biolink_sdtm_owl:LBSPCCOL,class,biolink:Procedure,,,,(biolink:has_output some biolink_sdtm_owl:LBSPEC)|(biolink:has_input some biolink_sdtm_owl:SUBJECT),specimen collection process,,,,,,,Specimen Collection Process
+biolink_sdtm_owl:LBSPEC,class,biolink:MaterialSample,,,,,specimen,,,,,LB,laboratory test results,Specimen Type
+biolink_sdtm_owl:LBBLOOD,class,biolink_sdtm_owl:LBSPEC,,,,,blood specimen,,,,,,,
+biolink_sdtm_owl:LBSERUM,class,biolink_sdtm_owl:LBSPEC,,,,,serum specimen,,,,,,,
+biolink_sdtm_owl:VISIT,class,biolink:Procedure,,,,,visit,,,,,,,Visit
+biolink_sdtm_owl:VISITNAME,class,biolink:ID,,,,,visit ID,,,,,LB,laboratory test results,Visit Name
+biolink_sdtm_owl:LBDTC,data property,,,,,,date of lab visit,,,,,LB,laboratory test results,
+biolink_sdtm_owl:ALB,class,biolink:ClinicalMeasurement,,,,,albumin concentration,,,,,LB,laboratory test results,Albumin
+biolink_sdtm_owl:ALBCREAT,class,biolink:ClinicalMeasurement,,,,,albumin/creatinine per day,,,,,LB,laboratory test results,Albumin/Creatinine
+biolink_sdtm_owl:BICARB,class,biolink:ClinicalMeasurement,,,,,bicarbonate concentration,,,,,LB,laboratory test results,Bicarbonate
+biolink_sdtm_owl:BILI,class,biolink:ClinicalMeasurement,,,,,bilirubin concentration,,,,,LB,laboratory test results,Bilirubin
+biolink_sdtm_owl:BUN,class,biolink:ClinicalMeasurement,,,,,blood urea nitrogen concentration,,,,,LB,laboratory test results,Blood Urea Nitrogen
+biolink_sdtm_owl:CA,class,biolink:ClinicalMeasurement,,,,,calcium concentration,,,,,LB,laboratory test results,Calcium
+biolink_sdtm_owl:CO2,class,biolink:ClinicalMeasurement,,,,,carbon dioxide concentration,,,,,LB,laboratory test results,Carbon Dioxide
+biolink_sdtm_owl:CL,class,biolink:ClinicalMeasurement,,,,,chloride concentration,,,,,LB,laboratory test results,Chloride
+biolink_sdtm_owl:CHOL,class,biolink:ClinicalMeasurement,,,,,cholesterol concentration,,,,,LB,laboratory test results,Cholesterol
+biolink_sdtm_owl:CITRATE,class,biolink:ClinicalMeasurement,,,,,citrate  concentration,,,,,LB,laboratory test results,Citrate
+biolink_sdtm_owl:CREAT,class,biolink:ClinicalMeasurement,,,,,creatinin concentration,,,,,LB,laboratory test results,Creatinine
+biolink_sdtm_owl:CREATCLR,class,biolink:ClinicalMeasurement,,,,,creatinine clearance,,,,,LB,laboratory test results,Creatinine Clearance
+biolink_sdtm_owl:GFRIOT,class,biolink_sdtm_owl:GFR,,,,,GFR based on iothalamate,,,,,LB,laboratory test results,GFR based on Iothalamate
+biolink_sdtm_owl:GFRCRCRT,class,biolink_sdtm_owl:GFR,,,,,GFR from creatinine corrected for BSA,,,,,LB,laboratory test results,GFR From Creatinine Corrected for BSA
+biolink_sdtm_owl:GFRCRIOT,class,biolink_sdtm_owl:GFRIOT,,,,,GFR From iothalamate corrected for BSA,,,,,LB,laboratory test results,GFR From Iothalamate Corrected for BSA
+biolink_sdtm_owl:GFR,class,biolink:ClinicalMeasurement,,,,,glomerular filtration rate,,,,,LB,laboratory test results,Glomerular Filtration Rate
+biolink_sdtm_owl:GLUC,class,biolink:ClinicalMeasurement,,,,,glucose concentration,,,,,LB,laboratory test results,Glucose
+biolink_sdtm_owl:HDL,class,biolink:ClinicalMeasurement,,,,,HDL cholesterol concentration,,,,,LB,laboratory test results,HDL Cholesterol
+biolink_sdtm_owl:HCT,class,biolink:ClinicalMeasurement,,,,,hematocrit concentration,,,,,LB,laboratory test results,Hematocrit
+biolink_sdtm_owl:HGB,class,biolink:ClinicalMeasurement,,,,,hemoglobin concentration,,,,,LB,laboratory test results,Hemoglobin
+biolink_sdtm_owl:LDL,class,biolink:ClinicalMeasurement,,,,,LDL cholesterol concentration,,,,,LB,laboratory test results,LDL Cholesterol
+biolink_sdtm_owl:WBC,class,biolink:ClinicalMeasurement,,,,,leukocytes,,,,,LB,laboratory test results,Leukocytes
+biolink_sdtm_owl:MG,class,biolink:ClinicalMeasurement,,,,,amgnesium concentration,,,,,LB,laboratory test results,Magnesium
+biolink_sdtm_owl:MG,class,biolink:ClinicalMeasurement,,,,,magnesium concentration,,,,,LB,laboratory test results,Magnesium
+biolink_sdtm_owl:OXALATE,class,biolink:ClinicalMeasurement,,,,,oxalate concentration,,,,,LB,laboratory test results,Oxalate
+biolink_sdtm_owl:PHOS,class,biolink:ClinicalMeasurement,,,,,phosphate concentration,,,,,LB,laboratory test results,Phosphate
+biolink_sdtm_owl:PLAT,class,biolink:ClinicalMeasurement,,,,,platelet concentration,,,,,LB,laboratory test results,Platelet
+biolink_sdtm_owl:K,class,biolink:ClinicalMeasurement,,,,,potassium concentration,,,,,LB,laboratory test results,Potassium
+biolink_sdtm_owl:PROT,class,biolink:ClinicalMeasurement,,,,,protein concentration,,,,,LB,laboratory test results,Protein
+biolink_sdtm_owl:SODIUM,class,biolink:ClinicalMeasurement,,,,,sodium concentration,,,,,LB,laboratory test results,Sodium
+biolink_sdtm_owl:TRIG,class,biolink:ClinicalMeasurement,,,,,triglycerides concentration,,,,,LB,laboratory test results,Triglycerides
+biolink_sdtm_owl:URATE,class,biolink:ClinicalMeasurement,,,,,urate concentration,,,,,LB,laboratory test results,Urate
+biolink_sdtm_owl:UUN,class,biolink:ClinicalMeasurement,,,,,urine urea nitrogen concentration,,,,,LB,laboratory test results,Urine Urea Nitrogen

@@ -1,0 +1,15 @@
+﻿Domain ID,Domain label,Variable ID,Variable label,Type,Parent
+UR,urniary system findings,URTEST,Question Name,Class,biolink:ClinicalMeasurement
+UR,urniary system findings,URORRES,Finding in Original Units,Class,biolink:Value
+UR,urniary system findings,URORRESU,Original Units,Class,biolink:Unit
+UR,urniary system findings,URSTRESN,Numeric Finding in Standard Units,Class,biolink:Value
+UR,urniary system findings,URSTRESU,Standard Units,Class,biolink:Unit
+UR,urniary system findings,URLOC,Anatomical Location,Class,biolink:AnatomicalEntity
+UR,urniary system findings,URMETHOD,Method of the procedure,Class,biolink:Procedure
+UR,urniary system findings,URDY,Study Day of Finding,Slot,biolink:NodeProperty
+UR,urniary system findings,VOLUME,Volume,Class,sdtm:URTEST
+UR,urniary system findings,DEPTH,Depth,,sdtm:URTEST
+UR,urniary system findings,LENGTH,Length,,sdtm:URTEST
+UR,urniary system findings,NCPRMVOL,Non-Cystic Parenchymal Volume,,sdtm:URTEST
+UR,urniary system findings,VOLUME,Volume,,sdtm:URTEST
+UR,urniary system findings,WIDTH,Width,,sdtm:URTEST

@@ -1,6 +1,6 @@
 
 ![Build Status](https://github.com/criticalpathinstitute/biolink_sdtm_owl/workflows/CI/badge.svg)
-# BioCollections Ontology
+# SDTM BioLink Mapping Ontology
 
 Description: An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.
 

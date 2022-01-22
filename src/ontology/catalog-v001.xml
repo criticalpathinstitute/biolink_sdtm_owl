@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-
-  
-  <uri name="http://purl.obolibrary.org/obo/biolink_sdtm_owl/imports/obi_import.owl" uri="imports/obi_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/biolink_sdtm_owl/imports/obi_import.obo" uri="imports/obi_import.obo"/>
-  
-
-
-  
-
-</group>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/cpath/biolink_sdtm_owl/modules/sdtm_dm.owl" uri="modules/sdtm_dm.owl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/cpath/biolink_sdtm_owl/modules/core_terms.owl" uri="modules/core_terms.owl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/biolink/biolink-model" uri="https://raw.githubusercontent.com/biolink/biolink-model/master/biolink-model.owl.ttl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/biolink_sdtm_owl/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/biolink_sdtm_owl/imports/obi_import.obo" uri="imports/obi_import.obo"/>
+    </group>
 </catalog>
