@@ -40,7 +40,7 @@ robot_settings: null
 robot_version: null
 robotemplate_group: null
 subset_group: null
-title: BioCollections Ontology
+title: SDTM BioLink Mapping Ontology
 travis_emails: null
 uribase: http://purl.obolibrary.org/obo
 use_dosdps: false
