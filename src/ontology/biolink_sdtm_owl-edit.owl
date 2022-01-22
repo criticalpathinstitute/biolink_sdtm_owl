@@ -12,11 +12,11 @@ Ontology(<http://purl.obolibrary.org/obo/biolink_sdtm_owl.owl>
 Import(<https://w3id.org/biolink/biolink-model>)
 Import(<https://w3id.org/cpath/biolink_sdtm_owl/modules/core_terms.owl>)
 Import(<https://w3id.org/cpath/biolink_sdtm_owl/modules/sdtm_dm.owl>)
+Import(<https://w3id.org/cpath/biolink_sdtm_owl/modules/sdtm_lb.owl>)
 Annotation(dce:description "An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.")
 Annotation(dce:title "BioCollections Ontology")
 Annotation(dcterms:license <Unspecified>)
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BIOLINK_SDTM_OWL_00000000>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
@@ -26,9 +26,13 @@ Declaration(AnnotationProperty(dcterms:license))
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/BIOLINK_SDTM_OWL_00000000> (root node)
+# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES> (lab test result)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BIOLINK_SDTM_OWL_00000000> "root node"@en)
+SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES> ObjectSomeValuesFrom(<https://w3id.org/cpath/biolink_sdtm_owl/is_about> <https://w3id.org/biolink/vocab/ClinicalMeasurement>))
+
+# Class: <https://w3id.org/cpath/biolink_sdtm_owl/STUDYARM> (study arm)
+
+SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/STUDYARM> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/part_of> <https://w3id.org/cpath/biolink_sdtm_owl/CLINSTUDY>))
 
 
 )

@@ -47,6 +47,12 @@
     
 
 
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/sdtm_label -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/sdtm_label"/>
+    
+
+
     <!-- https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id -->
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id"/>
@@ -77,9 +83,10 @@
         <rdfs:domain rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/STUDYSITE"/>
         <obo:IAO_0000115 xml:lang="en">Unique identifier for a site within a study.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Study Site Identifier</rdfs:label>
+        <rdfs:label xml:lang="en">study site identifier</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study Site Identifier</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SITEID</biolink_sdtm_owl:sdtm_var_id>
     </owl:ObjectProperty>
     
@@ -92,9 +99,10 @@
         <rdfs:domain rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/CLINSTUDY"/>
         <obo:IAO_0000115 xml:lang="en">Unique identifier for a study.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Study Identifier</rdfs:label>
+        <rdfs:label xml:lang="en">study identifier</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study Identifier</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STUDYID</biolink_sdtm_owl:sdtm_var_id>
     </owl:ObjectProperty>
     
@@ -107,9 +115,10 @@
         <rdfs:domain rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/SUBJECT"/>
         <obo:IAO_0000115 xml:lang="en">Identifier used to uniquely identify a subject across all studies for all applications or submissions involving the product. This must be a unique number, and could be a compound identifier formed by concatenating STUDYID-SITEID-SUBJID.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Unique Subject Identifier</rdfs:label>
+        <rdfs:label xml:lang="en">unique subject identifier</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique Subject Identifier</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USUBJID</biolink_sdtm_owl:sdtm_var_id>
     </owl:ObjectProperty>
     
@@ -174,9 +183,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Attribute"/>
         <obo:IAO_0000115 xml:lang="en">Age expressed in AGEU. May be derived from RFSTDTC and BRTHDTC,  but BRTHDTC may not be available in all cases (due to subject privacy concerns).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Age</rdfs:label>
+        <rdfs:label xml:lang="en">age</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AGE</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
@@ -188,9 +198,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Unit"/>
         <obo:IAO_0000115 xml:lang="en">Units associated with AGE.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Age Units</rdfs:label>
+        <rdfs:label xml:lang="en">age units</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age Units</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AGEU</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
@@ -202,7 +213,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
         <obo:IAO_0000115 xml:lang="en">Description of Planned Arm</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Description of Planned Arm</rdfs:label>
+        <rdfs:label xml:lang="en">description of planned arm</rdfs:label>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of Planned Arm</biolink_sdtm_owl:sdtm_label>
     </owl:Class>
     
 
@@ -213,7 +225,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Activity"/>
         <obo:IAO_0000115 xml:lang="en">To be defined.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RW</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Clinical Study</rdfs:label>
+        <rdfs:label xml:lang="en">clinical study</rdfs:label>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical Study</biolink_sdtm_owl:sdtm_label>
     </owl:Class>
     
 
@@ -224,9 +237,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Attribute"/>
         <obo:IAO_0000115 xml:lang="en">Race of the subject. Sponsors should refer to &quot;Collection of Race and Ethnicity Data in Clinical Trials&quot; (FDA, October, 2016) for guidance regarding the collection of race (https://www.fda.gov/downloads/regulatoryinformation/guidances/ucm126396.pdf). See Assumption below regarding RACE.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Race</rdfs:label>
+        <rdfs:label xml:lang="en">race</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Race</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RACE</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
@@ -238,9 +252,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/BiologicalSex"/>
         <obo:IAO_0000115 xml:lang="en">Sex of the subject. Need to fill in with description from IG.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Sex</rdfs:label>
+        <rdfs:label xml:lang="en">sex</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sex</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SEX</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
@@ -252,9 +267,10 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Activity"/>
         <obo:IAO_0000115 xml:lang="en">An arm within a study.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RW</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">StudyArm</rdfs:label>
+        <rdfs:label xml:lang="en">study arm</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StudyArm</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARM</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
@@ -266,7 +282,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/GeographicLocation"/>
         <obo:IAO_0000115 xml:lang="en">A site within a study.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RW</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Study Site</rdfs:label>
+        <rdfs:label xml:lang="en">study site</rdfs:label>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study Site</biolink_sdtm_owl:sdtm_label>
     </owl:Class>
     
 
@@ -277,7 +294,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Case"/>
         <obo:IAO_0000115 xml:lang="en">A person who participates in a clinical study.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RW</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <rdfs:label xml:lang="en">subject</rdfs:label>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject</biolink_sdtm_owl:sdtm_label>
     </owl:Class>
 </rdf:RDF>
 
