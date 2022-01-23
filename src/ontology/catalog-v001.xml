@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://w3id.org/cpath/biolink_sdtm_owl/modules/sdtm_ur.owl" uri="modules/sdtm_ur.owl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/cpath/biolink_sdtm_owl/modules/sdtm_lb.owl" uri="modules/sdtm_lb.owl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/cpath/biolink_sdtm_owl/modules/sdtm_dm.owl" uri="modules/sdtm_dm.owl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/cpath/biolink_sdtm_owl/modules/core_terms.owl" uri="modules/core_terms.owl"/>

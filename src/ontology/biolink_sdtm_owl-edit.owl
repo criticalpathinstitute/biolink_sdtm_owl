@@ -17,16 +17,26 @@ Annotation(dce:description "An ontology for a proof of concept mapping of PKD da
 Annotation(dce:title "BioCollections Ontology")
 Annotation(dcterms:license <Unspecified>)
 
+Declaration(Class(<https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
+
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES> (lab test result)
+# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBSPCCOL> (specimen collection process)
+
+SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/LBSPCCOL> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/has_output> <https://w3id.org/cpath/biolink_sdtm_owl/LBSPEC>))
+
+# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBTEST> (laboratory test)
+
+SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/LBTEST> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/has_input> <https://w3id.org/cpath/biolink_sdtm_owl/LBSPEC>))
+
+# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES> (<https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES>)
 
 SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES> ObjectSomeValuesFrom(<https://w3id.org/cpath/biolink_sdtm_owl/is_about> <https://w3id.org/biolink/vocab/ClinicalMeasurement>))
 
@@ -34,5 +44,12 @@ SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES> ObjectSomeValuesFr
 
 SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/STUDYARM> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/part_of> <https://w3id.org/cpath/biolink_sdtm_owl/CLINSTUDY>))
 
+# Class: <https://w3id.org/cpath/biolink_sdtm_owl/TSTRES> (test result)
 
+SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/TSTRES> ObjectSomeValuesFrom(<https://w3id.org/cpath/biolink_sdtm_owl/is_about> <https://w3id.org/biolink/vocab/ClinicalMeasurement>))
+
+
+AnnotationAssertion(<https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_code> <https://w3id.org/cpath/biolink_sdtm_owl/DTC> "UR")
+AnnotationAssertion(<https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_name> <https://w3id.org/cpath/biolink_sdtm_owl/DTC> "urniary system findings")
+AnnotationAssertion(<https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id> <https://w3id.org/cpath/biolink_sdtm_owl/DTC> "URDTC")
 )

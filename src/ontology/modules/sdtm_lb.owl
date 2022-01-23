@@ -40,6 +40,12 @@
     
 
 
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -57,26 +63,34 @@
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/LBORRESU -->
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/ORRESU -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LBORRESU">
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/ORRESU">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/biolink/vocab/has_unit"/>
         <rdfs:label xml:lang="en">has original unit</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Original Units</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBORRESU</biolink_sdtm_owl:sdtm_var_id>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URORRESU</biolink_sdtm_owl:sdtm_var_id>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/LBSTRESU -->
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/STRESU -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LBSTRESU">
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/STRESU">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/biolink/vocab/has_unit"/>
         <rdfs:label xml:lang="en">has standard unit</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standard Units</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTRESU</biolink_sdtm_owl:sdtm_var_id>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URSTRESU</biolink_sdtm_owl:sdtm_var_id>
     </owl:ObjectProperty>
     
 
@@ -102,13 +116,14 @@
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/LBDTC -->
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/DTC -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LBDTC">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/DTC">
         <rdfs:domain rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/VISIT"/>
         <rdfs:label xml:lang="en">date of lab visit</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBDTC</biolink_sdtm_owl:sdtm_var_id>
     </owl:DatatypeProperty>
     
 
@@ -121,6 +136,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference Range Upper Limit in Orig Unit</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBORNRHI</biolink_sdtm_owl:sdtm_var_id>
     </owl:DatatypeProperty>
     
 
@@ -133,6 +149,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference Range Lower Limit in Orig Unit</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBORNRLO</biolink_sdtm_owl:sdtm_var_id>
     </owl:DatatypeProperty>
     
 
@@ -145,6 +162,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference Range Upper Limit-Std Units</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTNRHI</biolink_sdtm_owl:sdtm_var_id>
     </owl:DatatypeProperty>
     
 
@@ -157,6 +175,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference Range Lower Limit-Std Units</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTNRLO</biolink_sdtm_owl:sdtm_var_id>
     </owl:DatatypeProperty>
     
 
@@ -210,6 +229,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albumin</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALB</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -222,6 +242,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albumin/Creatinine</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALBCREAT</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -234,6 +255,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bicarbonate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BICARB</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -246,6 +268,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bilirubin</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BILI</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -258,6 +281,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Urea Nitrogen</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BUN</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -270,6 +294,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcium</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CA</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -291,6 +316,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cholesterol</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHOL</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -303,6 +329,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citrate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CITRATE</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -315,6 +342,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chloride</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -327,6 +355,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbon Dioxide</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO2</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -339,6 +368,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CREAT</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -351,6 +381,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine Clearance</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CREATCLR</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -363,6 +394,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glomerular Filtration Rate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -375,6 +407,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR From Creatinine Corrected for BSA</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFRCRCRT</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -387,6 +420,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR From Iothalamate Corrected for BSA</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFRCRIOT</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -399,6 +433,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR based on Iothalamate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFRIOT</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -411,6 +446,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLUC</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -423,6 +459,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematocrit</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCT</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -435,6 +472,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HDL Cholesterol</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HDL</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -456,6 +494,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hemoglobin</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HGB</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -468,6 +507,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potassium</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -489,6 +529,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category for Lab Test</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBCAT</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -496,11 +537,12 @@
     <!-- https://w3id.org/cpath/biolink_sdtm_owl/LBORRES -->
 
     <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LBORRES">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">lab results in original units</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Result or Finding in Original Units</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBORRES</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -550,6 +592,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specimen Type</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSPEC</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -557,11 +600,12 @@
     <!-- https://w3id.org/cpath/biolink_sdtm_owl/LBSTRESC -->
 
     <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LBSTRESC">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">lab character result in standard format</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Character Result-Finding in Std Format</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTRESC</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -569,11 +613,12 @@
     <!-- https://w3id.org/cpath/biolink_sdtm_owl/LBSTRESN -->
 
     <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LBSTRESN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">lab numeric result in sandard units</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numeric Result-Finding in Standard Units</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTRESN</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -595,15 +640,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lab Test Name</biolink_sdtm_owl:sdtm_label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES -->
-
-    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
-        <rdfs:label xml:lang="en">lab test result</rdfs:label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBTEST</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -616,6 +653,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LDL Cholesterol</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LDL</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -624,11 +662,11 @@
 
     <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/MG">
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ClinicalMeasurement"/>
-        <rdfs:label xml:lang="en">amgnesium concentration</rdfs:label>
         <rdfs:label xml:lang="en">magnesium concentration</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnesium</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MG</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -641,6 +679,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxalate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OXALATE</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -653,6 +692,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phosphate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHOS</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -665,6 +705,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platelet</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PLAT</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -677,6 +718,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PROT</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -689,6 +731,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sodium</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SODIUM</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -701,6 +744,16 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triglycerides</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRIG</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/TSTRES -->
+
+    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/TSTRES">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
+        <rdfs:label xml:lang="en">test result</rdfs:label>
     </owl:Class>
     
 
@@ -713,6 +766,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URATE</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -734,6 +788,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urine Urea Nitrogen</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UUN</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -756,6 +811,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit Name</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VISIT</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -768,6 +824,7 @@
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leukocytes</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBC</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
 </rdf:RDF>
 
