@@ -636,7 +636,7 @@
 
     <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LBTEST">
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
-        <rdfs:label xml:lang="en">laboratory test</rdfs:label>
+        <rdfs:label xml:lang="en">laboratory test results</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lab Test Name</biolink_sdtm_owl:sdtm_label>

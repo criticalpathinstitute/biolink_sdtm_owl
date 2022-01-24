@@ -13,6 +13,7 @@ Import(<https://w3id.org/biolink/biolink-model>)
 Import(<https://w3id.org/cpath/biolink_sdtm_owl/modules/core_terms.owl>)
 Import(<https://w3id.org/cpath/biolink_sdtm_owl/modules/sdtm_dm.owl>)
 Import(<https://w3id.org/cpath/biolink_sdtm_owl/modules/sdtm_lb.owl>)
+Import(<https://w3id.org/cpath/biolink_sdtm_owl/modules/sdtm_ur.owl>)
 Annotation(dce:description "An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.")
 Annotation(dce:title "BioCollections Ontology")
 Annotation(dcterms:license <Unspecified>)
@@ -32,7 +33,7 @@ Declaration(AnnotationProperty(dcterms:license))
 
 SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/LBSPCCOL> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/has_output> <https://w3id.org/cpath/biolink_sdtm_owl/LBSPEC>))
 
-# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBTEST> (laboratory test)
+# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBTEST> (laboratory test results)
 
 SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/LBTEST> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/has_input> <https://w3id.org/cpath/biolink_sdtm_owl/LBSPEC>))
 
