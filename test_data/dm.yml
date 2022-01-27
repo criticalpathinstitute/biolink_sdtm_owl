@@ -1,0 +1,24 @@
+prefixes:
+  biolink_sdtm_owl: https://w3id.org/cpath/biolink_sdtm_owl/
+  biolink: https://w3id.org/biolink/vocab/
+mappings:
+  demographics:
+    sources: 
+      - [sdtm_dm.csv~csv]
+    s: biolink_sdtm_owl:$(usbjid)
+    po:
+      - [a, biolink_sdtm_owl:SUBJECT]
+      - [biolink_sdtm_owl:USUBJID, $(usbjid)]
+      - [biolink_sdtm_owl:AGEU, $(age), ^^xsd:integer]
+      - [biolink_sdtm_owl:SEX, $(sex)]
+      - [biolink_sdtm_owl:RACE, $(race)]
+      - [biolink:participates_in, biolink_sdtm_owl:$(studyid)]
+      - [biolink:participates_in, biolink_sdtm_owl:$(arm)]
+    s: biolink_sdtm_owl:$(studyid)
+    po:
+      - [a, biolink_sdtm_owl:CLINSTUDY]
+      - [biolink_sdtm_owl:STUDYID, $(studyid)]
+    s: biolink_sdtm_owl:$(arm)
+    po: 
+      - [a, biolink_sdtm_owl:ARM]
+      - [biolink:part_of, biolink_sdtm_owl:$(studyid)]

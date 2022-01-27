@@ -7,7 +7,7 @@
 # Robot Modules (non-dosdp, not imports)
 # ----------------------------------------
 
-MODULES = core_terms sdtm_dm sdtm_lb #sdtm_ur
+MODULES = core_terms sdtm_dm sdtm_lb sdtm_ur
 MODULEDIR = ../modules
 ALL_MODS_OWL = $(patsubst %, modules/%.owl, $(MODULES))
 ALL_MODS_CSV = $(patsubst %, modules/%.csv, $(MODULES))
