@@ -10,11 +10,7 @@ More information can be found at http://obofoundry.org/ontology/biolink_sdtm_owl
 
 ### Stable release versions
 
-The latest version of the ontology can always be found at:
-
-http://purl.obolibrary.org/obo/biolink_sdtm_owl.owl
-
-(note this will not show up until the request has been approved by obofoundry.org)
+TBD. For now, please use the owl file in this (root) directory: [biolink_sdtm_owl.owl](biolink_sdtm_owl.owl)
 
 ### Editors' version
 
