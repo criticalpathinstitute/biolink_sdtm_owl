@@ -25,7 +25,7 @@ biolink_sdtm_owl:LBBLOOD,class,biolink_sdtm_owl:LBSPEC,,,,,,blood specimen,,,,,,
 biolink_sdtm_owl:LBSERUM,class,biolink_sdtm_owl:LBSPEC,,,,,,serum specimen,,,,,,,,
 biolink_sdtm_owl:VISIT,class,biolink:Activity,,,,,,visit,,,,,,,Visit,
 biolink_sdtm_owl:VISITNAME,class,biolink:ID,,,,,,visit ID,,,,VISIT,LB,laboratory test results,Visit Name,
-biolink_sdtm_owl:LBTESTCD,data property,,,biolink_sdtm_owl:LBTEST,,,,,,,,,,,,
+biolink_sdtm_owl:LBTESTCD,data property,,,biolink_sdtm_owl:LBTEST,,,,SDTM lab test code,,,,,,,,
 biolink_sdtm_owl:DY,data property,,,biolink:Procedure,,,,date of procedure,,,,LBDTC|URDTC,LB|UR,laboratory test results|urniary system findings,,
 biolink_sdtm_owl:DTC,data property,,,biolink:Procedure,,,,date of procedure,,,,LBDTC|URDTC,LB|UR,laboratory test results|urniary system findings,,
 biolink_sdtm_owl:ALB,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64431,albumin test,,,,ALB,LB,laboratory test results,Albumin,y

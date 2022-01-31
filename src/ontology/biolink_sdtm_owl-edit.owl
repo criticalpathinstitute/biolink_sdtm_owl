@@ -18,7 +18,6 @@ Annotation(dce:description "An ontology for a proof of concept mapping of PKD da
 Annotation(dce:title "BioCollections Ontology")
 Annotation(dcterms:license <Unspecified>)
 
-Declaration(Class(<https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
@@ -29,17 +28,9 @@ Declaration(AnnotationProperty(dcterms:license))
 #   Classes
 ############################
 
-# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBSPCCOL> (specimen collection process)
-
-SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/LBSPCCOL> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/has_output> <https://w3id.org/cpath/biolink_sdtm_owl/LBSPEC>))
-
-# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBTEST> (laboratory test results)
+# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBTEST> (laboratory test)
 
 SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/LBTEST> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/has_input> <https://w3id.org/cpath/biolink_sdtm_owl/LBSPEC>))
-
-# Class: <https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES> (<https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES>)
-
-SubClassOf(<https://w3id.org/cpath/biolink_sdtm_owl/LBTSTRES> ObjectSomeValuesFrom(<https://w3id.org/cpath/biolink_sdtm_owl/is_about> <https://w3id.org/biolink/vocab/ClinicalMeasurement>))
 
 # Class: <https://w3id.org/cpath/biolink_sdtm_owl/STUDYARM> (study arm)
 

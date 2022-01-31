@@ -120,19 +120,6 @@
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/DEPTH -->
-
-    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/DEPTH">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ClinicalMeasurement"/>
-        <rdfs:label xml:lang="en">depth of anatomical structure</rdfs:label>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depth</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEPTH</biolink_sdtm_owl:sdtm_var_id>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/cpath/biolink_sdtm_owl/HEARTLV -->
 
     <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/HEARTLV">
@@ -153,21 +140,41 @@
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/LBTEST -->
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/LOCDEPTH -->
 
-    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LBTEST"/>
+    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LOCDEPTH">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ClinicalMeasurement"/>
+        <rdfs:label xml:lang="en">depth of anatomical structure</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depth</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEPTH</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/LENGTH -->
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/LOCLENGTH -->
 
-    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LENGTH">
+    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LOCLENGTH">
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ClinicalMeasurement"/>
         <rdfs:label xml:lang="en">length of anatomical structure</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Length</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LENGTH</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/LOCVOLUME -->
+
+    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/LOCVOLUME">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ClinicalMeasurement"/>
+        <rdfs:label xml:lang="en">volume of anatomical structure</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VOLUME</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -198,10 +205,16 @@
     
 
 
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/TSTRES -->
+
+    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/TSTRES"/>
+    
+
+
     <!-- https://w3id.org/cpath/biolink_sdtm_owl/URORRES -->
 
     <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/URORRES">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/TSTRES"/>
         <rdfs:label xml:lang="en">urinary system finding in original units</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
@@ -214,7 +227,7 @@
     <!-- https://w3id.org/cpath/biolink_sdtm_owl/URSTRESN -->
 
     <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/URSTRESN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/TSTRES"/>
         <rdfs:label xml:lang="en">urinary system numeric finding in standard units</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
@@ -233,19 +246,6 @@
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Question Name</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URTEST</biolink_sdtm_owl:sdtm_var_id>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/VOLUME -->
-
-    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/VOLUME">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ClinicalMeasurement"/>
-        <rdfs:label xml:lang="en">volume of anatomical structure</rdfs:label>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VOLUME</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
 </rdf:RDF>
 

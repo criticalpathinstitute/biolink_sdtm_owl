@@ -76,6 +76,22 @@
     
 
 
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/ARMCD -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/ARMCD">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/biolink/vocab/id"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/STUDYARM"/>
+        <obo:IAO_0000115 xml:lang="en">ARMCD is limited to 20 characters. It is not subject to the character restrictions that apply to TESTCD.The maximum length of ARMCD is longer than for other &quot;short&quot; variables to accommodate the kind of values that are likely to be needed for crossover trials. For example, if ARMCD values for a seven-period crossover were constructed using two-character abbreviations for each treatment and separating hyphens, the length of ARMCD values would be 20. If the subject was not assigned to an Arm, ARMCD is null and ARMNRS is populated.With the exception of studies which use multi-stage Arm assignments, must be a value of ARMCD in the Trial Arms Dataset.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">arm code</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned Arm Code</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARMCD</biolink_sdtm_owl:sdtm_var_id>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/cpath/biolink_sdtm_owl/SITEID -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/SITEID">
@@ -108,6 +124,22 @@
     
 
 
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/SUBJID -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/SUBJID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/biolink/vocab/id"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/SUBJECT"/>
+        <obo:IAO_0000115 xml:lang="en">Subject identifier, which must be unique within the study. Often the ID of the subject as recorded on a CRF.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">local subject identifier</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject Identifier for the Study</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUBJID</biolink_sdtm_owl:sdtm_var_id>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/cpath/biolink_sdtm_owl/USUBJID -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/USUBJID">
@@ -121,6 +153,60 @@
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unique Subject Identifier</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USUBJID</biolink_sdtm_owl:sdtm_var_id>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/ARMLABEL -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/ARMLABEL">
+        <rdfs:domain rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/STUDYARM"/>
+        <obo:IAO_0000115 xml:lang="en">Name of the Arm to which the subject was assigned. If the subject was not assigned to an Arm, ARM is null and ARMNRS is populated.With the exception of studies which use multi-stage Arm assignments, must be a value of ARM in the Trial Arms Dataset.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">description of planned arm</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of Planned Arm</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARM</biolink_sdtm_owl:sdtm_var_id>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/COUNTRY -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/COUNTRY">
+        <rdfs:domain rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/STUDYSITE"/>
+        <obo:IAO_0000115 xml:lang="en">Country of the investigational site in which the subject participated in the trial.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">country of study site</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COUNTRY</biolink_sdtm_owl:sdtm_var_id>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/DTHFL -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/DTHFL">
+        <rdfs:domain rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/SUBJECT"/>
+        <obo:IAO_0000115 xml:lang="en">Indicates the subject died. Should be &quot;Y&quot; or null. Should be populated even when the death date is unknown.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">death flag</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject Death Flag</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DTHFL</biolink_sdtm_owl:sdtm_var_id>
+    </owl:DatatypeProperty>
     
 
 
@@ -165,12 +251,6 @@
     
 
 
-    <!-- https://w3id.org/biolink/vocab/InformationContentEntity -->
-
-    <owl:Class rdf:about="https://w3id.org/biolink/vocab/InformationContentEntity"/>
-    
-
-
     <!-- https://w3id.org/biolink/vocab/Unit -->
 
     <owl:Class rdf:about="https://w3id.org/biolink/vocab/Unit"/>
@@ -207,18 +287,6 @@
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/ARM -->
-
-    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/ARM">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
-        <obo:IAO_0000115 xml:lang="en">Description of Planned Arm</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">description of planned arm</rdfs:label>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of Planned Arm</biolink_sdtm_owl:sdtm_label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/cpath/biolink_sdtm_owl/CLINSTUDY -->
 
     <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/CLINSTUDY">
@@ -226,7 +294,21 @@
         <obo:IAO_0000115 xml:lang="en">To be defined.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RW</obo:IAO_0000119>
         <rdfs:label xml:lang="en">clinical study</rdfs:label>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical Study</biolink_sdtm_owl:sdtm_label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/ETHNIC -->
+
+    <owl:Class rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/ETHNIC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Attribute"/>
+        <obo:IAO_0000115 xml:lang="en">The ethnicity of the subject. Sponsors should refer to &quot;Collection of Race and Ethnicity Data in Clinical Trials&quot; (FDA, October, 2016) for guidance regarding the collection of ethnicity (https://www.fda.gov/downloads/regulatoryinformation/guidances/ucm126396.pdf).</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">race</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethnic</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ETHNIC</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
@@ -268,10 +350,6 @@
         <obo:IAO_0000115 xml:lang="en">An arm within a study.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RW</obo:IAO_0000119>
         <rdfs:label xml:lang="en">study arm</rdfs:label>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StudyArm</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARM</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 

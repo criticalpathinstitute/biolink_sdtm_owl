@@ -9,9 +9,7 @@ mappings:
     po:
       - [a, biolink_sdtm_owl:SUBJECT]
       - [biolink_sdtm_owl:USUBJID, $(usbjid)]
-      - [biolink_sdtm_owl:AGEU, $(age), ^^xsd:integer]
-      - [biolink_sdtm_owl:SEX, $(sex)]
-      - [biolink_sdtm_owl:RACE, $(race)]
+      - [biolink:has_attribute, biolink_sdtm_owl:AGE]
       - [biolink:participates_in, biolink_sdtm_owl:$(studyid)]
       - [biolink:participates_in, biolink_sdtm_owl:$(arm)]
     s: biolink_sdtm_owl:$(studyid)
@@ -22,3 +20,5 @@ mappings:
     po: 
       - [a, biolink_sdtm_owl:ARM]
       - [biolink:part_of, biolink_sdtm_owl:$(studyid)]
+
+    
