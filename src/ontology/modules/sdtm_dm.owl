@@ -167,9 +167,16 @@
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/ARMLABEL -->
+    <!-- http://purl.org/dc/terms/description -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/ARMLABEL">
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/ARM -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/ARM">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
         <rdfs:domain rdf:resource="https://w3id.org/cpath/biolink_sdtm_owl/STUDYARM"/>
         <obo:IAO_0000115 xml:lang="en">Name of the Arm to which the subject was assigned. If the subject was not assigned to an Arm, ARM is null and ARMNRS is populated.With the exception of studies which use multi-stage Arm assignments, must be a value of ARM in the Trial Arms Dataset.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
