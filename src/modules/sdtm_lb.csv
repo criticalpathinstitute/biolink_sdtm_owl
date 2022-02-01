@@ -1,4 +1,4 @@
-﻿Ontology ID,type,parent class,parent property,domain,range,subclass axioms,equivalance axioms,label,definition,definition source,English syn.,sdtm_var_id,sdtm_domain_code,sdtm_domain_name ,sdtm_label,In dateset
+﻿Ontology ID,type,parent class,parent property,domain,range,subclass axioms,equivalance axioms,label,definition,definition source,English syn.,sdtm_var_id,sdtm_domain_code,sdtm_domain_name ,sdtm_label,In dataset
 ID,TYPE,SC %,SP %,DOMAIN,RANGE,,EC %,AL rdfs:label@en,AL IAO:0000115@en,A IAO:0000119 SPLIT=|,AL oboInOwl:hasExactSynonym@en,A biolink_sdtm_owl:sdtm_var_id  SPLIT=|,A biolink_sdtm_owl:sdtm_domain_code SPLIT=|,A biolink_sdtm_owl:sdtm_domain_name SPLIT=|,A biolink_sdtm_owl:sdtm_label SPLIT=|,
 biolink_sdtm_owl:LBTEST,class,biolink:Procedure,,,,(has_input some specimen)|(has_output some TSTRES),,laboratory test,,,,LBTEST,LB,laboratory test results,Lab Test Name,
 biolink_sdtm_owl:TSTRES,class,biolink:InformationContentEntity,,,,,,test result,,,,,,,,
@@ -21,8 +21,9 @@ biolink_sdtm_owl:LBSTNRLO,data property,biolink:Value,,biolink_sdtm_owl:LBSTRNG,
 biolink_sdtm_owl:LBSTNRHI,data property,biolink:Value,,biolink_sdtm_owl:LBSTRNG,,,,has reference range upper limit in standard units,,,,LBSTNRHI,LB,laboratory test results,Reference Range Upper Limit-Std Units,
 biolink_sdtm_owl:SPCCOL,class,biolink:Procedure,,,,(biolink:has_output some biolink_sdtm_owl:LBSPEC)|(biolink:has_input some biolink_sdtm_owl:SUBJECT),,specimen collection process,,,,,,,Specimen Collection Process,
 biolink_sdtm_owl:LBSPEC,class,biolink:MaterialSample,,,,,,specimen,,,,LBSPEC,LB,laboratory test results,Specimen Type,
-biolink_sdtm_owl:LBBLOOD,class,biolink_sdtm_owl:LBSPEC,,,,,,blood specimen,,,,,,,,
-biolink_sdtm_owl:LBSERUM,class,biolink_sdtm_owl:LBSPEC,,,,,,serum specimen,,,,,,,,
+biolink_sdtm_owl:LBBLOOD,class,biolink_sdtm_owl:LBSPEC,,,,,http://purl.obolibrary.org/obo/NCIT_C12434,blood specimen,,,,,,,,
+biolink_sdtm_owl:LBSERUM,class,biolink_sdtm_owl:LBSPEC,,,,,http://purl.obolibrary.org/obo/NCIT_C13325,serum specimen,,,,,,,,
+biolink_sdtm_owl:LBURINE,class,biolink_sdtm_owl:LBSPEC,,,,,http://purl.obolibrary.org/obo/NCIT_C13283,urine specimen,,,,,,,,
 biolink_sdtm_owl:VISIT,class,biolink:Activity,,,,,,visit,,,,,,,Visit,
 biolink_sdtm_owl:VISITNAME,class,biolink:ID,,,,,,visit ID,,,,VISIT,LB,laboratory test results,Visit Name,
 biolink_sdtm_owl:LBTESTCD,data property,,,biolink_sdtm_owl:LBTEST,,,,SDTM lab test code,,,,,,,,
@@ -31,35 +32,34 @@ biolink_sdtm_owl:DTC,data property,,,biolink:Procedure,,,,date of procedure,,,,L
 biolink_sdtm_owl:ALB,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64431,albumin test,,,,ALB,LB,laboratory test results,Albumin,y
 biolink_sdtm_owl:ALBCREAT,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C74761,albumin to creatinine ratio test,,,,ALBCREAT,LB,laboratory test results,Albumin/Creatinine,y
 biolink_sdtm_owl:BICARB,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C74667,bicarbonate test,,,,BICARB,LB,laboratory test results,Bicarbonate,y
-biolink_sdtm_owl:BILI,class,biolink_sdtm_owl:LBTEST,,,,,,bilirubin test,,,,BILI,LB,laboratory test results,Bilirubin,y
-biolink_sdtm_owl:BUN,class,biolink_sdtm_owl:LBTEST,,,,,,blood urea nitrogen test,,,,BUN,LB,laboratory test results,Blood Urea Nitrogen,y
-biolink_sdtm_owl:CA,class,biolink_sdtm_owl:LBTEST,,,,,,calcium test,,,,CA,LB,laboratory test results,Calcium,y
-biolink_sdtm_owl:CO2,class,biolink_sdtm_owl:LBTEST,,,,,,carbon dioxide test,,,,CO2,LB,laboratory test results,Carbon Dioxide,y
-biolink_sdtm_owl:CL,class,biolink_sdtm_owl:LBTEST,,,,,,chloride test,,,,CL,LB,laboratory test results,Chloride,y
-biolink_sdtm_owl:CHOL,class,biolink_sdtm_owl:LBTEST,,,,,,cholesterol test,,,,CHOL,LB,laboratory test results,Cholesterol,y
-biolink_sdtm_owl:CITRATE,class,biolink_sdtm_owl:LBTEST,,,,,,citrate  test,,,,CITRATE,LB,laboratory test results,Citrate,y
-biolink_sdtm_owl:CREAT,class,biolink_sdtm_owl:LBTEST,,,,,,creatinin test,,,,CREAT,LB,laboratory test results,Creatinine,y
-biolink_sdtm_owl:CREATCLR,class,biolink_sdtm_owl:LBTEST,,,,,,creatinine clearance,,,,CREATCLR,LB,laboratory test results,Creatinine Clearance,y
+biolink_sdtm_owl:BILI,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C38037,bilirubin test,,,,BILI,LB,laboratory test results,Bilirubin,y
+biolink_sdtm_owl:BUN,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C125949,blood urea nitrogen test,,,,BUN,LB,laboratory test results,Blood Urea Nitrogen,y
+biolink_sdtm_owl:CA,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64488,calcium test,,,,CA,LB,laboratory test results,Calcium,y
+biolink_sdtm_owl:CO2,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64545,carbon dioxide test,,,,CO2,LB,laboratory test results,Carbon Dioxide,y
+biolink_sdtm_owl:CL,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64495,chloride test,,,,CL,LB,laboratory test results,Chloride,y
+biolink_sdtm_owl:CHOL,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C105586,cholesterol test,,,,CHOL,LB,laboratory test results,Cholesterol,y
+biolink_sdtm_owl:CITRATE,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C92248,citrate test,,,,CITRATE,LB,laboratory test results,Citrate,y
+biolink_sdtm_owl:CREAT,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64547,creatinine test,,,,CREAT,LB,laboratory test results,Creatinine,y
+biolink_sdtm_owl:CREATCLR,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C25747,creatinine clearance,,,,CREATCLR,LB,laboratory test results,Creatinine Clearance,y
 biolink_sdtm_owl:GFRIOT,class,biolink_sdtm_owl:GFR,,,,,,GFR based on iothalamate,,,,GFRIOT,LB,laboratory test results,GFR based on Iothalamate,y plus GFR Based on Iothalamate
-biolink_sdtm_owl:GFRCRCRT,class,biolink_sdtm_owl:GFR,,,,,,GFR from creatinine corrected for BSA,,,,GFRCRCRT,LB,laboratory test results,GFR From Creatinine Corrected for BSA,y
+biolink_sdtm_owl:GFRCRCRT,class,biolink_sdtm_owl:GFR,,,,,http://purl.obolibrary.org/obo/NCIT_C98735,GFR from creatinine corrected for BSA,,,,GFRCRCRT,LB,laboratory test results,GFR From Creatinine Corrected for BSA,y
 biolink_sdtm_owl:GFRCRIOT,class,biolink_sdtm_owl:GFRIOT,,,,,,GFR From iothalamate corrected for BSA,,,,GFRCRIOT,LB,laboratory test results,GFR From Iothalamate Corrected for BSA,y
-biolink_sdtm_owl:GFR,class,biolink_sdtm_owl:LBTEST,,,,,,glomerular filtration rate,,,,GFR,LB,laboratory test results,Glomerular Filtration Rate,y
-biolink_sdtm_owl:GLUC,class,biolink_sdtm_owl:LBTEST,,,,,,glucose test,,,,GLUC,LB,laboratory test results,Glucose,y
-biolink_sdtm_owl:HDL,class,biolink_sdtm_owl:LBTEST,,,,,,HDL cholesterol test,,,,HDL,LB,laboratory test results,HDL Cholesterol,y
-biolink_sdtm_owl:HCT,class,biolink_sdtm_owl:LBTEST,,,,,,hematocrit test,,,,HCT,LB,laboratory test results,Hematocrit,y
-biolink_sdtm_owl:HGB,class,biolink_sdtm_owl:LBTEST,,,,,,hemoglobin test,,,,HGB,LB,laboratory test results,Hemoglobin,y
-biolink_sdtm_owl:LDL,class,biolink_sdtm_owl:LBTEST,,,,,,LDL cholesterol test,,,,LDL,LB,laboratory test results,LDL Cholesterol,y
-biolink_sdtm_owl:WBC,class,biolink_sdtm_owl:LBTEST,,,,,,leukocytes,,,,WBC,LB,laboratory test results,Leukocytes,y
-biolink_sdtm_owl:MG,class,biolink_sdtm_owl:LBTEST,,,,,,magnesium test,,,,MG,LB,laboratory test results,Magnesium,y
-biolink_sdtm_owl:MG,class,biolink_sdtm_owl:LBTEST,,,,,,magnesium test,,,,MG,LB,laboratory test results,Magnesium,n
-biolink_sdtm_owl:OXALATE,class,biolink_sdtm_owl:LBTEST,,,,,,oxalate test,,,,OXALATE,LB,laboratory test results,Oxalate,y
-biolink_sdtm_owl:PHOS,class,biolink_sdtm_owl:LBTEST,,,,,,phosphate test,,,,PHOS,LB,laboratory test results,Phosphate,y
-biolink_sdtm_owl:PLAT,class,biolink_sdtm_owl:LBTEST,,,,,,platelet test,,,,PLAT,LB,laboratory test results,Platelet,y
-biolink_sdtm_owl:K,class,biolink_sdtm_owl:LBTEST,,,,,,potassium test,,,,K,LB,laboratory test results,Potassium,y
-biolink_sdtm_owl:PROT,class,biolink_sdtm_owl:LBTEST,,,,,,protein test,,,,PROT,LB,laboratory test results,Protein,y
-biolink_sdtm_owl:SODIUM,class,biolink_sdtm_owl:LBTEST,,,,,,sodium test,,,,SODIUM,LB,laboratory test results,Sodium,y
-biolink_sdtm_owl:TRIG,class,biolink_sdtm_owl:LBTEST,,,,,,triglycerides test,,,,TRIG,LB,laboratory test results,Triglycerides,y
-biolink_sdtm_owl:URATE,class,biolink_sdtm_owl:LBTEST,,,,,,urate test,,,,URATE,LB,laboratory test results,Urate,n
-biolink_sdtm_owl:UUN,class,biolink_sdtm_owl:LBTEST,,,,,,urine urea nitrogen test,,,,UUN,LB,laboratory test results,Urine Urea Nitrogen,y
-biolink_sdtm_owl:LBVOLUME,class,biolink_sdtm_owl:LBTEST,,,,,,uniralysis volume,,,,VOLUME,LB,laboratory test results,"Volume	",y
-,,,,,,,,,,,,,,,,
+biolink_sdtm_owl:GFR,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C90505,glomerular filtration rate,,,,GFR,LB,laboratory test results,Glomerular Filtration Rate,y
+biolink_sdtm_owl:GLUC,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C105585,glucose test,,,,GLUC,LB,laboratory test results,Glucose,y
+biolink_sdtm_owl:HDL,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C105587,HDL cholesterol test,,,,HDL,LB,laboratory test results,HDL Cholesterol,y
+biolink_sdtm_owl:HCT,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64796,hematocrit test,,,,HCT,LB,laboratory test results,Hematocrit,y
+biolink_sdtm_owl:HGB,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64848,hemoglobin test,,,,HGB,LB,laboratory test results,Hemoglobin,y
+biolink_sdtm_owl:LDL,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C105588,LDL cholesterol test,,,,LDL,LB,laboratory test results,LDL Cholesterol,y
+biolink_sdtm_owl:WBC,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C51948,leukocytes,,,,WBC,LB,laboratory test results,Leukocytes,y
+biolink_sdtm_owl:MG,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64840,magnesium test,,,,MG,LB,laboratory test results,Magnesium,y
+biolink_sdtm_owl:MG,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64840,magnesium test,,,,MG,LB,laboratory test results,Magnesium,n
+biolink_sdtm_owl:OXALATE,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C92250,oxalate test,,,,OXALATE,LB,laboratory test results,Oxalate,y
+biolink_sdtm_owl:PHOS,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64857,phosphate test,,,,PHOS,LB,laboratory test results,Phosphate,y
+biolink_sdtm_owl:PLAT,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C51951,platelet test,,,,PLAT,LB,laboratory test results,Platelet,y
+biolink_sdtm_owl:K,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64853,potassium test,,,,K,LB,laboratory test results,Potassium,y
+biolink_sdtm_owl:PROT,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64858,protein test,,,,PROT,LB,laboratory test results,Protein,y
+biolink_sdtm_owl:SODIUM,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64809,sodium test,,,,SODIUM,LB,laboratory test results,Sodium,y
+biolink_sdtm_owl:TRIG,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64812,triglycerides test,,,,TRIG,LB,laboratory test results,Triglycerides,y
+biolink_sdtm_owl:URATE,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C64814,urate test,,,,URATE,LB,laboratory test results,Urate,n
+biolink_sdtm_owl:UUN,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C125949,urine urea nitrogen test,,,,UUN,LB,laboratory test results,Urine Urea Nitrogen,y
+biolink_sdtm_owl:LBVOLUME,class,biolink_sdtm_owl:LBTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C74720,urinalysis volume,,,,VOLUME,LB,laboratory test results,"Volume	",y
