@@ -15,7 +15,7 @@
 # ----------------------------------------
 # these can be overwritten on the command line
 
-URIBASE=                    https://w3id.org/cpath
+URIBASE=                    http://purl.obolibrary.org/obo
 ONT=                        biolink_sdtm_owl
 ONTBASE=                    $(URIBASE)/$(ONT)
 EDIT_FORMAT=                owl
@@ -87,7 +87,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  #obi
+IMPORTS =  ncit
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -222,6 +222,8 @@ imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+#robot extract --input mirror/ncit.owl --term-file imports/ncit_terms.txt --method BOT --output imports/ncit_import.owl
+
 .PRECIOUS: imports/%_import.owl
 
 .PHONY: refresh-imports
@@ -257,13 +259,13 @@ MIR=true # Global parameter to bypass mirror generation
 IMP_LARGE=true # Global parameter to bypass handling of large imports
 
 
-## ONTOLOGY: obi
-## Copy of obi is re-downloaded whenever source changes
-mirror/obi.trigger: $(SRC)
+## ONTOLOGY: ncit
+## Copy of ncit is re-downloaded whenever source changes
+mirror/ncit.trigger: $(SRC)
 
-mirror/obi.owl: mirror/obi.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/obi.owl --create-dirs -o mirror/obi.owl --retry 4 --max-time 200 && $(ROBOT) convert -i mirror/obi.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: mirror/obi.owl
+mirror/ncit.owl: mirror/ncit.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/ncit.owl --create-dirs -o mirror/ncit.owl --retry 4 --max-time 200 && $(ROBOT) convert -i mirror/ncit.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/ncit.owl
 
 
 
@@ -287,7 +289,7 @@ subsets/%.owl: $(ONT).owl
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
 .PHONY: release
-release: $(ONT).owl
+release: $(ONT).owl $(ONT).obo
 	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
 
 # ----------------------------------------

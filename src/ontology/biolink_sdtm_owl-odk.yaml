@@ -3,7 +3,7 @@ catalog_file: catalog-v001.xml
 components: null
 contact: rwalls@c-path.org
 contributors: ['Ian Braun']
-creators: null
+creators: ['Ramoan Walls']
 description: 'An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.'
 dosdp_tools_options: --obo-prefixes=true
 edit_format: owl
@@ -18,7 +18,7 @@ import_group:
   directory: imports/
   disabled: false
   ids:
-  - ncitobo
+  -ncit
 import_pattern_ontology: false
 license: Unspecified
 namespaces: null
