@@ -20,3 +20,8 @@ all_modules_owl:: $(ALL_MODS_OWL)
 modules/%.owl:: $(MODULEDIR)/%.csv
 	$(ROBOT) template --template $< --input biolink_sdtm_owl.owl --prefix "biolink_sdtm_owl: $(URIBASE)/biolink_sdtm_owl/" --prefix "biolink: https://w3id.org/biolink/vocab/" --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@
 
+#Commands for ncit import
+#robot extract --catalog catalog.xml --input mirror/ncit.owl --term-file imports/ncit_terms.txt --method BOT --output imports/ncit_import.owl --individuals minimal
+
+#robot extract --input mirror/ncit.owl --term-file imports/ncit_terms.txt --force true --copy-ontology-annotations true --individuals minimal --method BOT \
+	annotate --ontology-iri https://w3id.org/c-path/biolink_sdtm_owl/imports/ncit_import.owl annotate -V https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-06/imports/ncit_import.owl --annotation owl:versionInfo 2022-02-06 --output imports/ncit_import.owl

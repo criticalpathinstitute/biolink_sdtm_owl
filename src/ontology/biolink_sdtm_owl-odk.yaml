@@ -3,24 +3,30 @@ catalog_file: catalog-v001.xml
 components: null
 contact: rwalls@c-path.org
 contributors: ['Ian Braun']
-creators: ['Ramoan Walls']
+creators: ['Ramona L. Walls']
 description: 'An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.'
 dosdp_tools_options: --obo-prefixes=true
 edit_format: owl
 exclude_tautologies: structural
 export_formats:
 - owl
-git_user: 'ramonawalls'
+git_user: ramonawalls
 github_org: criticalpathinstitute
 gzip_main: false
 id: biolink_sdtm_owl
 import_group:
   directory: imports/
   disabled: false
-  ids:
-  -ncit
+  slme_individuals: exclude
+  products:
+  - id: iao
+    mirror_from: http://purl.obolibrary.org/obo/iao.owl
+  - id: ncit
+    mirror_from: http://purl.obolibrary.org/obo/ncbi.owl
+    is_large: TRUE
+    rebuild_if_source_changes: true
 import_pattern_ontology: false
-license: Unspecified
+license: CC-BY
 namespaces: null
 obo_format_options: ''
 pattern_group: null
@@ -31,17 +37,16 @@ public_release_assets: null
 reasoner: ELK
 release_artefacts:
 - full
-- base
 release_date: false
 repo: biolink_sdtm_owl
 report_fail_on: null
-robot_java_args: ''
+robot_java_args: '-Xmx4G'
 robot_settings: null
 robot_version: null
 robotemplate_group: null
 subset_group: null
 title: SDTM BioLink Mapping Ontology
 travis_emails: null
-uribase: http://purl.obolibrary.org/obo
+uribase: https://w3id.org/c-path
 use_dosdps: false
 use_external_date: false

@@ -15,7 +15,7 @@
 # ----------------------------------------
 # these can be overwritten on the command line
 
-URIBASE=                    http://purl.obolibrary.org/obo
+URIBASE=                    https://w3id.org/c-path
 ONT=                        biolink_sdtm_owl
 ONTBASE=                    $(URIBASE)/$(ONT)
 EDIT_FORMAT=                owl
@@ -48,7 +48,7 @@ ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 
 FORMATS = $(sort  owl owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
-RELEASE_ARTEFACTS = $(sort $(ONT)-full $(ONT)-base $(ONT)-base $(ONT)-full)
+RELEASE_ARTEFACTS = $(sort $(ONT)-full $(ONT)-base $(ONT)-full)
 
 # ----------------------------------------
 # Top-level targets
@@ -87,7 +87,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  ncit
+IMPORTS =  iao ncit
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -218,13 +218,18 @@ imports/merged_import.owl: mirror/merged.owl imports/merged_terms_combined.txt
 
 imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -T imports/$*_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
+		extract -T imports/$*_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-#robot extract --input mirror/ncit.owl --term-file imports/ncit_terms.txt --method BOT --output imports/ncit_import.owl
-
 .PRECIOUS: imports/%_import.owl
+
+## Module for ontology: ncit
+
+imports/ncit_import.owl: mirror/ncit.owl imports/ncit_terms_combined.txt
+	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) extract -i $< -T imports/ncit_terms_combined.txt --force true --individuals exclude --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -259,12 +264,21 @@ MIR=true # Global parameter to bypass mirror generation
 IMP_LARGE=true # Global parameter to bypass handling of large imports
 
 
+## ONTOLOGY: iao
+## Copy of iao is re-downloaded whenever source changes
+mirror/iao.trigger: $(SRC)
+
+mirror/iao.owl: mirror/iao.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/iao.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/iao.owl
+
+
 ## ONTOLOGY: ncit
 ## Copy of ncit is re-downloaded whenever source changes
 mirror/ncit.trigger: $(SRC)
 
 mirror/ncit.owl: mirror/ncit.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/ncit.owl --create-dirs -o mirror/ncit.owl --retry 4 --max-time 200 && $(ROBOT) convert -i mirror/ncit.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/ncbi.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: mirror/ncit.owl
 
 

@@ -4,4 +4,3 @@ biolink_sdtm_owl:sdtm_var_id,annotation property,,,SDTM Variable ID,,,,The uniqu
 biolink_sdtm_owl:sdtm_domain_code,annotation property,,,SDTM domain code,,,,The two letter code for the SDTM domain.,SDTM,
 biolink_sdtm_owl:sdtm_domain_name,annotation property,,,SDTM domain name,,,,The full name of the SDTM domain.,SDTM,
 biolink_sdtm_owl:sdtm_label,annotation property,,,SDTM label,,,,The label used by SDTM. Sometimes does not match the semantics of the class.,SDTM,
-biolink_sdtm_owl:is_about,object property,,,is about,biolink:InformationContentEntity,,,,,

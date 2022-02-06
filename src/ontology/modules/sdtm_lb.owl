@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/biolink_sdtm_owl/modules/sdtm_lb.owl#"
-     xml:base="http://purl.obolibrary.org/obo/biolink_sdtm_owl/modules/sdtm_lb.owl"
+<rdf:RDF xmlns="https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_lb.owl#"
+     xml:base="https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_lb.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:biolink_sdtm_owl="http://purl.obolibrary.org/obo/biolink_sdtm_owl/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/modules/sdtm_lb.owl"/>
+     xmlns:biolink_sdtm_owl="https://w3id.org/c-path/biolink_sdtm_owl/">
+    <owl:Ontology rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_lb.owl"/>
     
 
 
@@ -22,27 +22,27 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/sdtm_domain_code -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/sdtm_domain_code"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/sdtm_domain_name -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/sdtm_domain_name"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/sdtm_label -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/sdtm_label"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/sdtm_var_id -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/sdtm_var_id"/>
+    <owl:AnnotationProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id"/>
     
 
 
@@ -57,10 +57,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/ORRESU -->
+    <!-- https://w3id.org/biolink/vocab/has_unit -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/ORRESU">
+    <owl:ObjectProperty rdf:about="https://w3id.org/biolink/vocab/has_unit"/>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/ORRESU -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/ORRESU">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/biolink/vocab/has_unit"/>
+        <rdfs:label xml:lang="en">has original unit</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
@@ -68,15 +75,15 @@
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Original Units</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBORRESU</biolink_sdtm_owl:sdtm_var_id>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URORRESU</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">has original unit</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/STRESU -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/STRESU -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/STRESU">
+    <owl:ObjectProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/STRESU">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/biolink/vocab/has_unit"/>
+        <rdfs:label xml:lang="en">has standard unit</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
@@ -84,32 +91,25 @@
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standard Units</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTRESU</biolink_sdtm_owl:sdtm_var_id>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URSTRESU</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">has standard unit</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/associated_with_visit -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/associated_with_visit">
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/VISIT"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit">
+        <rdfs:range rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/VISIT"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/in_lb_cat -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/in_lb_cat -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/in_lb_cat">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBCAT"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/in_lb_cat">
+        <rdfs:domain rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:range rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBCAT"/>
         <rdfs:label xml:lang="en">in lab test category</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/biolink/vocab/has_unit -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/biolink/vocab/has_unit"/>
     
 
 
@@ -124,104 +124,104 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/DTC -->
+    <!-- https://w3id.org/biolink/vocab/Value -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/DTC">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/biolink/vocab/Value"/>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/DTC -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/DTC">
         <rdfs:domain rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBDTC</biolink_sdtm_owl:sdtm_var_id>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URDTC</biolink_sdtm_owl:sdtm_var_id>
         <rdfs:label xml:lang="en">date of procedure</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/DY -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/DY">
-        <rdfs:domain rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBDTC</biolink_sdtm_owl:sdtm_var_id>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URDTC</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">study day of procedure</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBORNRHI -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/DY -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBORNRHI">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/DY">
+        <rdfs:domain rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
+        <rdfs:label xml:lang="en">study day of procedure</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBDTC</biolink_sdtm_owl:sdtm_var_id>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URDTC</biolink_sdtm_owl:sdtm_var_id>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBORNRHI -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBORNRHI">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/biolink/vocab/Value"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBORRNG"/>
+        <rdfs:domain rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBORRNG"/>
+        <rdfs:label xml:lang="en">has reference range upper limit in orig unit</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference Range Upper Limit in Orig Unit</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBORNRHI</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">has reference range upper limit in orig unit</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBORNRLO -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBORNRLO -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBORNRLO">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBORNRLO">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/biolink/vocab/Value"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBORRNG"/>
+        <rdfs:domain rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBORRNG"/>
+        <rdfs:label xml:lang="en">has reference range lower limit in orig unit</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference Range Lower Limit in Orig Unit</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBORNRLO</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">has reference range lower limit in orig unit</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTNRHI -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRHI -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTNRHI">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRHI">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/biolink/vocab/Value"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTRNG"/>
+        <rdfs:domain rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSTRNG"/>
+        <rdfs:label xml:lang="en">has reference range upper limit in standard units</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference Range Upper Limit-Std Units</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTNRHI</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">has reference range upper limit in standard units</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTNRLO -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRLO -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTNRLO">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRLO">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/biolink/vocab/Value"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTRNG"/>
+        <rdfs:domain rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSTRNG"/>
+        <rdfs:label xml:lang="en">has reference range lower limit in standard units</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference Range Lower Limit-Std Units</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTNRLO</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">has reference range lower limit in standard units</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTESTCD -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBTESTCD -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTESTCD">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBTESTCD">
+        <rdfs:domain rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">SDTM lab test code</rdfs:label>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/biolink/vocab/Value -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/biolink/vocab/Value"/>
     
 
 
@@ -239,7 +239,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C105585 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C105585">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GLUC"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GLUC"/>
     </owl:Class>
     
 
@@ -247,7 +247,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C105586 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C105586">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CHOL"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CHOL"/>
     </owl:Class>
     
 
@@ -255,7 +255,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C105587 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C105587">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/HDL"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/HDL"/>
     </owl:Class>
     
 
@@ -263,7 +263,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C105588 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C105588">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LDL"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LDL"/>
     </owl:Class>
     
 
@@ -271,7 +271,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C12434 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C12434">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBBLOOD"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD"/>
     </owl:Class>
     
 
@@ -279,8 +279,8 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C125949 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C125949">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/BUN"/>
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/UUN"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/BUN"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/UUN"/>
     </owl:Class>
     
 
@@ -288,7 +288,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C13283 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C13283">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBURINE"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBURINE"/>
     </owl:Class>
     
 
@@ -296,7 +296,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C13325 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C13325">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSERUM"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSERUM"/>
     </owl:Class>
     
 
@@ -304,7 +304,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C25747 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25747">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CREATCLR"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CREATCLR"/>
     </owl:Class>
     
 
@@ -312,7 +312,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C38037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38037">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/BILI"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/BILI"/>
     </owl:Class>
     
 
@@ -320,7 +320,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C51948 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C51948">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/WBC"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/WBC"/>
     </owl:Class>
     
 
@@ -328,7 +328,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C51951 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C51951">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/PLAT"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/PLAT"/>
     </owl:Class>
     
 
@@ -336,7 +336,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64431 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64431">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/ALB"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/ALB"/>
     </owl:Class>
     
 
@@ -344,7 +344,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64488">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CA"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CA"/>
     </owl:Class>
     
 
@@ -352,7 +352,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64495 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64495">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CL"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CL"/>
     </owl:Class>
     
 
@@ -360,7 +360,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64545 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64545">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CO2"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CO2"/>
     </owl:Class>
     
 
@@ -368,7 +368,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64547 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64547">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CREAT"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CREAT"/>
     </owl:Class>
     
 
@@ -376,7 +376,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64796 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64796">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/HCT"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/HCT"/>
     </owl:Class>
     
 
@@ -384,7 +384,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64809 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64809">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/SODIUM"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/SODIUM"/>
     </owl:Class>
     
 
@@ -392,7 +392,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64812 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64812">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/TRIG"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/TRIG"/>
     </owl:Class>
     
 
@@ -400,7 +400,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64814 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64814">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/URATE"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/URATE"/>
     </owl:Class>
     
 
@@ -408,7 +408,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64840 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64840">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/MG"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/MG"/>
     </owl:Class>
     
 
@@ -416,7 +416,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64848 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64848">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/HGB"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/HGB"/>
     </owl:Class>
     
 
@@ -424,7 +424,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64853 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64853">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/K"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/K"/>
     </owl:Class>
     
 
@@ -432,7 +432,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64857 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64857">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/PHOS"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/PHOS"/>
     </owl:Class>
     
 
@@ -440,7 +440,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C64858 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64858">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/PROT"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/PROT"/>
     </owl:Class>
     
 
@@ -448,7 +448,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C74667 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C74667">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/BICARB"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/BICARB"/>
     </owl:Class>
     
 
@@ -456,7 +456,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C74720 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C74720">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBVOLUME"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME"/>
     </owl:Class>
     
 
@@ -464,7 +464,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C74761 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C74761">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/ALBCREAT"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/ALBCREAT"/>
     </owl:Class>
     
 
@@ -472,7 +472,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C90505 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C90505">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFR"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFR"/>
     </owl:Class>
     
 
@@ -480,7 +480,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C92248 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C92248">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CITRATE"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CITRATE"/>
     </owl:Class>
     
 
@@ -488,7 +488,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C92250 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C92250">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/OXALATE"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/OXALATE"/>
     </owl:Class>
     
 
@@ -496,637 +496,7 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_C98735 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C98735">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFRCRCRT"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/ALB -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/ALB">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albumin</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALB</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">albumin test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/ALBCREAT -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/ALBCREAT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albumin/Creatinine</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALBCREAT</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">albumin to creatinine ratio test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/BICARB -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/BICARB">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bicarbonate</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BICARB</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">bicarbonate test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/BILI -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/BILI">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bilirubin</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BILI</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">bilirubin test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/BUN -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/BUN">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Urea Nitrogen</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BUN</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">blood urea nitrogen test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/CA -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CA">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcium</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CA</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">calcium test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/CHEMISTRY -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CHEMISTRY">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBCAT"/>
-        <rdfs:label xml:lang="en">chemistry lab test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/CHOL -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CHOL">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cholesterol</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHOL</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">cholesterol test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/CITRATE -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CITRATE">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citrate</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CITRATE</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">citrate test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/CL -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CL">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chloride</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">chloride test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/CO2 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CO2">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbon Dioxide</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO2</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">carbon dioxide test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/CREAT -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CREAT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CREAT</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">creatinine test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/CREATCLR -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/CREATCLR">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine Clearance</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CREATCLR</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">creatinine clearance</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFR -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFR">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glomerular Filtration Rate</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">glomerular filtration rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFRCRCRT -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFRCRCRT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFR"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR From Creatinine Corrected for BSA</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFRCRCRT</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">GFR from creatinine corrected for BSA</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFRCRIOT -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFRCRIOT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFRIOT"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR From Iothalamate Corrected for BSA</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFRCRIOT</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">GFR From iothalamate corrected for BSA</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFRIOT -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFRIOT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GFR"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR based on Iothalamate</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFRIOT</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">GFR based on iothalamate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/GLUC -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/GLUC">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLUC</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">glucose test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/HCT -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/HCT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematocrit</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCT</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">hematocrit test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/HDL -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/HDL">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HDL Cholesterol</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HDL</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">HDL cholesterol test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/HEMATOLOGY -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/HEMATOLOGY">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBCAT"/>
-        <rdfs:label xml:lang="en">hematatology lab test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/HGB -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/HGB">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hemoglobin</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HGB</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">hemoglobin test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/K -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/K">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potassium</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">potassium test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBBLOOD -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBBLOOD">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSPEC"/>
-        <rdfs:label xml:lang="en">blood specimen</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBCAT -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBCAT">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category for Lab Test</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBCAT</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">lab test category</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBORRES -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBORRES">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/TSTRES"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Result or Finding in Original Units</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBORRES</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">lab results in original units</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBORRNG -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBORRNG">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBREFRG"/>
-        <rdfs:label xml:lang="en">reference range in original units</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBREFRG -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBREFRG">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
-        <rdfs:label xml:lang="en">reference range</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSERUM -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSERUM">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSPEC"/>
-        <rdfs:label xml:lang="en">serum specimen</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSPEC -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSPEC">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/MaterialSample"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specimen Type</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSPEC</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">specimen</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTRESC -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTRESC">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/TSTRES"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Character Result-Finding in Std Format</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTRESC</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">lab character result in standard format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTRESN -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTRESN">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/TSTRES"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numeric Result-Finding in Standard Units</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTRESN</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">lab numeric result in sandard units</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTRNG -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSTRNG">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBREFRG"/>
-        <rdfs:label xml:lang="en">reference range in standard units</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lab Test Name</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBTEST</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">laboratory test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBURINE -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBURINE">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBSPEC"/>
-        <rdfs:label xml:lang="en">urine specimen</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBVOLUME -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBVOLUME">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume	</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VOLUME</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">urinalysis volume</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/LDL -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LDL">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LDL Cholesterol</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LDL</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">LDL cholesterol test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/MG -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/MG">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnesium</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MG</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">magnesium test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/OXALATE -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/OXALATE">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxalate</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OXALATE</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">oxalate test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/PHOS -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/PHOS">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phosphate</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHOS</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">phosphate test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/PLAT -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/PLAT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platelet</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PLAT</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">platelet test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/PROT -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/PROT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PROT</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">protein test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/SODIUM -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/SODIUM">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sodium</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SODIUM</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">sodium test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/SPCCOL -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/SPCCOL">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specimen Collection Process</biolink_sdtm_owl:sdtm_label>
-        <rdfs:label xml:lang="en">specimen collection process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/TRIG -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/TRIG">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triglycerides</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRIG</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">triglycerides test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/TSTRES -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/TSTRES">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
-        <rdfs:label xml:lang="en">test result</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/URATE -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/URATE">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urate</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URATE</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">urate test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/URINALYSIS -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/URINALYSIS">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBCAT"/>
-        <rdfs:label xml:lang="en">urinalysis lab test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/UUN -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/UUN">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urine Urea Nitrogen</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UUN</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">urine urea nitrogen test</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/VISIT -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/VISIT">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Activity"/>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit</biolink_sdtm_owl:sdtm_label>
-        <rdfs:label xml:lang="en">visit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/VISITNAME -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/VISITNAME">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ID"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit Name</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VISIT</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">visit ID</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/biolink_sdtm_owl/WBC -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/WBC">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/LBTEST"/>
-        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
-        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leukocytes</biolink_sdtm_owl:sdtm_label>
-        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBC</biolink_sdtm_owl:sdtm_var_id>
-        <rdfs:label xml:lang="en">leukocytes</rdfs:label>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFRCRCRT"/>
     </owl:Class>
     
 
@@ -1158,6 +528,636 @@
     <!-- https://w3id.org/biolink/vocab/Procedure -->
 
     <owl:Class rdf:about="https://w3id.org/biolink/vocab/Procedure"/>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/ALB -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/ALB">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">albumin test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albumin</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALB</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/ALBCREAT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/ALBCREAT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">albumin to creatinine ratio test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albumin/Creatinine</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALBCREAT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/BICARB -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/BICARB">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">bicarbonate test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bicarbonate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BICARB</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/BILI -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/BILI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">bilirubin test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bilirubin</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BILI</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/BUN -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/BUN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">blood urea nitrogen test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Urea Nitrogen</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BUN</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/CA -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">calcium test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcium</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CA</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBCAT"/>
+        <rdfs:label xml:lang="en">chemistry lab test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/CHOL -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CHOL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">cholesterol test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cholesterol</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHOL</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/CITRATE -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CITRATE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">citrate test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Citrate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CITRATE</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/CL -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">chloride test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chloride</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/CO2 -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CO2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">carbon dioxide test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbon Dioxide</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO2</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/CREAT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CREAT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">creatinine test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CREAT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/CREATCLR -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CREATCLR">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">creatinine clearance</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creatinine Clearance</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CREATCLR</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/GFR -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/GFR">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">glomerular filtration rate</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glomerular Filtration Rate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/GFRCRCRT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/GFRCRCRT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFR"/>
+        <rdfs:label xml:lang="en">GFR from creatinine corrected for BSA</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR From Creatinine Corrected for BSA</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFRCRCRT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/GFRCRIOT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/GFRCRIOT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFRIOT"/>
+        <rdfs:label xml:lang="en">GFR From iothalamate corrected for BSA</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR From Iothalamate Corrected for BSA</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFRCRIOT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/GFRIOT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/GFRIOT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFR"/>
+        <rdfs:label xml:lang="en">GFR based on iothalamate</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFR based on Iothalamate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFRIOT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/GLUC -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/GLUC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">glucose test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLUC</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/HCT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/HCT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">hematocrit test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematocrit</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/HDL -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/HDL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">HDL cholesterol test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HDL Cholesterol</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HDL</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/HEMATOLOGY -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/HEMATOLOGY">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBCAT"/>
+        <rdfs:label xml:lang="en">hematatology lab test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/HGB -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/HGB">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">hemoglobin test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hemoglobin</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HGB</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/K -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/K">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">potassium test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potassium</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
+        <rdfs:label xml:lang="en">blood specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBCAT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBCAT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
+        <rdfs:label xml:lang="en">lab test category</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category for Lab Test</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBCAT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBORRES -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBORRES">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/TSTRES"/>
+        <rdfs:label xml:lang="en">lab results in original units</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Result or Finding in Original Units</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBORRES</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBORRNG -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBORRNG">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBREFRG"/>
+        <rdfs:label xml:lang="en">reference range in original units</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBREFRG -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBREFRG">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
+        <rdfs:label xml:lang="en">reference range</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBSERUM -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBSERUM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
+        <rdfs:label xml:lang="en">serum specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/MaterialSample"/>
+        <rdfs:label xml:lang="en">specimen</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specimen Type</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSPEC</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBSTRESC -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBSTRESC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/TSTRES"/>
+        <rdfs:label xml:lang="en">lab character result in standard format</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Character Result-Finding in Std Format</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTRESC</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBSTRESN -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBSTRESN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/TSTRES"/>
+        <rdfs:label xml:lang="en">lab numeric result in sandard units</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numeric Result-Finding in Standard Units</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBSTRESN</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBSTRNG -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBSTRNG">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBREFRG"/>
+        <rdfs:label xml:lang="en">reference range in standard units</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBTEST -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
+        <rdfs:label xml:lang="en">laboratory test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lab Test Name</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBTEST</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBURINE -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBURINE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
+        <rdfs:label xml:lang="en">urine specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">urinalysis volume</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume	</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VOLUME</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LDL -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LDL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">LDL cholesterol test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LDL Cholesterol</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LDL</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/MG -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/MG">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">magnesium test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnesium</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MG</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/OXALATE -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/OXALATE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">oxalate test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxalate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OXALATE</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/PHOS -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/PHOS">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">phosphate test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phosphate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHOS</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/PLAT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/PLAT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">platelet test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platelet</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PLAT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/PROT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/PROT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">protein test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PROT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/SODIUM -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/SODIUM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">sodium test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sodium</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SODIUM</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
+        <rdfs:label xml:lang="en">specimen collection process</rdfs:label>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specimen Collection Process</biolink_sdtm_owl:sdtm_label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/TRIG -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/TRIG">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">triglycerides test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triglycerides</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRIG</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/TSTRES -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/TSTRES">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
+        <rdfs:label xml:lang="en">test result</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/URATE -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/URATE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">urate test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urate</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URATE</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/URINALYSIS -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/URINALYSIS">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBCAT"/>
+        <rdfs:label xml:lang="en">urinalysis lab test</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/UUN -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/UUN">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">urine urea nitrogen test</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urine Urea Nitrogen</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UUN</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/VISIT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/VISIT">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Activity"/>
+        <rdfs:label xml:lang="en">visit</rdfs:label>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit</biolink_sdtm_owl:sdtm_label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/VISITNAME -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/VISITNAME">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ID"/>
+        <rdfs:label xml:lang="en">visit ID</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit Name</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VISIT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/WBC -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/WBC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:label xml:lang="en">leukocytes</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leukocytes</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBC</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
 </rdf:RDF>
 
 

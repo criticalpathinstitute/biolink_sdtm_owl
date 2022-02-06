@@ -1,14 +1,25 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ncit.owl#"
-     xml:base="http://purl.obolibrary.org/obo/ncit.owl"
+<rdf:RDF xmlns="https://w3id.org/c-path/biolink_sdtm_owl/imports/ncit_import.owl#"
+     xml:base="https://w3id.org/c-path/biolink_sdtm_owl/imports/ncit_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ncit.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/imports/ncit_import.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-06/imports/ncit_import.owl"/>
+        <protege:defaultLanguage>en</protege:defaultLanguage>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NCIt OBO Edition project aims to increase integration of the NCIt with OBO Library ontologies. NCIt is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities.</terms:description>
+        <terms:isVersionOf rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI Thesaurus OBO Edition</terms:title>
+        <rdfs:comment>NCI Thesaurus, a controlled vocabulary in support of NCI administrative and scientific activities. Produced by the Enterprise Vocabulary System (EVS), a project by the NCI Center for Biomedical Informatics and Information Technology. National Cancer Institute, National Institutes of Health, Bethesda, MD 20892, U.S.A.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-06</owl:versionInfo>
+        <owl:versionInfo>21.07d</owl:versionInfo>
+    </owl:Ontology>
     
 
 

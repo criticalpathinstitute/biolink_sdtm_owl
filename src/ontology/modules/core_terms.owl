@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/cpath/biolink_sdtm_owl/modules/core_terms.owl#"
-     xml:base="https://w3id.org/cpath/biolink_sdtm_owl/modules/core_terms.owl"
+<rdf:RDF xmlns="https://w3id.org/c-path/biolink_sdtm_owl/modules/core_terms.owl#"
+     xml:base="https://w3id.org/c-path/biolink_sdtm_owl/modules/core_terms.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:biolink_sdtm_owl="https://w3id.org/cpath/biolink_sdtm_owl/">
-    <owl:Ontology rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/modules/core_terms.owl"/>
+     xmlns:biolink_sdtm_owl="https://w3id.org/c-path/biolink_sdtm_owl/">
+    <owl:Ontology rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/modules/core_terms.owl"/>
     
 
 
@@ -35,9 +35,9 @@
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_code -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_code">
+    <owl:AnnotationProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code">
         <obo:IAO_0000115 xml:lang="en">The two letter code for the SDTM domain.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
         <rdfs:label xml:lang="en">SDTM domain code</rdfs:label>
@@ -45,9 +45,9 @@
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_name -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_name">
+    <owl:AnnotationProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name">
         <obo:IAO_0000115 xml:lang="en">The full name of the SDTM domain.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
         <rdfs:label xml:lang="en">SDTM domain name</rdfs:label>
@@ -55,9 +55,9 @@
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/sdtm_label -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/sdtm_label">
+    <owl:AnnotationProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label">
         <obo:IAO_0000115 xml:lang="en">The label used by SDTM. Sometimes does not match the semantics of the class.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
         <rdfs:label xml:lang="en">SDTM label</rdfs:label>
@@ -65,50 +65,13 @@
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id -->
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id -->
 
-    <owl:AnnotationProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id">
+    <owl:AnnotationProperty rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id">
         <obo:IAO_0000115 xml:lang="en">The unique SDTM code for a class in this model.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
         <rdfs:label xml:lang="en">SDTM Variable ID</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/is_about -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/is_about">
-        <rdfs:domain rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
-        <rdfs:label xml:lang="en">is about</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/biolink/vocab/InformationContentEntity -->
-
-    <owl:Class rdf:about="https://w3id.org/biolink/vocab/InformationContentEntity"/>
 </rdf:RDF>
 
 
