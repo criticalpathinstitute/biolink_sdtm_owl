@@ -87,7 +87,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  iao ncit
+IMPORTS =  ncit
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -264,15 +264,6 @@ MIR=true # Global parameter to bypass mirror generation
 IMP_LARGE=true # Global parameter to bypass handling of large imports
 
 
-## ONTOLOGY: iao
-## Copy of iao is re-downloaded whenever source changes
-mirror/iao.trigger: $(SRC)
-
-mirror/iao.owl: mirror/iao.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/iao.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: mirror/iao.owl
-
-
 ## ONTOLOGY: ncit
 ## Copy of ncit is re-downloaded whenever source changes
 mirror/ncit.trigger: $(SRC)
@@ -303,7 +294,7 @@ subsets/%.owl: $(ONT).owl
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
 .PHONY: release
-release: $(ONT).owl
+release: $(ONT).owl $(ONT).obo
 	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
 
 # ----------------------------------------
