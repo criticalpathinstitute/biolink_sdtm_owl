@@ -5875,12 +5875,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- https://w3id.org/cpath/biolink_sdtm_owl/is_about -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/is_about"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

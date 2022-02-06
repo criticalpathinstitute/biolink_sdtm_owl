@@ -1,21 +1,98 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/biolink_sdtm_owl/biolink_sdtm_owl-base.owl#"
-     xml:base="http://purl.obolibrary.org/obo/biolink_sdtm_owl/biolink_sdtm_owl-base.owl"
+<rdf:RDF xmlns="https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl-base.owl#"
+     xml:base="https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl-base.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/biolink_sdtm_owl/biolink_sdtm_owl-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/biolink_sdtm_owl/releases/2022-01-22/biolink_sdtm_owl-base.owl"/>
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:biolink_sdtm_owl="https://w3id.org/cpath/biolink_sdtm_owl/">
+    <owl:Ontology rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl-base.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-06/biolink_sdtm_owl-base.owl"/>
         <dc:description>An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.</dc:description>
         <dc:title>BioCollections Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="Unspecified"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-22</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-06</owl:versionInfo>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_code -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_code"/>
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_name -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_name"/>
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/biolink/vocab/has_input -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/biolink/vocab/has_input"/>
+    
+
+
+    <!-- https://w3id.org/biolink/vocab/has_output -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/biolink/vocab/has_output"/>
+    
+
+
+    <!-- https://w3id.org/cpath/biolink_sdtm_owl/is_about -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/is_about"/>
     
 
 
@@ -30,11 +107,89 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BIOLINK_SDTM_OWL_00000000 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BIOLINK_SDTM_OWL_00000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <owl:equivalentClass rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/biolink/vocab/InformationContentEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/biolink/vocab/InformationContentEntity"/>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBTEST -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/biolink/vocab/has_input"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/biolink/vocab/has_output"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/TSTRES"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/biolink/vocab/has_input"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/biolink/vocab/has_output"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT"/>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/TSTRES -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/TSTRES"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://w3id.org/cpath/biolink_sdtm_owl/DTC">
+        <biolink_sdtm_owl:sdtm_domain_name>urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_var_id>URDTC</biolink_sdtm_owl:sdtm_var_id>
+        <biolink_sdtm_owl:sdtm_domain_code>UR</biolink_sdtm_owl:sdtm_domain_code>
+    </rdf:Description>
 </rdf:RDF>
 
 

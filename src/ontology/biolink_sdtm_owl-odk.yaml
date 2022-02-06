@@ -19,9 +19,12 @@ import_group:
   disabled: false
   slme_individuals: exclude
   products:
+  - id: iao
+    mirror_from: http://purl.obolibrary.org/obo/iao.owl
   - id: ncit
     mirror_from: http://purl.obolibrary.org/obo/ncbi.owl
     is_large: TRUE
+    rebuild_if_source_changes: true
 import_pattern_ontology: false
 license: CC-BY
 namespaces: null
