@@ -22,7 +22,7 @@ import_group:
   - id: iao
     mirror_from: http://purl.obolibrary.org/obo/iao.owl
   - id: ncit
-    mirror_from: http://purl.obolibrary.org/obo/ncbi.owl
+    mirror_from: http://purl.obolibrary.org/obo/ncit.owl
     is_large: TRUE
     rebuild_if_source_changes: true
 import_pattern_ontology: false
