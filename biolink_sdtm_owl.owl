@@ -15,8 +15,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:biolink_sdtm_owl="https://w3id.org/cpath/biolink_sdtm_owl/"
      xmlns:biolink_sdtm_owl1="https://w3id.org/c-path/biolink_sdtm_owl/">
-    <owl:Ontology rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-08/biolink_sdtm_owl.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl-full.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-08/biolink_sdtm_owl-full.owl"/>
         <dc:description>An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.</dc:description>
         <dc:title>BioCollections Ontology</dc:title>
         <terms:license rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/Unspecified"/>
@@ -11656,8 +11656,10 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C74720">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LOCVOLUME"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74957"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/URTEST"/>
         <obo:IAO_0000115>The determination of the volume of a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C74720</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -18918,6 +18920,7 @@ Previous. An information content entity is a non-realizable information entity t
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74957"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/URTEST"/>
         <rdfs:label xml:lang="en">urinalysis volume</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18944,8 +18947,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/LOCDEPTH -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LOCDEPTH">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ClinicalMeasurement"/>
-        <rdfs:label xml:lang="en">depth of anatomical structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/URTEST"/>
+        <rdfs:label xml:lang="en">depth measurement of anatomical structure</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl1:sdtm_domain_name>
         <biolink_sdtm_owl1:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depth</biolink_sdtm_owl1:sdtm_label>
@@ -18957,8 +18960,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/LOCLENGTH -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LOCLENGTH">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ClinicalMeasurement"/>
-        <rdfs:label xml:lang="en">length of anatomical structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/URTEST"/>
+        <rdfs:label xml:lang="en">length measurement of anatomical structure</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl1:sdtm_domain_name>
         <biolink_sdtm_owl1:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Length</biolink_sdtm_owl1:sdtm_label>
@@ -18970,8 +18973,10 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/LOCVOLUME -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LOCVOLUME">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ClinicalMeasurement"/>
-        <rdfs:label xml:lang="en">volume of anatomical structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74957"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/URTEST"/>
+        <rdfs:label xml:lang="en">volume measurement of anatomical structure</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl1:sdtm_domain_name>
         <biolink_sdtm_owl1:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume</biolink_sdtm_owl1:sdtm_label>
@@ -18997,7 +19002,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/NCPRMVOL -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/NCPRMVOL">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ClinicalMeasurement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/URTEST"/>
         <rdfs:label xml:lang="en">non-cystic parenchymal kidney volume</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl1:sdtm_domain_name>
@@ -19133,6 +19138,12 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/STUDYARM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Activity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/biolink/vocab/part_of"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CLINSTUDY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An arm within a study.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RW</obo:IAO_0000119>
         <rdfs:label xml:lang="en">study arm</rdfs:label>
