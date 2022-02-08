@@ -47,7 +47,6 @@ https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL
 https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT
 https://w3id.org/c-path/biolink_sdtm_owl/TSTRES
 https://w3id.org/cpath/biolink_sdtm_owl/DTC
-https://w3id.org/cpath/biolink_sdtm_owl/is_about
 https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_code
 https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_name
 https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id

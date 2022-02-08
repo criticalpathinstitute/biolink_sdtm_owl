@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/c-path/biolink_sdtm_owl.owl#"
-     xml:base="https://w3id.org/c-path/biolink_sdtm_owl.owl"
+<rdf:RDF xmlns="https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl-full.owl#"
+     xml:base="https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl-full.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ncit="http://purl.obolibrary.org/obo/ncit#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -14,12 +15,12 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:biolink_sdtm_owl="https://w3id.org/cpath/biolink_sdtm_owl/"
      xmlns:biolink_sdtm_owl1="https://w3id.org/c-path/biolink_sdtm_owl/">
-    <owl:Ontology rdf:about="https://w3id.org/c-path/biolink_sdtm_owl.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-06/biolink_sdtm_owl.owl"/>
+    <owl:Ontology rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl.owl">
+        <owl:versionIRI rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-08/biolink_sdtm_owl.owl"/>
         <dc:description>An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.</dc:description>
         <dc:title>BioCollections Ontology</dc:title>
         <terms:license rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/Unspecified"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-06</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -161,6 +162,534 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C101832 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C101832">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C101833 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C101833">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C105551 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C105551">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C116103 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C116103">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C116104 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C116104">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C116977 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C116977">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C118169 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C118169">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C124299 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C124299">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C124300 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C124300">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C132298 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C132298">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C132310 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C132310">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C142799 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C142799">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C150812 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C150812">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C150813 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C150813">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C156952 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C156952">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C156953 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C156953">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C157528 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C157528">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C157529 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C157529">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C157711 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C157711">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159008 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159008">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159010 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159010">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159022 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159022">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159062 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159062">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159093 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159093">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159111">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159117">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159120 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159120">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159339 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159339">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159412">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159418 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159418">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159501 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159501">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159502 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159502">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C159503 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C159503">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C165451 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C165451">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C166373 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C166373">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C167409 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C167409">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173206 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C173206">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C173236 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C173236">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C174019 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C174019">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C174250 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C174250">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C175517 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C175517">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C175518 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C175518">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C177383 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C177383">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C177398 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C177398">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C177536 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C177536">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C177537 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C177537">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C178106 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C178106">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C178115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C178115">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C178125 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C178125">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C178126 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C178126">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C61410 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C61410">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C65047 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C65047">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C66830 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C66830">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67154 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C67154">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C67497 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C67497">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C74456 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C74456">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C77526 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C77526">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C77529 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C77529">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C78734 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C78734">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C85493 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C85493">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C85839 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C85839">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C89506 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C89506">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C90259 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C90259">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96778 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C96778">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C96779 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C96779">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C99147 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_C99147">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_NHC0 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_NHC0"/>
@@ -275,6 +804,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ncit#oncotree_slim -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncit#oncotree_slim">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
@@ -290,6 +827,12 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     
 
 
@@ -6279,7 +6822,14 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <owl:equivalentClass rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/InformationContentEntity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/NamedThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -6391,7 +6941,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C105585">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GLUC"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GLUC"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C47868"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the amount of glucose present in a sample.</obo:IAO_0000115>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25294"/>
         <obo:NCIT_NHC0>C105585</obo:NCIT_NHC0>
@@ -6490,7 +7041,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C105586">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CHOL"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CHOL"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74949"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the amount of total cholesterol present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C105586</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -6564,7 +7116,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C105587">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/HDL"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/HDL"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74949"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the amount of high-density lipoprotein cholesterol present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C105587</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -6638,7 +7191,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C105588">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LDL"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LDL"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74949"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the amount of low-density lipoprotein cholesterol present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C105588</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -6976,7 +7530,14 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C12434">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13236"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_R82"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12909"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A liquid tissue; its major function is to transport oxygen throughout the body. It also supplies the tissues with nutrients, removes waste products, and contains various components of the immune system defending the body against infection. Several hormones also travel in the blood.</obo:IAO_0000115>
         <obo:NCIT_A24 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C168958"/>
         <obo:NCIT_A24 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C83315"/>
@@ -7040,6 +7601,24 @@ Previous. An information content entity is a non-realizable information entity t
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ncit#oncotree_slim"/>
         <rdfs:label>Blood</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12434"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Blood</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>biospecimen_anatomic_site</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12434"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>Blood</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>biospecimen_type</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12434"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
@@ -7198,24 +7777,6 @@ Previous. An information content entity is a non-realizable information entity t
         <owl:annotatedTarget>A tissue with red blood cells, white blood cells, platelets, and other substances suspended in fluid called plasma. Blood takes oxygen and nutrients to the tissues, and carries away wastes.</owl:annotatedTarget>
         <obo:NCIT_P378>NCI-GLOSS</obo:NCIT_P378>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12434"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
-        <owl:annotatedTarget>Blood</owl:annotatedTarget>
-        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
-        <obo:NCIT_P394>PT</obo:NCIT_P394>
-        <obo:NCIT_P395>biospecimen_anatomic_site</obo:NCIT_P395>
-        <obo:NCIT_P396>GDC</obo:NCIT_P396>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12434"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
-        <owl:annotatedTarget>Blood</owl:annotatedTarget>
-        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
-        <obo:NCIT_P394>PT</obo:NCIT_P394>
-        <obo:NCIT_P395>biospecimen_type</obo:NCIT_P395>
-        <obo:NCIT_P396>GDC</obo:NCIT_P396>
-    </owl:Axiom>
     
 
 
@@ -7224,8 +7785,8 @@ Previous. An information content entity is a non-realizable information entity t
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C125949">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/BUN"/>
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/UUN"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/BUN"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/UUN"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74760"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the amount of urea nitrogen present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C125949</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -7668,7 +8229,14 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C13283">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBURINE"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBURINE"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13236"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_R81"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12413"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The fluid that is excreted by the kidneys.  It is stored in the bladder and discharged through the urethra.</obo:IAO_0000115>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C83315"/>
         <obo:NCIT_NHC0>C13283</obo:NCIT_NHC0>
@@ -7765,7 +8333,14 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C13325">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSERUM"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSERUM"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13236"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_R82"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13356"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The clear portion of the blood that remains after the removal of the blood cells and the clotting proteins.</obo:IAO_0000115>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C53414"/>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C83315"/>
@@ -8538,7 +9113,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25747">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CREATCLR"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CREATCLR"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75913"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the clearance of endogenous creatinine, used for evaluating the glomerular filtration rate.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C25747</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -8766,7 +9342,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C38037">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/BILI"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/BILI"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74954"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The measurement of the total amount of bilirubin present in a particular substrate. The substrate most often tested is blood, but other fluids extracted from the body may be used periodically depending on the purpose of the test.</obo:IAO_0000115>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25294"/>
         <obo:NCIT_NHC0>C38037</obo:NCIT_NHC0>
@@ -9279,7 +9856,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C51948">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/WBC"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/WBC"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28133"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A test to determine the number of leukocytes in a biospecimen.</obo:IAO_0000115>
         <obo:NCIT_A24 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C117142"/>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25294"/>
@@ -9445,7 +10023,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C51951">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/PLAT"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/PLAT"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28133"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the number of platelets in a biospecimen.</obo:IAO_0000115>
         <obo:NCIT_A24 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C117142"/>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25294"/>
@@ -9681,7 +10260,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64431">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/ALB"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/ALB"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64430"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74954"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of albumin present in a sample.</obo:IAO_0000115>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25294"/>
         <obo:NCIT_NHC0>C64431</obo:NCIT_NHC0>
@@ -9791,7 +10372,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64488">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CA"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CA"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49237"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of calcium present in a sample.</obo:IAO_0000115>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25294"/>
         <obo:NCIT_NHC0>C64488</obo:NCIT_NHC0>
@@ -9881,7 +10463,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64495">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CL"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CL"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of chloride present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C64495</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -9949,7 +10532,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64545">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CO2"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CO2"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C82624"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the gas carbon dioxide present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C64545</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -10017,7 +10601,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64547">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CREAT"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CREAT"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64430"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of creatinine present in a sample.</obo:IAO_0000115>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25294"/>
         <obo:NCIT_NHC0>C64547</obo:NCIT_NHC0>
@@ -10135,7 +10720,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64796">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/HCT"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/HCT"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49286"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A measure of the volume of red blood cells expressed as a percentage of the total blood volume. Normal in males is 43-49%, in females 37-43%.</obo:IAO_0000115>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25294"/>
         <obo:NCIT_NHC0>C64796</obo:NCIT_NHC0>
@@ -10268,7 +10854,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64809">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/SODIUM"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/SODIUM"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of sodium present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C64809</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -10336,7 +10923,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64812">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/TRIG"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/TRIG"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74949"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of triglyceride present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C64812</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -10411,7 +10999,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64814">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/URATE"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/URATE"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49237"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of urate present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C64814</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -10487,7 +11076,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64840">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/MG"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/MG"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of magnesium present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C64840</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -10566,7 +11156,9 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64848">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/HGB"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/HGB"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49286"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64430"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of hemoglobin present in a biospecimen.</obo:IAO_0000115>
         <obo:NCIT_A24 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C117142"/>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25294"/>
@@ -10719,7 +11311,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64853">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/K"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/K"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of potassium present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C64853</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -10787,7 +11380,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64857">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/PHOS"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/PHOS"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of phosphate present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C64857</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -10882,7 +11476,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C64858">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/PROT"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/PROT"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64430"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A quantitative measurement of the amount of total protein present in a sample.</obo:IAO_0000115>
         <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25294"/>
         <obo:NCIT_NHC0>C64858</obo:NCIT_NHC0>
@@ -10984,7 +11579,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C74667">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/BICARB"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/BICARB"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49237"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the amount of bicarbonate present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C74667</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -11060,7 +11656,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C74720">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74957"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the volume of a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C74720</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -11248,7 +11845,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C74761">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/ALBCREAT"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/ALBCREAT"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74760"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the ratio of albumin compared to creatinine protein present in a urine sample. The measurement may be expressed as a ratio or percentage.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C74761</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -11700,7 +12298,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C90505">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFR"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFR"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74972"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>A kidney function test that measures the fluid volume that is filtered from the kidney glomeruli to the Bowman&apos;s capsule per unit of time.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C90505</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -11766,7 +12365,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C92248">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CITRATE"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CITRATE"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49237"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the amount of citrate present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C92248</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -11841,7 +12441,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C92250">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/OXALATE"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/OXALATE"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49237"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <obo:IAO_0000115>The determination of the amount of oxalate present in a sample.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C92250</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -11916,7 +12517,8 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C98735">
         <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFRCRCRT"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFRCRCRT"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90505"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFR"/>
         <obo:IAO_0000115>The determination of the glomerular filtration rate by measurement of creatinine clearance and whose result is adjusted for body surface area.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C98735</obo:NCIT_NHC0>
         <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
@@ -15367,7 +15969,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/biolink/vocab/InformationContentEntity -->
 
     <owl:Class rdf:about="https://w3id.org/biolink/vocab/InformationContentEntity">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/NamedThing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/biolink/vocab/creation_date"/>
@@ -17806,7 +18409,9 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/ALB -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/ALB">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64431"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64430"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74954"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">albumin test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17819,7 +18424,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/ALBCREAT -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/ALBCREAT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74761"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74760"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">albumin to creatinine ratio test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17832,7 +18438,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/BICARB -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/BICARB">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74667"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49237"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">bicarbonate test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17845,7 +18452,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/BILI -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/BILI">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38037"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74954"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">bilirubin test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17858,7 +18466,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/BUN -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/BUN">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C125949"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74760"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">blood urea nitrogen test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17871,7 +18480,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/CA -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CA">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64488"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49237"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">calcium test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17893,7 +18503,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/CHOL -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CHOL">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C105586"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74949"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">cholesterol test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17906,7 +18517,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/CITRATE -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CITRATE">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C92248"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49237"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">citrate test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17919,7 +18531,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/CL -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CL">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64495"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">chloride test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17943,7 +18556,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/CO2 -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CO2">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64545"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C82624"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">carbon dioxide test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17956,7 +18570,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/CREAT -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CREAT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64547"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64430"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">creatinine test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17969,7 +18584,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/CREATCLR -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CREATCLR">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C25747"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C75913"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">creatinine clearance</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -17997,7 +18613,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/GFR -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/GFR">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90505"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74972"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">glomerular filtration rate</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18010,7 +18627,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/GFRCRCRT -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/GFRCRCRT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C98735"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90505"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/GFR"/>
         <rdfs:label xml:lang="en">GFR from creatinine corrected for BSA</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18050,7 +18668,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/GLUC -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/GLUC">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C105585"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C47868"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">glucose test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18063,7 +18682,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/HCT -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/HCT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64796"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49286"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">hematocrit test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18076,7 +18696,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/HDL -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/HDL">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C105587"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74949"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">HDL cholesterol test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18108,7 +18729,9 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/HGB -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/HGB">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64848"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49286"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64430"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">hemoglobin test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18121,7 +18744,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/K -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/K">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64853"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">potassium test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18144,7 +18768,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C12434"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13236"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
         <rdfs:label xml:lang="en">blood specimen</rdfs:label>
     </owl:Class>
     
@@ -18198,7 +18823,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBSERUM -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBSERUM">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13236"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
         <rdfs:label xml:lang="en">serum specimen</rdfs:label>
     </owl:Class>
     
@@ -18280,7 +18906,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBURINE -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBURINE">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13283"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C13236"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC"/>
         <rdfs:label xml:lang="en">urine specimen</rdfs:label>
     </owl:Class>
     
@@ -18289,7 +18916,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74720"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74957"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">urinalysis volume</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18302,7 +18930,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/LDL -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/LDL">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C105588"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74949"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">LDL cholesterol test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18354,7 +18983,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/MG -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/MG">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64840"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">magnesium test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18380,7 +19010,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/OXALATE -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/OXALATE">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C92250"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49237"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">oxalate test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18393,7 +19024,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/PHOS -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/PHOS">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64857"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">phosphate test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18406,7 +19038,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/PLAT -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/PLAT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C51951"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28133"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">platelet test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18419,7 +19052,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/PROT -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/PROT">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64858"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64430"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">protein test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18462,7 +19096,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/SODIUM -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/SODIUM">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64809"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74946"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">sodium test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18532,7 +19167,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/TRIG -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/TRIG">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64812"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74949"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">triglycerides test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18568,7 +19204,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/URATE -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/URATE">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C64814"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C49237"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">urate test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18629,7 +19266,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/UUN -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/UUN">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C125949"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C74760"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">urine urea nitrogen test</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18665,7 +19303,8 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/WBC -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/WBC">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C51948"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28133"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/LBTEST"/>
         <rdfs:label xml:lang="en">leukocytes</rdfs:label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl1:sdtm_domain_code>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl1:sdtm_domain_name>
@@ -18937,8 +19576,8 @@ Previous. An information content entity is a non-realizable information entity t
     <rdf:Description rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/ARM">
         <biolink_sdtm_owl1:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of Planned Arm</biolink_sdtm_owl1:sdtm_label>
         <biolink_sdtm_owl1:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl1:sdtm_domain_code>
-        <biolink_sdtm_owl1:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARM</biolink_sdtm_owl1:sdtm_var_id>
         <obo:IAO_0000115 xml:lang="en">Name of the Arm to which the subject was assigned. If the subject was not assigned to an Arm, ARM is null and ARMNRS is populated.With the exception of studies which use multi-stage Arm assignments, must be a value of ARM in the Trial Arms Dataset.</obo:IAO_0000115>
+        <biolink_sdtm_owl1:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARM</biolink_sdtm_owl1:sdtm_var_id>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDTM</obo:IAO_0000119>
         <biolink_sdtm_owl1:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl1:sdtm_domain_name>
         <rdfs:label xml:lang="en">description of planned arm</rdfs:label>
@@ -18952,5 +19591,5 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
