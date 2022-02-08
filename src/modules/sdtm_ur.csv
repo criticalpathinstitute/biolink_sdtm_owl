@@ -1,14 +1,14 @@
-﻿Ontology ID,type,parent class,parent property,domain,range,subclass axioms,label,definition,definition source,English syn.,sdtm_var_id,sdtm_domain_code,sdtm_domain_name,sdtm_label
-ID,TYPE,SC %,SP %,DOMAIN,RANGE,,AL rdfs:label@en,AL IAO:0000115@en,A IAO:0000119 SPLIT=|,AL oboInOwl:hasExactSynonym@en,A biolink_sdtm_owl:sdtm_var_id,A biolink_sdtm_owl:sdtm_domain_code,A biolink_sdtm_owl:sdtm_domain_name,A biolink_sdtm_owl:sdtm_label
-biolink_sdtm_owl:URTEST,class,biolink:Procedure,,,,(biolink:has_output some biolink_sdtm_owl:TSTRES),urinary system tests,,,,URTEST,UR,urniary system findings,Question Name
-biolink_sdtm_owl:URORRES,class,biolink_sdtm_owl:TSTRES,,,,,urinary system finding in original units,,,,URORRES,UR,urniary system findings,Finding in Original Units
-biolink_sdtm_owl:URSTRESN,class,biolink_sdtm_owl:TSTRES,,,,,urinary system numeric finding in standard units,,,,URSTRESN,UR,urniary system findings,Numeric Finding in Standard Units
-biolink_sdtm_owl:TSTLOC,class,biolink:AnatomicalEntity,,,,,anatomical location of test,,,,URLOC,UR,urniary system findings,Anatomical Location
-biolink_sdtm_owl:has_anatomical_location,object property,,,biolink:Procedure,biolink_sdtm_owl:TSTLOC,,occurs in anatomical location,,,,,,,
-biolink_sdtm_owl:HEARTLV,class,biolink_sdtm_owl:TSTLOC,,,,,left ventricle of the heart,,,,"HEART, LEFT VENTRICLE",,,
-biolink_sdtm_owl:KIDNEY,class,biolink_sdtm_owl:TSTLOC,,,,,kidney,,,,KIDNEY,,,
-biolink_sdtm_owl:METHOD,data property,,,biolink:Procedure,,,method of the procedure,,,,URMETHOD,UR,urniary system findings,Method of the procedure
-biolink_sdtm_owl:LOCVOLUME,class,biolink:ClinicalMeasurement,,,,,volume of anatomical structure,,,,VOLUME,UR,urniary system findings,Volume
-biolink_sdtm_owl:LOCDEPTH,class,biolink:ClinicalMeasurement,,,,,depth of anatomical structure,,,,DEPTH,UR,urniary system findings,Depth
-biolink_sdtm_owl:LOCLENGTH,class,biolink:ClinicalMeasurement,,,,,length of anatomical structure,,,,LENGTH,UR,urniary system findings,Length
-biolink_sdtm_owl:NCPRMVOL,class,biolink:ClinicalMeasurement,,,,,non-cystic parenchymal kidney volume,,,,NCPRMVOL,UR,urniary system findings,Non-Cystic Parenchymal Volume
+﻿Ontology ID,type,parent class,parent property,domain,range,subclass axioms,equivalance axioms,label,definition,definition source,English syn.,sdtm_var_id,sdtm_domain_code,sdtm_domain_name,sdtm_label
+ID,TYPE,SC %,SP %,DOMAIN,RANGE,,EC %,AL rdfs:label@en,AL IAO:0000115@en,A IAO:0000119 SPLIT=|,AL oboInOwl:hasExactSynonym@en,A biolink_sdtm_owl:sdtm_var_id,A biolink_sdtm_owl:sdtm_domain_code,A biolink_sdtm_owl:sdtm_domain_name,A biolink_sdtm_owl:sdtm_label
+biolink_sdtm_owl:URTEST,class,biolink:Procedure,,,,(biolink:has_output some biolink_sdtm_owl:TSTRES),,urinary system tests,,,,URTEST,UR,urniary system findings,Question Name
+biolink_sdtm_owl:URORRES,class,biolink_sdtm_owl:TSTRES,,,,,,urinary system finding in original units,,,,URORRES,UR,urniary system findings,Finding in Original Units
+biolink_sdtm_owl:URSTRESN,class,biolink_sdtm_owl:TSTRES,,,,,,urinary system numeric finding in standard units,,,,URSTRESN,UR,urniary system findings,Numeric Finding in Standard Units
+biolink_sdtm_owl:TSTLOC,class,biolink:AnatomicalEntity,,,,,,anatomical location of test,,,,URLOC,UR,urniary system findings,Anatomical Location
+biolink_sdtm_owl:has_anatomical_location,object property,,,biolink:Procedure,biolink_sdtm_owl:TSTLOC,,,occurs in anatomical location,,,,,,,
+biolink_sdtm_owl:HEARTLV,class,biolink_sdtm_owl:TSTLOC,,,,,,left ventricle of the heart,,,,"HEART, LEFT VENTRICLE",,,
+biolink_sdtm_owl:KIDNEY,class,biolink_sdtm_owl:TSTLOC,,,,,,kidney,,,,KIDNEY,,,
+biolink_sdtm_owl:METHOD,data property,,,biolink:Procedure,,,,method of the procedure,,,,URMETHOD,UR,urniary system findings,Method of the procedure
+biolink_sdtm_owl:LOCVOLUME,class,biolink_sdtm_owl:URTEST,,,,,http://purl.obolibrary.org/obo/NCIT_C74720,volume measurement of anatomical structure,,,,VOLUME,UR,urniary system findings,Volume
+biolink_sdtm_owl:LOCDEPTH,class,biolink_sdtm_owl:URTEST,,,,,,depth measurement of anatomical structure,,,,DEPTH,UR,urniary system findings,Depth
+biolink_sdtm_owl:LOCLENGTH,class,biolink_sdtm_owl:URTEST,,,,,,length measurement of anatomical structure,,,,LENGTH,UR,urniary system findings,Length
+biolink_sdtm_owl:NCPRMVOL,class,biolink_sdtm_owl:URTEST,,,,,,non-cystic parenchymal kidney volume,,,,NCPRMVOL,UR,urniary system findings,Non-Cystic Parenchymal Volume
