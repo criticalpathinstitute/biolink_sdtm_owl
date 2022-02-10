@@ -99,6 +99,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16809 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16809">
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/MRI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17204">
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/CT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17230">
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/ULTRASOUND"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C25228 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25228">
@@ -153,7 +177,7 @@
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/CT">
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
-        <rdfs:label xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C17204</rdfs:label>
+        <rdfs:label xml:lang="en">CT</rdfs:label>
     </owl:Class>
     
 
@@ -229,7 +253,7 @@
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/MRI">
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
-        <rdfs:label xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C16809</rdfs:label>
+        <rdfs:label xml:lang="en">MRI</rdfs:label>
     </owl:Class>
     
 
@@ -278,7 +302,7 @@
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/ULTRASOUND">
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Procedure"/>
-        <rdfs:label xml:lang="en">http://purl.obolibrary.org/obo/NCIT_C17230</rdfs:label>
+        <rdfs:label xml:lang="en">ultrasound</rdfs:label>
     </owl:Class>
     
 
