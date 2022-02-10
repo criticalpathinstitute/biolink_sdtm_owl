@@ -8,6 +8,9 @@ http://purl.obolibrary.org/obo/NCIT_C125949	#blood urea nitrogen test
 http://purl.obolibrary.org/obo/NCIT_C125949	#urine urea nitrogen test	
 http://purl.obolibrary.org/obo/NCIT_C13283	#urine specimen	
 http://purl.obolibrary.org/obo/NCIT_C13325	#serum specimen	
+http://purl.obolibrary.org/obo/NCIT_C16809	#MRI
+http://purl.obolibrary.org/obo/NCIT_C17204	#CT
+http://purl.obolibrary.org/obo/NCIT_C17230	#ultrasound
 http://purl.obolibrary.org/obo/NCIT_C25747	#creatinine clearance	
 http://purl.obolibrary.org/obo/NCIT_C38037	#bilirubin test	
 http://purl.obolibrary.org/obo/NCIT_C51948	#leukocytes	
