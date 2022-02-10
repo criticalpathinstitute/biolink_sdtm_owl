@@ -1,0 +1,4 @@
+domain,row_id,studyid,usubjid,urseq,urgrpid,urtestcd,urtest,urorres,urorresu,urstresc,urstresn,urstresu,urloc,urlat,urmethod,visitnum,visit,mpdtc
+ur,1,sample,1,1,NA,VOLUME,Volume,100,mL,100,100,mL,KIDNEY,BILATERAL,MRI,1,visit_one,1/1/1999
+ur,2,sample,2,2,NA,VOLUME,Volume,100.11,mL,100.11,100.11,mL,KIDNEY,RIGHT,MRI,1,visit_one,1/1/1999
+ur,3,sample,2,3,NA,VOLUME,Volume,100.11,mL,100.11,100.11,mL,KIDNEY,LEFT,MRI,1,visit_one,1/1/1999

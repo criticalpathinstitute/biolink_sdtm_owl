@@ -1,0 +1,3 @@
+domain,row_id,studyid,usubjid,domain.1,lbtest,lbtestcd,lbcat,lborres,lborresu,lbornrlo,lbornrhi,lbstresc,lbstresn,lbstresu,lbstnrlo,lbstnrhi,lbspec,visit,lbdy
+lb,1,sample,1,LB,Albumin,ALB,CHEMISTRY,1.23,mL,1.1,4.1,,1.23,mL,1.1,4.1,LBBLOOD,visit_one,10
+lb,2,sample,2,LB,Bicarbonate,BICARB,CHEMISTRY,2.34,mg,2.1,5.1,,2.34,mg,2.1,5.1,LBBLOOD,visit_two,11
