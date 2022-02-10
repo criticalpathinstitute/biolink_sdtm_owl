@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-10/imports/ncit_import.owl" uri="imports/ncit_import.owl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-10/imports/iao_import.owl" uri="imports/iao_import.owl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-08/imports/ncit_import.owl" uri="imports/ncit_import.owl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-08/imports/iao_import.owl" uri="imports/iao_import.owl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-06/imports/iao_import.owl" uri="imports/iao_import.owl"/>

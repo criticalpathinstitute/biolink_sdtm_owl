@@ -33,3 +33,9 @@ http://purl.obolibrary.org/obo/NCIT_C64812	#triglycerides test
 http://purl.obolibrary.org/obo/NCIT_C64814	#urate test	
 http://purl.obolibrary.org/obo/NCIT_C125949	#urine urea nitrogen test	
 http://purl.obolibrary.org/obo/NCIT_C74720	#urinalysis volume	
+http://purl.obolibrary.org/obo/NCIT_C17204	#CT
+http://purl.obolibrary.org/obo/NCIT_C16809	#MRI
+http://purl.obolibrary.org/obo/NCIT_C17230	#ultrasound
+http://purl.obolibrary.org/obo/NCIT_C25229	#left
+http://purl.obolibrary.org/obo/NCIT_C25228	#right
+http://purl.obolibrary.org/obo/NCIT_C13332	#bilateral

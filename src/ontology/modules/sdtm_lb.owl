@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_lb.owl#"
      xml:base="https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_lb.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -19,6 +20,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
@@ -1130,7 +1137,6 @@
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/VISIT">
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Activity"/>
         <rdfs:label xml:lang="en">visit</rdfs:label>
-        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit</biolink_sdtm_owl:sdtm_label>
     </owl:Class>
     
 
@@ -1139,11 +1145,30 @@
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/VISITNAME">
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ID"/>
-        <rdfs:label xml:lang="en">visit ID</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">1. Protocol-defined description of clinical encounter. 2. May be used in addition to VISITNUM and/or VISITDY.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">visit name</rdfs:label>
         <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
         <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
         <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit Name</biolink_sdtm_owl:sdtm_label>
         <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VISIT</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/VISITNUM -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/VISITNUM">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/ID"/>
+        <obo:IAO_0000115 xml:lang="en">1. Clinical encounter number. 2. Numeric version of VISIT, used for sorting.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">visit number</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LB</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UR</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laboratory test results</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urniary system findings</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Visit Number</biolink_sdtm_owl:sdtm_label>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VISITNUM</biolink_sdtm_owl:sdtm_var_id>
     </owl:Class>
     
 
