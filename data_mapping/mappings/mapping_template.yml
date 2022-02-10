@@ -208,7 +208,7 @@ mappings:
       # Mapping a lab test to the visit that it is associated with.
       - p: sdtm:associated_with_visit
         o: 
-          mapping: visit
+          mapping: visit_from_lb_source
           condition:
             function: equal
             parameters:
@@ -245,10 +245,8 @@ mappings:
 
 
 
-
-
   # Visit.
-  visit:
+  visit_from_lb_source:
     sources:
       - ['data_mapping/sample_data/lb.csv~csv']
     s: sdtm:$(visit)                              # Uses the unique visit name value for each visit as the identifier.
@@ -258,8 +256,6 @@ mappings:
       - [sdtm:DTC, $(lbdy)]                       # sdmt:DTC is a data property with a domain of the visit class and a label of 'date of lab visit'.
 
       
-
-
 
 
   # The specimen collection process (the procedure involved in obtaining the specimen).
@@ -486,7 +482,16 @@ mappings:
     s: sdtm:urtest_$(usubjid)_$(row_id)
     po:
       - [a, sdtm:URTEST]            # This is a subclass of biolink:Procedure.
-      - [sdtm:METHOD, $(urmethod)]  # A data property for the string value of the test method. 
+
+      # Mapping a urinary system test to the visit that it is associated with.
+      - p: sdtm:associated_with_visit
+        o: 
+          mapping: visit_from_ur_source
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
 
       # The output of this procedure is the measurement.
       - p: biolink:has_output
@@ -508,7 +513,27 @@ mappings:
               - [str1, $(row_id), s]
               - [str2, $(row_id), o]
 
-      # The outputs of the urinary system test are the numerical findings.
+      # Mapping this procedure to the laterality of the location of it.
+      - p: sdtm:has_anatomical_location
+        o:
+          mapping: urinary_system_test_laterality_of_anatomical_location
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+      # Mapping this procedure to the method used. In biolink terms, the method used is also a procedure.
+      - p: sdtm:METHOD  # This is a subproperty of the object property biolink:has_procedure.
+        o:
+          mapping: urinary_system_test_method
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+      # The outputs of the urinary system test are the numerical findings (or findings in character format).
       - p: biolink:has_output
         o:
           mapping: urinary_system_test_numeric_result_in_standard_units
@@ -525,6 +550,29 @@ mappings:
             parameters:
               - [str1, $(row_id), s]
               - [str2, $(row_id), o]
+      - p: biolink:has_output
+        o:
+          mapping: urinary_system_test_character_result_in_standard_format
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+
+
+
+  # Visit.
+  visit_from_ur_source:
+    sources:
+      - ['data_mapping/sample_data/ur.csv~csv']
+    s: sdtm:$(visit)                              # Uses the unique visit name value for each visit as the identifier.
+    po:
+      - [a, sdtm:VISIT]                           # sdtm:VISIT is a subclass of biolink:Activity.
+      - [sdtm:VISITNAME, $(visit)]                # sdtm:VISITNAME is a subproperty of biolink:ID.
+      - [sdtm:VISITNUM, $(visitnum)]              # sdtm:VISITNUM is a subproperty of biolink:ID.
+      - [sdtm:DTC, $(urdy)]                       # sdmt:DTC is a data property with a domain of the visit class and a label of 'date of lab visit'.
+
 
 
 
@@ -553,6 +601,22 @@ mappings:
 
 
 
+  # Urinary system test laterality of anatomical location.
+  urinary_system_test_laterality_of_anatomical_location:
+    source:
+      - ['data_mapping/sample_data/ur.csv~csv']
+    s: null
+    po:
+      - [a, $(urlat_uri)~iri]
+
+
+  # Urinary system test method.
+  urinary_system_test_method:
+    source:
+      - ['data_mapping/sample_data/ur.csv~csv']
+    s: null
+    po:
+      - [a, $(urmethod_uri)~iri] # The classes selected from here (sdtm:CT, sdtm:MRI, etc.), are subclasses of biolink:Procedure.
 
 
 
@@ -613,7 +677,7 @@ mappings:
       - ['data_mapping/sample_data/ur.csv~csv']
     s: null
     po:
-      - [a, sdtm::LBORRES] # Which is a sdtm:TSTRES, which is a biolink:InformationContentEntity.
+      - [a, sdtm::URORRES] # Which is a sdtm:TSTRES, which is a biolink:InformationContentEntity.
       - p: biolink:has_attribute
         o:
           mapping: urinary_system_test_numeric_result_in_original_units_attribute
@@ -652,3 +716,31 @@ mappings:
       - [sdtm:ORRESU, $(urorresu)] 
       - [biolink:has_numeric_value, $(urorres)]
 
+
+
+
+
+  # Urinary system test character result in standard format.
+  urinary_system_test_character_result_in_standard_format:
+    sources:
+      - ['data_mapping/sample_data/ur.csv~csv']
+    s: null
+    po:
+      - [a, sdtm::URSTRESC] # Which is a sdtm:TSTRES, which is a biolink:InformationContentEntity.
+      - p: biolink:has_attribute
+        o:
+          mapping: urinary_system_test_character_result_in_standard_format_attribute
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  # ... and the attribute object for that biolink:InformationContentEntity.
+  urinary_system_test_character_result_in_standard_format_attribute:
+    sources:
+      - ['data_mapping/sample_data/ur.csv~csv']
+    s: null
+    po:
+      - [a, biolink:Attribute]
+      - [biolink:has_qualitative_value, $(urstresc)]

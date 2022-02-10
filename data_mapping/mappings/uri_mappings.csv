@@ -45,3 +45,9 @@ ur,urtestcd,LENGTH,urtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LOCLENGT
 ur,urtestcd,NCPRMVOL,urtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,NCPRMVOL
 ur,urloc,"HEART, LEFT VENTRICLE",urloc_uri,https://w3id.org/c-path/biolink_sdtm_owl/,HEARTLV
 ur,urloc,KIDNEY,urloc_uri,https://w3id.org/c-path/biolink_sdtm_owl/,KIDNEY
+ur,urlat,LEFT,urlat_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LEFT
+ur,urlat,RIGHT,urlat_uri,https://w3id.org/c-path/biolink_sdtm_owl/,RIGHT
+ur,urlat,BILATERAL,urlat_uri,https://w3id.org/c-path/biolink_sdtm_owl/,BILATERAL
+ur,urmethod,CT,urmethod_uri,https://w3id.org/c-path/biolink_sdtm_owl/,CT
+ur,urmethod,MRI,urmethod_uri,https://w3id.org/c-path/biolink_sdtm_owl/,MRI
+ur,urmethod,Ultrasound,urmethod_uri,https://w3id.org/c-path/biolink_sdtm_owl/,Ultrasound
