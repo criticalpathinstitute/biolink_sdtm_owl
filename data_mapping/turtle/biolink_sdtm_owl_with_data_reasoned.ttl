@@ -17557,34 +17557,14 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000002
 <http://purl.obolibrary.org/obo/IAO_0000002> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "example to be eventually removed"@en ;
                                              rdfs:label "example to be eventually removed"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000103
 <http://purl.obolibrary.org/obo/IAO_0000103> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "failed exploratory term"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Person:Alan Ruttenberg"@en ;
@@ -17593,17 +17573,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000120
 <http://purl.obolibrary.org/obo/IAO_0000120> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "metadata complete"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en ;
                                              rdfs:label "metadata complete"@en .
@@ -17611,17 +17581,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000121
 <http://purl.obolibrary.org/obo/IAO_0000121> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "organizational term"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en ;
                                              rdfs:label "organizational term"@en .
@@ -17629,17 +17589,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000122
 <http://purl.obolibrary.org/obo/IAO_0000122> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "ready for release"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en ;
                                              rdfs:label "ready for release"@en .
@@ -17647,17 +17597,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000123
 <http://purl.obolibrary.org/obo/IAO_0000123> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "metadata incomplete"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en ;
                                              rdfs:label "metadata incomplete"@en .
@@ -17665,17 +17605,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000124
 <http://purl.obolibrary.org/obo/IAO_0000124> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "uncurated"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en ;
                                              rdfs:label "uncurated"@en .
@@ -17683,17 +17613,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000125
 <http://purl.obolibrary.org/obo/IAO_0000125> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "pending final vetting"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en ;
                                              rdfs:label "pending final vetting"@en .
@@ -17701,34 +17621,14 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000226
 <http://purl.obolibrary.org/obo/IAO_0000226> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "placeholder removed"@en ;
                                              rdfs:label "placeholder removed"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000227
 <http://purl.obolibrary.org/obo/IAO_0000227> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "terms merged"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "An editor note should explain what were the merged terms and the reason for the merge."@en ;
                                              rdfs:label "terms merged"@en .
@@ -17736,17 +17636,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000228
 <http://purl.obolibrary.org/obo/IAO_0000228> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "term imported"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en ;
                                              rdfs:label "term imported"@en .
@@ -17754,17 +17644,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000229
 <http://purl.obolibrary.org/obo/IAO_0000229> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "term split"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en ;
                                              rdfs:label "term split"@en .
@@ -17772,17 +17652,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000410
 <http://purl.obolibrary.org/obo/IAO_0000410> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000409> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "universal"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
@@ -17792,17 +17662,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000420
 <http://purl.obolibrary.org/obo/IAO_0000420> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000409> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "defined class"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."@en ;
@@ -17812,17 +17672,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000421
 <http://purl.obolibrary.org/obo/IAO_0000421> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000409> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "named class expression"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"@en ;
@@ -17832,17 +17682,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000423
 <http://purl.obolibrary.org/obo/IAO_0000423> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "to be replaced with external ontology term"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Terms with this status should eventually replaced with a term from another ontology."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
@@ -17852,17 +17692,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  http://purl.obolibrary.org/obo/IAO_0000428
 <http://purl.obolibrary.org/obo/IAO_0000428> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
-                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
-                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
-                                                      owl:Thing ,
-                                                      <https://w3id.org/biolink/vocab/Entity> ,
-                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
-                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
+                                                      owl:Thing ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "requires discussion"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
@@ -17872,15 +17702,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY
 <https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY> rdf:type owl:NamedIndividual ,
-                                                              owl:Thing ,
-                                                              <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
-                                                              <https://w3id.org/biolink/vocab/Entity> ,
-                                                              <https://w3id.org/biolink/vocab/NamedThing> ,
-                                                              <https://w3id.org/biolink/vocab/Occurrent> ,
-                                                              <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
-                                                              <https://w3id.org/biolink/vocab/Procedure> ,
-                                                              <https://w3id.org/c-path/biolink_sdtm_owl/LBCAT> ,
-                                                              <https://w3id.org/linkml/mixin> .
+                                                              owl:Thing .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/arm_0
@@ -17894,10 +17716,197 @@ Previous. An information content entity is a non-realizable information entity t
                                                           <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
                                                           <https://w3id.org/c-path/biolink_sdtm_owl/STUDYARM> ,
                                                           <https://w3id.org/linkml/mixin> ;
-                                                 <http://purl.org/dc/terms/description> "NO DRUG" ;
                                                  <https://w3id.org/c-path/biolink_sdtm_owl/ARM> "NO DRUG" ;
                                                  <https://w3id.org/biolink/part_of> <https://w3id.org/c-path/biolink_sdtm_owl/study_10-12345> ;
                                                  <https://w3id.org/c-path/biolink_sdtm_owl/ARMCD> "0" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_1
+<https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_1> rdf:type owl:NamedIndividual ,
+                                                                                owl:Thing ,
+                                                                                <https://w3id.org/biolink/QuantityValue> ;
+                                                                       <https://w3id.org/biolink/has_numeric_value> 40 ;
+                                                                       <https://w3id.org/biolink/has_unit> "YEARS" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_2
+<https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_2> rdf:type owl:NamedIndividual ,
+                                                                                owl:Thing ,
+                                                                                <https://w3id.org/biolink/QuantityValue> ;
+                                                                       <https://w3id.org/biolink/has_numeric_value> 50 ;
+                                                                       <https://w3id.org/biolink/has_unit> "YEARS" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_1
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_1> rdf:type owl:NamedIndividual ,
+                                                                                                   owl:Thing ,
+                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/> ;
+                                                                                          <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute1> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_2
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_2> rdf:type owl:NamedIndividual ,
+                                                                                                   owl:Thing ,
+                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/> ;
+                                                                                          <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute2> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute1
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute1> rdf:type owl:NamedIndividual ,
+                                                                                                            owl:Thing ,
+                                                                                                            <https://w3id.org/biolink/Attribute> ;
+                                                                                                   <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_1> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute2
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute2> rdf:type owl:NamedIndividual ,
+                                                                                                            owl:Thing ,
+                                                                                                            <https://w3id.org/biolink/Attribute> ;
+                                                                                                   <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_2> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_1
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_1> rdf:type owl:NamedIndividual ,
+                                                                                                                      owl:Thing ,
+                                                                                                                      <https://w3id.org/biolink/QuantityValue> ;
+                                                                                                             <https://w3id.org/biolink/has_numeric_value> "1.23" ;
+                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> "mL" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_2
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_2> rdf:type owl:NamedIndividual ,
+                                                                                                                      owl:Thing ,
+                                                                                                                      <https://w3id.org/biolink/QuantityValue> ;
+                                                                                                             <https://w3id.org/biolink/has_numeric_value> "2.34" ;
+                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> "mg" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_1
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_1> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                   <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                                   owl:Thing ,
+                                                                                                   <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                   <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                   <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/LBSTRESN> ,
+                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/TSTRES> ;
+                                                                                          <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_attribute_1> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_2
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_2> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                   <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                                   owl:Thing ,
+                                                                                                   <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                   <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                   <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/LBSTRESN> ,
+                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/TSTRES> ;
+                                                                                          <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_attribute_2> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_attribute_1
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_attribute_1> rdf:type owl:NamedIndividual ,
+                                                                                                             owl:Thing ,
+                                                                                                             <https://w3id.org/biolink/Attribute> ;
+                                                                                                    <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_quantitative_value_1> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_attribute_2
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_attribute_2> rdf:type owl:NamedIndividual ,
+                                                                                                             owl:Thing ,
+                                                                                                             <https://w3id.org/biolink/Attribute> ;
+                                                                                                    <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_quantitative_value_2> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_quantitative_value_1
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_quantitative_value_1> rdf:type owl:NamedIndividual ,
+                                                                                                                      owl:Thing ,
+                                                                                                                      <https://w3id.org/biolink/QuantityValue> ;
+                                                                                                             <https://w3id.org/biolink/has_numeric_value> "1.23" ;
+                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> "mL" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_quantitative_value_2
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_quantitative_value_2> rdf:type owl:NamedIndividual ,
+                                                                                                                      owl:Thing ,
+                                                                                                                      <https://w3id.org/biolink/QuantityValue> ;
+                                                                                                             <https://w3id.org/biolink/has_numeric_value> "2.34" ;
+                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> "mg" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_reference_range_in_original_units_1
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_reference_range_in_original_units_1> rdf:type owl:NamedIndividual ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                    <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                                    owl:Thing ,
+                                                                                                    <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                    <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                    <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/LBORRNG> ,
+                                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/LBREFRG> ;
+                                                                                           <http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_1_1> ;
+                                                                                           <https://w3id.org/c-path/biolink_sdtm_owl/LBORNRHI> "4.1" ;
+                                                                                           <https://w3id.org/c-path/biolink_sdtm_owl/LBORNRLO> "1.1" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_reference_range_in_original_units_2
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_reference_range_in_original_units_2> rdf:type owl:NamedIndividual ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                    <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                                    owl:Thing ,
+                                                                                                    <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                    <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                    <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/LBORRNG> ,
+                                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/LBREFRG> ;
+                                                                                           <http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_2_2> ;
+                                                                                           <https://w3id.org/c-path/biolink_sdtm_owl/LBORNRHI> "5.1" ;
+                                                                                           <https://w3id.org/c-path/biolink_sdtm_owl/LBORNRLO> "2.1" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_reference_range_in_standard_units_1
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_reference_range_in_standard_units_1> rdf:type owl:NamedIndividual ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                    <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                                    owl:Thing ,
+                                                                                                    <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                    <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                    <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/LBREFRG> ,
+                                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/LBSTRNG> ;
+                                                                                           <http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_1_1> ;
+                                                                                           <https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRHI> "4.1" ;
+                                                                                           <https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRLO> "1.1" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_reference_range_in_standard_units_2
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_reference_range_in_standard_units_2> rdf:type owl:NamedIndividual ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                    <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                    <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                                    owl:Thing ,
+                                                                                                    <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                    <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                    <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/LBREFRG> ,
+                                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/LBSTRNG> ;
+                                                                                           <http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_2_2> ;
+                                                                                           <https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRHI> "5.1" ;
+                                                                                           <https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRLO> "2.1" .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/lbtest_1_1
@@ -17924,22 +17933,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit> <https://w3id.org/c-path/biolink_sdtm_owl/visit_one> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/in_lb_cat> <https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY> ;
                                                       <https://w3id.org/biolink/has_input> <https://w3id.org/c-path/biolink_sdtm_owl/specimen_1_1> ;
-                                                      <https://w3id.org/biolink/has_output> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/LBSTRESN> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                                                             <https://w3id.org/biolink/has_numeric_value> "1.23" ;
-                                                                                                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> "mL"
-                                                                                                                                                                                           ]
-                                                                                                                                       ]
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                                                             <https://w3id.org/biolink/has_numeric_value> "1.23" ;
-                                                                                                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> "mL"
-                                                                                                                                                                                           ]
-                                                                                                                                       ]
-                                                                                            ] .
+                                                      <https://w3id.org/biolink/has_output> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_1> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_1> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/lbtest_2_2
@@ -17964,22 +17959,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit> <https://w3id.org/c-path/biolink_sdtm_owl/visit_two> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/in_lb_cat> <https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY> ;
                                                       <https://w3id.org/biolink/has_input> <https://w3id.org/c-path/biolink_sdtm_owl/specimen_2_2> ;
-                                                      <https://w3id.org/biolink/has_output> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/LBSTRESN> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                                                             <https://w3id.org/biolink/has_numeric_value> "2.34" ;
-                                                                                                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> "mg"
-                                                                                                                                                                                           ]
-                                                                                                                                       ]
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                                                             <https://w3id.org/biolink/has_numeric_value> "2.34" ;
-                                                                                                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> "mg"
-                                                                                                                                                                                           ]
-                                                                                                                                       ]
-                                                                                            ] .
+                                                      <https://w3id.org/biolink/has_output> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_2> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_2> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/site_9999
@@ -18085,15 +18066,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                               <https://w3id.org/biolink/vocab/ThingWithTaxon> ,
                                                               <https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT> ,
                                                               <https://w3id.org/linkml/mixin> ;
-                                                     <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/AGE> ;
-                                                                                                <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                    <https://w3id.org/biolink/has_numeric_value> 40 ;
-                                                                                                                                                    <https://w3id.org/biolink/has_unit> "YEARS"
-                                                                                                                                                  ]
-                                                                                              ] ,
-                                                                                              [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/SEX> ;
-                                                                                                <https://w3id.org/biolink/has_qualitative_value> "M"
-                                                                                              ] ;
+                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/dm_age$_(row_id)> ,
+                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/dm_sex$_(row_id)> ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/USUBJID> "1" .
 
 
@@ -18109,16 +18083,432 @@ Previous. An information content entity is a non-realizable information entity t
                                                               <https://w3id.org/biolink/vocab/ThingWithTaxon> ,
                                                               <https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT> ,
                                                               <https://w3id.org/linkml/mixin> ;
-                                                     <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/AGE> ;
-                                                                                                <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                    <https://w3id.org/biolink/has_numeric_value> 50 ;
-                                                                                                                                                    <https://w3id.org/biolink/has_unit> "YEARS"
-                                                                                                                                                  ]
-                                                                                              ] ,
-                                                                                              [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/SEX> ;
-                                                                                                <https://w3id.org/biolink/has_qualitative_value> "F"
-                                                                                              ] ;
+                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/dm_age$_(row_id)> ,
+                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/dm_sex$_(row_id)> ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/USUBJID> "2" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_1> rdf:type owl:NamedIndividual ,
+                                                                                                                 owl:Thing ,
+                                                                                                                 <https://w3id.org/c-path/biolink_sdtm_owl/> ;
+                                                                                                        <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_attribute_1> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_2> rdf:type owl:NamedIndividual ,
+                                                                                                                 owl:Thing ,
+                                                                                                                 <https://w3id.org/c-path/biolink_sdtm_owl/> ;
+                                                                                                        <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_attribute_2> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_3> rdf:type owl:NamedIndividual ,
+                                                                                                                 owl:Thing ,
+                                                                                                                 <https://w3id.org/c-path/biolink_sdtm_owl/> ;
+                                                                                                        <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_attribute_3> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_attribute_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_attribute_1> rdf:type owl:NamedIndividual ,
+                                                                                                                           owl:Thing ,
+                                                                                                                           <https://w3id.org/biolink/Attribute> ;
+                                                                                                                  <https://w3id.org/biolink/has_qualitative_value> "100.0" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_attribute_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_attribute_2> rdf:type owl:NamedIndividual ,
+                                                                                                                           owl:Thing ,
+                                                                                                                           <https://w3id.org/biolink/Attribute> ;
+                                                                                                                  <https://w3id.org/biolink/has_qualitative_value> "100.11" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_attribute_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_attribute_3> rdf:type owl:NamedIndividual ,
+                                                                                                                           owl:Thing ,
+                                                                                                                           <https://w3id.org/biolink/Attribute> ;
+                                                                                                                  <https://w3id.org/biolink/has_qualitative_value> "100.11" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_laterality_of_anatomical_location_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_laterality_of_anatomical_location_1> rdf:type owl:NamedIndividual ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C13332> ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C13442> ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C20189> ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C41009> ,
+                                                                                                               owl:Thing ,
+                                                                                                               <https://w3id.org/biolink/vocab/Annotation> ,
+                                                                                                               <https://w3id.org/biolink/vocab/Attribute> ,
+                                                                                                               <https://w3id.org/biolink/vocab/ClinicalAttribute> ,
+                                                                                                               <https://w3id.org/biolink/vocab/ClinicalModifier> ,
+                                                                                                               <https://w3id.org/biolink/vocab/OntologyClass> ,
+                                                                                                               <https://w3id.org/c-path/biolink_sdtm_owl/BILATERAL> ,
+                                                                                                               <https://w3id.org/c-path/biolink_sdtm_owl/URLAT> ,
+                                                                                                               <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_laterality_of_anatomical_location_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_laterality_of_anatomical_location_2> rdf:type owl:NamedIndividual ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C20189> ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C25228> ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C41009> ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C73706> ,
+                                                                                                               owl:Thing ,
+                                                                                                               <https://w3id.org/biolink/vocab/Annotation> ,
+                                                                                                               <https://w3id.org/biolink/vocab/Attribute> ,
+                                                                                                               <https://w3id.org/biolink/vocab/ClinicalAttribute> ,
+                                                                                                               <https://w3id.org/biolink/vocab/ClinicalModifier> ,
+                                                                                                               <https://w3id.org/biolink/vocab/OntologyClass> ,
+                                                                                                               <https://w3id.org/c-path/biolink_sdtm_owl/RIGHT> ,
+                                                                                                               <https://w3id.org/c-path/biolink_sdtm_owl/URLAT> ,
+                                                                                                               <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_laterality_of_anatomical_location_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_laterality_of_anatomical_location_3> rdf:type owl:NamedIndividual ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C20189> ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C25229> ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C41009> ,
+                                                                                                               <http://purl.obolibrary.org/obo/NCIT_C73706> ,
+                                                                                                               owl:Thing ,
+                                                                                                               <https://w3id.org/biolink/vocab/Annotation> ,
+                                                                                                               <https://w3id.org/biolink/vocab/Attribute> ,
+                                                                                                               <https://w3id.org/biolink/vocab/ClinicalAttribute> ,
+                                                                                                               <https://w3id.org/biolink/vocab/ClinicalModifier> ,
+                                                                                                               <https://w3id.org/biolink/vocab/OntologyClass> ,
+                                                                                                               <https://w3id.org/c-path/biolink_sdtm_owl/LEFT> ,
+                                                                                                               <https://w3id.org/c-path/biolink_sdtm_owl/URLAT> ,
+                                                                                                               <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_location_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_location_1> rdf:type owl:NamedIndividual ,
+                                                                                      owl:Thing ,
+                                                                                      <https://w3id.org/biolink/vocab/AnatomicalEntity> ,
+                                                                                      <https://w3id.org/biolink/vocab/BiologicalEntity> ,
+                                                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                      <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                      <https://w3id.org/biolink/vocab/OrganismalEntity> ,
+                                                                                      <https://w3id.org/biolink/vocab/PhysicalEssence> ,
+                                                                                      <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                      <https://w3id.org/biolink/vocab/ThingWithTaxon> ,
+                                                                                      <https://w3id.org/c-path/biolink_sdtm_owl/KIDNEY> ,
+                                                                                      <https://w3id.org/c-path/biolink_sdtm_owl/TSTLOC> ,
+                                                                                      <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_location_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_location_2> rdf:type owl:NamedIndividual ,
+                                                                                      owl:Thing ,
+                                                                                      <https://w3id.org/biolink/vocab/AnatomicalEntity> ,
+                                                                                      <https://w3id.org/biolink/vocab/BiologicalEntity> ,
+                                                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                      <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                      <https://w3id.org/biolink/vocab/OrganismalEntity> ,
+                                                                                      <https://w3id.org/biolink/vocab/PhysicalEssence> ,
+                                                                                      <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                      <https://w3id.org/biolink/vocab/ThingWithTaxon> ,
+                                                                                      <https://w3id.org/c-path/biolink_sdtm_owl/KIDNEY> ,
+                                                                                      <https://w3id.org/c-path/biolink_sdtm_owl/TSTLOC> ,
+                                                                                      <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_location_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_location_3> rdf:type owl:NamedIndividual ,
+                                                                                      owl:Thing ,
+                                                                                      <https://w3id.org/biolink/vocab/AnatomicalEntity> ,
+                                                                                      <https://w3id.org/biolink/vocab/BiologicalEntity> ,
+                                                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                      <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                      <https://w3id.org/biolink/vocab/OrganismalEntity> ,
+                                                                                      <https://w3id.org/biolink/vocab/PhysicalEssence> ,
+                                                                                      <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                      <https://w3id.org/biolink/vocab/ThingWithTaxon> ,
+                                                                                      <https://w3id.org/c-path/biolink_sdtm_owl/KIDNEY> ,
+                                                                                      <https://w3id.org/c-path/biolink_sdtm_owl/TSTLOC> ,
+                                                                                      <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_measurement_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_measurement_1> rdf:type owl:NamedIndividual ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C16203> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C25218> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C25294> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C43431> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C74720> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C74957> ,
+                                                                                         owl:Thing ,
+                                                                                         <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                                                         <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                         <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                         <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                                                         <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                         <https://w3id.org/biolink/vocab/Procedure> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/LBTEST> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/LOCVOLUME> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ,
+                                                                                         <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_measurement_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_measurement_2> rdf:type owl:NamedIndividual ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C16203> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C25218> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C25294> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C43431> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C74720> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C74957> ,
+                                                                                         owl:Thing ,
+                                                                                         <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                                                         <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                         <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                         <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                                                         <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                         <https://w3id.org/biolink/vocab/Procedure> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/LBTEST> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/LOCVOLUME> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ,
+                                                                                         <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_measurement_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_measurement_3> rdf:type owl:NamedIndividual ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C16203> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C25218> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C25294> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C43431> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C74720> ,
+                                                                                         <http://purl.obolibrary.org/obo/NCIT_C74957> ,
+                                                                                         owl:Thing ,
+                                                                                         <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                                                         <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                         <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                         <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                                                         <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                         <https://w3id.org/biolink/vocab/Procedure> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/LBTEST> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/LOCVOLUME> ,
+                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ,
+                                                                                         <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_method_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_method_1> rdf:type owl:NamedIndividual ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C16203> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C16502> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C16809> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C17369> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C18020> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C25218> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C43431> ,
+                                                                                    owl:Thing ,
+                                                                                    <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                                                    <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                    <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                    <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                                                    <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                    <https://w3id.org/biolink/vocab/Procedure> ,
+                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/MRI> ,
+                                                                                    <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_method_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_method_2> rdf:type owl:NamedIndividual ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C16203> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C16502> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C16809> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C17369> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C18020> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C25218> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C43431> ,
+                                                                                    owl:Thing ,
+                                                                                    <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                                                    <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                    <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                    <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                                                    <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                    <https://w3id.org/biolink/vocab/Procedure> ,
+                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/MRI> ,
+                                                                                    <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_method_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_method_3> rdf:type owl:NamedIndividual ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C16203> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C16502> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C16809> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C17369> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C18020> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C25218> ,
+                                                                                    <http://purl.obolibrary.org/obo/NCIT_C43431> ,
+                                                                                    owl:Thing ,
+                                                                                    <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                                                    <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                    <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                    <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                                                    <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                    <https://w3id.org/biolink/vocab/Procedure> ,
+                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/MRI> ,
+                                                                                    <https://w3id.org/linkml/mixin> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_1> rdf:type owl:NamedIndividual ,
+                                                                                                              owl:Thing ,
+                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/> ;
+                                                                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_attribute_1> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_2> rdf:type owl:NamedIndividual ,
+                                                                                                              owl:Thing ,
+                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/> ;
+                                                                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_attribute_2> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_3> rdf:type owl:NamedIndividual ,
+                                                                                                              owl:Thing ,
+                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/> ;
+                                                                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_attribute_3> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_attribute_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_attribute_1> rdf:type owl:NamedIndividual ,
+                                                                                                                        owl:Thing ,
+                                                                                                                        <https://w3id.org/biolink/Attribute> ;
+                                                                                                               <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_1> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_attribute_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_attribute_2> rdf:type owl:NamedIndividual ,
+                                                                                                                        owl:Thing ,
+                                                                                                                        <https://w3id.org/biolink/Attribute> ;
+                                                                                                               <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_2> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_attribute_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_attribute_3> rdf:type owl:NamedIndividual ,
+                                                                                                                        owl:Thing ,
+                                                                                                                        <https://w3id.org/biolink/Attribute> ;
+                                                                                                               <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_3> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_1> rdf:type owl:NamedIndividual ,
+                                                                                                                                 owl:Thing ,
+                                                                                                                                 <https://w3id.org/biolink/QuantityValue> ;
+                                                                                                                        <https://w3id.org/biolink/has_numeric_value> "100.0" ;
+                                                                                                                        <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> "mL" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_2> rdf:type owl:NamedIndividual ,
+                                                                                                                                 owl:Thing ,
+                                                                                                                                 <https://w3id.org/biolink/QuantityValue> ;
+                                                                                                                        <https://w3id.org/biolink/has_numeric_value> "100.11" ;
+                                                                                                                        <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> "mL" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_3> rdf:type owl:NamedIndividual ,
+                                                                                                                                 owl:Thing ,
+                                                                                                                                 <https://w3id.org/biolink/QuantityValue> ;
+                                                                                                                        <https://w3id.org/biolink/has_numeric_value> "100.11" ;
+                                                                                                                        <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> "mL" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_1> rdf:type owl:NamedIndividual ,
+                                                                                                              <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                              <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                              <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                              <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                                              owl:Thing ,
+                                                                                                              <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                              <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                              <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/TSTRES> ,
+                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/URSTRESN> ;
+                                                                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_attribute_1> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_2> rdf:type owl:NamedIndividual ,
+                                                                                                              <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                              <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                              <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                              <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                                              owl:Thing ,
+                                                                                                              <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                              <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                              <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/TSTRES> ,
+                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/URSTRESN> ;
+                                                                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_attribute_2> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_3> rdf:type owl:NamedIndividual ,
+                                                                                                              <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                              <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                              <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                              <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                                                                              owl:Thing ,
+                                                                                                              <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                              <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                              <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/TSTRES> ,
+                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/URSTRESN> ;
+                                                                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_attribute_3> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_attribute_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_attribute_1> rdf:type owl:NamedIndividual ,
+                                                                                                                        owl:Thing ,
+                                                                                                                        <https://w3id.org/biolink/Attribute> ;
+                                                                                                               <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_1> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_attribute_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_attribute_2> rdf:type owl:NamedIndividual ,
+                                                                                                                        owl:Thing ,
+                                                                                                                        <https://w3id.org/biolink/Attribute> ;
+                                                                                                               <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_2> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_attribute_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_attribute_3> rdf:type owl:NamedIndividual ,
+                                                                                                                        owl:Thing ,
+                                                                                                                        <https://w3id.org/biolink/Attribute> ;
+                                                                                                               <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_3> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_1
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_1> rdf:type owl:NamedIndividual ,
+                                                                                                                                 owl:Thing ,
+                                                                                                                                 <https://w3id.org/biolink/QuantityValue> ;
+                                                                                                                        <https://w3id.org/biolink/has_numeric_value> "100.0" ;
+                                                                                                                        <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> "mL" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_2
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_2> rdf:type owl:NamedIndividual ,
+                                                                                                                                 owl:Thing ,
+                                                                                                                                 <https://w3id.org/biolink/QuantityValue> ;
+                                                                                                                        <https://w3id.org/biolink/has_numeric_value> "100.11" ;
+                                                                                                                        <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> "mL" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_3
+<https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_3> rdf:type owl:NamedIndividual ,
+                                                                                                                                 owl:Thing ,
+                                                                                                                                 <https://w3id.org/biolink/QuantityValue> ;
+                                                                                                                        <https://w3id.org/biolink/has_numeric_value> "100.11" ;
+                                                                                                                        <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> "mL" .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/urtest_1_1
@@ -18132,36 +18522,14 @@ Previous. An information content entity is a non-realizable information entity t
                                                                <https://w3id.org/biolink/vocab/Procedure> ,
                                                                <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ,
                                                                <https://w3id.org/linkml/mixin> ;
-                                                      <https://w3id.org/c-path/biolink_sdtm_owl/METHOD> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/MRI>
-                                                                                                        ] ;
+                                                      <https://w3id.org/c-path/biolink_sdtm_owl/METHOD> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_method_1> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit> <https://w3id.org/c-path/biolink_sdtm_owl/visit_one> ;
-                                                      <https://w3id.org/c-path/biolink_sdtm_owl/has_anatomical_location> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/KIDNEY>
-                                                                                                                         ] ,
-                                                                                                                         [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/BILATERAL>
-                                                                                                                         ] ;
-                                                      <https://w3id.org/biolink/has_output> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/LOCVOLUME>
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/URSTRESN> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                                                             <https://w3id.org/biolink/has_numeric_value> "100.0" ;
-                                                                                                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> "mL"
-                                                                                                                                                                                           ]
-                                                                                                                                       ]
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                                                             <https://w3id.org/biolink/has_numeric_value> "100.0" ;
-                                                                                                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> "mL"
-                                                                                                                                                                                           ]
-                                                                                                                                       ]
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_qualitative_value> "100.0"
-                                                                                                                                       ]
-                                                                                            ] .
+                                                      <https://w3id.org/c-path/biolink_sdtm_owl/has_anatomical_location> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_laterality_of_anatomical_location_1> ,
+                                                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_location_1> ;
+                                                      <https://w3id.org/biolink/has_output> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_1> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_measurement_1> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_1> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_1> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/urtest_2_2
@@ -18175,36 +18543,14 @@ Previous. An information content entity is a non-realizable information entity t
                                                                <https://w3id.org/biolink/vocab/Procedure> ,
                                                                <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ,
                                                                <https://w3id.org/linkml/mixin> ;
-                                                      <https://w3id.org/c-path/biolink_sdtm_owl/METHOD> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/MRI>
-                                                                                                        ] ;
+                                                      <https://w3id.org/c-path/biolink_sdtm_owl/METHOD> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_method_2> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit> <https://w3id.org/c-path/biolink_sdtm_owl/visit_one> ;
-                                                      <https://w3id.org/c-path/biolink_sdtm_owl/has_anatomical_location> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/KIDNEY>
-                                                                                                                         ] ,
-                                                                                                                         [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/RIGHT>
-                                                                                                                         ] ;
-                                                      <https://w3id.org/biolink/has_output> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/LOCVOLUME>
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/URSTRESN> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                                                             <https://w3id.org/biolink/has_numeric_value> "100.11" ;
-                                                                                                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> "mL"
-                                                                                                                                                                                           ]
-                                                                                                                                       ]
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                                                             <https://w3id.org/biolink/has_numeric_value> "100.11" ;
-                                                                                                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> "mL"
-                                                                                                                                                                                           ]
-                                                                                                                                       ]
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_qualitative_value> "100.11"
-                                                                                                                                       ]
-                                                                                            ] .
+                                                      <https://w3id.org/c-path/biolink_sdtm_owl/has_anatomical_location> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_laterality_of_anatomical_location_2> ,
+                                                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_location_2> ;
+                                                      <https://w3id.org/biolink/has_output> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_2> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_measurement_2> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_2> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_2> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/urtest_2_3
@@ -18218,36 +18564,14 @@ Previous. An information content entity is a non-realizable information entity t
                                                                <https://w3id.org/biolink/vocab/Procedure> ,
                                                                <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ,
                                                                <https://w3id.org/linkml/mixin> ;
-                                                      <https://w3id.org/c-path/biolink_sdtm_owl/METHOD> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/MRI>
-                                                                                                        ] ;
+                                                      <https://w3id.org/c-path/biolink_sdtm_owl/METHOD> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_method_3> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit> <https://w3id.org/c-path/biolink_sdtm_owl/visit_one> ;
-                                                      <https://w3id.org/c-path/biolink_sdtm_owl/has_anatomical_location> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/KIDNEY>
-                                                                                                                         ] ,
-                                                                                                                         [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/LEFT>
-                                                                                                                         ] ;
-                                                      <https://w3id.org/biolink/has_output> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/LOCVOLUME>
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/URSTRESN> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                                                             <https://w3id.org/biolink/has_numeric_value> "100.11" ;
-                                                                                                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> "mL"
-                                                                                                                                                                                           ]
-                                                                                                                                       ]
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
-                                                                                                                                                                                             <https://w3id.org/biolink/has_numeric_value> "100.11" ;
-                                                                                                                                                                                             <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> "mL"
-                                                                                                                                                                                           ]
-                                                                                                                                       ]
-                                                                                            ] ,
-                                                                                            [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/> ;
-                                                                                              <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/biolink/Attribute> ;
-                                                                                                                                         <https://w3id.org/biolink/has_qualitative_value> "100.11"
-                                                                                                                                       ]
-                                                                                            ] .
+                                                      <https://w3id.org/c-path/biolink_sdtm_owl/has_anatomical_location> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_laterality_of_anatomical_location_3> ,
+                                                                                                                         <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_location_3> ;
+                                                      <https://w3id.org/biolink/has_output> <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_3> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_measurement_3> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_3> ,
+                                                                                            <https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_3> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/visit_one
@@ -18259,7 +18583,6 @@ Previous. An information content entity is a non-realizable information entity t
                                                               <https://w3id.org/biolink/vocab/NamedThing> ,
                                                               <https://w3id.org/biolink/vocab/Occurrent> ,
                                                               <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
-                                                              <https://w3id.org/biolink/vocab/Procedure> ,
                                                               <https://w3id.org/c-path/biolink_sdtm_owl/VISIT> ,
                                                               <https://w3id.org/linkml/mixin> ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/DTC> "10" ,
@@ -18278,39 +18601,39 @@ Previous. An information content entity is a non-realizable information entity t
                                                               <https://w3id.org/biolink/vocab/NamedThing> ,
                                                               <https://w3id.org/biolink/vocab/Occurrent> ,
                                                               <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
-                                                              <https://w3id.org/biolink/vocab/Procedure> ,
                                                               <https://w3id.org/c-path/biolink_sdtm_owl/VISIT> ,
                                                               <https://w3id.org/linkml/mixin> ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/DTC> "11" ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/VISITNAME> "visit_two" .
 
 
-[ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/LBORRNG> ;
-  <http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_1_1> ;
-  <https://w3id.org/c-path/biolink_sdtm_owl/LBORNRHI> "4.1" ;
-  <https://w3id.org/c-path/biolink_sdtm_owl/LBORNRLO> "1.1"
-] .
+###  https://w3id.org/c-path/biolink_sdtm_owl/dm_age$_(row_id)
+<https://w3id.org/c-path/biolink_sdtm_owl/dm_age$_(row_id)> rdf:type owl:NamedIndividual ,
+                                                                     owl:Thing ,
+                                                                     <https://w3id.org/biolink/vocab/Annotation> ,
+                                                                     <https://w3id.org/biolink/vocab/Attribute> ,
+                                                                     <https://w3id.org/biolink/vocab/OntologyClass> ,
+                                                                     <https://w3id.org/c-path/biolink_sdtm_owl/AGE> ,
+                                                                     <https://w3id.org/linkml/mixin> ;
+                                                            <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_1> ,
+                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_2> .
 
-[ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/LBORRNG> ;
-   <http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_2_2> ;
-   <https://w3id.org/c-path/biolink_sdtm_owl/LBORNRHI> "5.1" ;
-   <https://w3id.org/c-path/biolink_sdtm_owl/LBORNRLO> "2.1"
- ] .
 
-[ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/LBSTRNG> ;
-   <http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_1_1> ;
-   <https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRHI> "4.1" ;
-   <https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRLO> "1.1"
- ] .
+###  https://w3id.org/c-path/biolink_sdtm_owl/dm_sex$_(row_id)
+<https://w3id.org/c-path/biolink_sdtm_owl/dm_sex$_(row_id)> rdf:type owl:NamedIndividual ,
+                                                                     owl:Thing ,
+                                                                     <https://w3id.org/biolink/vocab/Annotation> ,
+                                                                     <https://w3id.org/biolink/vocab/Attribute> ,
+                                                                     <https://w3id.org/biolink/vocab/BiologicalSex> ,
+                                                                     <https://w3id.org/biolink/vocab/OntologyClass> ,
+                                                                     <https://w3id.org/c-path/biolink_sdtm_owl/SEX> ,
+                                                                     <https://w3id.org/linkml/mixin> ;
+                                                            <https://w3id.org/biolink/has_qualitative_value> "F" ,
+                                                                                                             "M" .
 
-[ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/LBSTRNG> ;
-   <http://purl.obolibrary.org/obo/IAO_0000136> <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_2_2> ;
-   <https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRHI> "5.1" ;
-   <https://w3id.org/c-path/biolink_sdtm_owl/LBSTNRLO> "2.1"
- ] .
 
 [ owl:qualifiedCardinality 1
- ] .
+] .
 
 #################################################################
 #    Annotations
@@ -18329,8 +18652,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                rdfs:label "description of planned arm"@en .
 
 
-<https://w3id.org/c-path/biolink_sdtm_owl/ARMCD> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
-                                                 <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "ARMCD"^^xsd:string ;
+<https://w3id.org/c-path/biolink_sdtm_owl/ARMCD> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "ARMCD"^^xsd:string ;
+                                                 <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Planned Arm Code"^^xsd:string ;
                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "DM"^^xsd:string ;
                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "ARMCD is limited to 20 characters. It is not subject to the character restrictions that apply to TESTCD.The maximum length of ARMCD is longer than for other \"short\" variables to accommodate the kind of values that are likely to be needed for crossover trials. For example, if ARMCD values for a seven-period crossover were constructed using two-character abbreviations for each treatment and separating hyphens, the length of ARMCD values would be 20. If the subject was not assigned to an Arm, ARMCD is null and ARMNRS is populated.With the exception of studies which use multi-stage Arm assignments, must be a value of ARMCD in the Trial Arms Dataset."@en ;
@@ -18400,11 +18723,11 @@ Previous. An information content entity is a non-realizable information entity t
 
 <https://w3id.org/c-path/biolink_sdtm_owl/VISITNUM> <http://purl.obolibrary.org/obo/IAO_0000115> "1. Clinical encounter number. 2. Numeric version of VISIT, used for sorting."@en ;
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "UR"^^xsd:string ;
-                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "VISITNUM"^^xsd:string ;
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "urniary system findings"^^xsd:string ;
+                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "VISITNUM"^^xsd:string ;
                                                     rdfs:label "visit number"@en ;
-                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "LB"^^xsd:string ;
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Visit Number"^^xsd:string ;
+                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "LB"^^xsd:string ;
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "laboratory test results"^^xsd:string .
 
 

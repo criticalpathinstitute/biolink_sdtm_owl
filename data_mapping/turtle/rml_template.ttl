@@ -163,7 +163,7 @@
     rdfs:label "age".
 :s_004 a rr:SubjectMap.
 :map_age_000 rr:subjectMap :s_004.
-:s_004 rr:termType rr:BlankNode.
+:s_004 rr:constant "https://w3id.org/c-path/biolink_sdtm_owl/dm_age$_(row_id)".
 :pom_012 a rr:PredicateObjectMap.
 :map_age_000 rr:predicateObjectMap :pom_012.
 :pm_012 a rr:PredicateMap.
@@ -188,7 +188,7 @@
     rdfs:label "age_quantitative_value".
 :s_005 a rr:SubjectMap.
 :map_age_quantitative_value_000 rr:subjectMap :s_005.
-:s_005 rr:termType rr:BlankNode.
+:s_005 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_{row_id}".
 :pom_014 a rr:PredicateObjectMap.
 :map_age_quantitative_value_000 rr:predicateObjectMap :pom_014.
 :pm_014 a rr:PredicateMap.
@@ -226,7 +226,7 @@
     rdfs:label "sex".
 :s_006 a rr:SubjectMap.
 :map_sex_000 rr:subjectMap :s_006.
-:s_006 rr:termType rr:BlankNode.
+:s_006 rr:constant "https://w3id.org/c-path/biolink_sdtm_owl/dm_sex$_(row_id)".
 :pom_017 a rr:PredicateObjectMap.
 :map_sex_000 rr:predicateObjectMap :pom_017.
 :pm_017 a rr:PredicateMap.
@@ -393,7 +393,7 @@
     rdfs:label "lab_test_reference_range_in_original_units".
 :s_011 a rr:SubjectMap.
 :map_lab_test_reference_range_in_original_units_000 rr:subjectMap :s_011.
-:s_011 rr:termType rr:BlankNode.
+:s_011 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_reference_range_in_original_units_{row_id}".
 :pom_032 a rr:PredicateObjectMap.
 :map_lab_test_reference_range_in_original_units_000 rr:predicateObjectMap :pom_032.
 :pm_032 a rr:PredicateMap.
@@ -436,7 +436,7 @@
     rdfs:label "lab_test_reference_range_in_standard_units".
 :s_012 a rr:SubjectMap.
 :map_lab_test_reference_range_in_standard_units_000 rr:subjectMap :s_012.
-:s_012 rr:termType rr:BlankNode.
+:s_012 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_reference_range_in_standard_units_{row_id}".
 :pom_036 a rr:PredicateObjectMap.
 :map_lab_test_reference_range_in_standard_units_000 rr:predicateObjectMap :pom_036.
 :pm_036 a rr:PredicateMap.
@@ -479,7 +479,7 @@
     rdfs:label "lab_test_numeric_result_in_standard_units".
 :s_013 a rr:SubjectMap.
 :map_lab_test_numeric_result_in_standard_units_000 rr:subjectMap :s_013.
-:s_013 rr:termType rr:BlankNode.
+:s_013 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_{row_id}".
 :pom_040 a rr:PredicateObjectMap.
 :map_lab_test_numeric_result_in_standard_units_000 rr:predicateObjectMap :pom_040.
 :pm_040 a rr:PredicateMap.
@@ -504,7 +504,7 @@
     rdfs:label "lab_test_numeric_result_in_standard_units_attribute".
 :s_014 a rr:SubjectMap.
 :map_lab_test_numeric_result_in_standard_units_attribute_000 rr:subjectMap :s_014.
-:s_014 rr:termType rr:BlankNode.
+:s_014 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_attribute_{row_id}".
 :pom_042 a rr:PredicateObjectMap.
 :map_lab_test_numeric_result_in_standard_units_attribute_000 rr:predicateObjectMap :pom_042.
 :pm_042 a rr:PredicateMap.
@@ -529,7 +529,7 @@
     rdfs:label "lab_test_numeric_result_in_standard_units_quantitative_value".
 :s_015 a rr:SubjectMap.
 :map_lab_test_numeric_result_in_standard_units_quantitative_value_000 rr:subjectMap :s_015.
-:s_015 rr:termType rr:BlankNode.
+:s_015 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_standard_units_quantitative_value_{row_id}".
 :pom_044 a rr:PredicateObjectMap.
 :map_lab_test_numeric_result_in_standard_units_quantitative_value_000 rr:predicateObjectMap :pom_044.
 :pm_044 a rr:PredicateMap.
@@ -566,7 +566,7 @@
     rdfs:label "lab_test_numeric_result_in_original_units".
 :s_016 a rr:SubjectMap.
 :map_lab_test_numeric_result_in_original_units_000 rr:subjectMap :s_016.
-:s_016 rr:termType rr:BlankNode.
+:s_016 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_{row_id}".
 :pom_047 a rr:PredicateObjectMap.
 :map_lab_test_numeric_result_in_original_units_000 rr:predicateObjectMap :pom_047.
 :pm_047 a rr:PredicateMap.
@@ -591,7 +591,7 @@
     rdfs:label "lab_test_numeric_result_in_original_units_attribute".
 :s_017 a rr:SubjectMap.
 :map_lab_test_numeric_result_in_original_units_attribute_000 rr:subjectMap :s_017.
-:s_017 rr:termType rr:BlankNode.
+:s_017 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute{row_id}".
 :pom_049 a rr:PredicateObjectMap.
 :map_lab_test_numeric_result_in_original_units_attribute_000 rr:predicateObjectMap :pom_049.
 :pm_049 a rr:PredicateMap.
@@ -616,7 +616,7 @@
     rdfs:label "lab_test_numeric_result_in_original_units_quantitative_value".
 :s_018 a rr:SubjectMap.
 :map_lab_test_numeric_result_in_original_units_quantitative_value_000 rr:subjectMap :s_018.
-:s_018 rr:termType rr:BlankNode.
+:s_018 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_{row_id}".
 :pom_051 a rr:PredicateObjectMap.
 :map_lab_test_numeric_result_in_original_units_quantitative_value_000 rr:predicateObjectMap :pom_051.
 :pm_051 a rr:PredicateMap.
@@ -766,7 +766,7 @@
     rdfs:label "urinary_system_test_measurement".
 :s_021 a rr:SubjectMap.
 :map_urinary_system_test_measurement_000 rr:subjectMap :s_021.
-:s_021 rr:termType rr:BlankNode.
+:s_021 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_measurement_{row_id}".
 :pom_067 a rr:PredicateObjectMap.
 :map_urinary_system_test_measurement_000 rr:predicateObjectMap :pom_067.
 :pm_067 a rr:PredicateMap.
@@ -785,7 +785,7 @@
     rdfs:label "urinary_system_test_location".
 :s_022 a rr:SubjectMap.
 :map_urinary_system_test_location_000 rr:subjectMap :s_022.
-:s_022 rr:termType rr:BlankNode.
+:s_022 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_location_{row_id}".
 :pom_068 a rr:PredicateObjectMap.
 :map_urinary_system_test_location_000 rr:predicateObjectMap :pom_068.
 :pm_068 a rr:PredicateMap.
@@ -804,7 +804,7 @@
     rdfs:label "urinary_system_test_laterality_of_anatomical_location".
 :s_023 a rr:SubjectMap.
 :map_urinary_system_test_laterality_of_anatomical_location_000 rr:subjectMap :s_023.
-:s_023 rr:termType rr:BlankNode.
+:s_023 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_laterality_of_anatomical_location_{row_id}".
 :pom_069 a rr:PredicateObjectMap.
 :map_urinary_system_test_laterality_of_anatomical_location_000 rr:predicateObjectMap :pom_069.
 :pm_069 a rr:PredicateMap.
@@ -823,7 +823,7 @@
     rdfs:label "urinary_system_test_method".
 :s_024 a rr:SubjectMap.
 :map_urinary_system_test_method_000 rr:subjectMap :s_024.
-:s_024 rr:termType rr:BlankNode.
+:s_024 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_method_{row_id}".
 :pom_070 a rr:PredicateObjectMap.
 :map_urinary_system_test_method_000 rr:predicateObjectMap :pom_070.
 :pm_070 a rr:PredicateMap.
@@ -842,7 +842,7 @@
     rdfs:label "urinary_system_test_numeric_result_in_standard_units".
 :s_025 a rr:SubjectMap.
 :map_urinary_system_test_numeric_result_in_standard_units_000 rr:subjectMap :s_025.
-:s_025 rr:termType rr:BlankNode.
+:s_025 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_{row_id}".
 :pom_071 a rr:PredicateObjectMap.
 :map_urinary_system_test_numeric_result_in_standard_units_000 rr:predicateObjectMap :pom_071.
 :pm_071 a rr:PredicateMap.
@@ -867,7 +867,7 @@
     rdfs:label "urinary_system_test_numeric_result_in_standard_units_attribute".
 :s_026 a rr:SubjectMap.
 :map_urinary_system_test_numeric_result_in_standard_units_attribute_000 rr:subjectMap :s_026.
-:s_026 rr:termType rr:BlankNode.
+:s_026 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_attribute_{row_id}".
 :pom_073 a rr:PredicateObjectMap.
 :map_urinary_system_test_numeric_result_in_standard_units_attribute_000 rr:predicateObjectMap :pom_073.
 :pm_073 a rr:PredicateMap.
@@ -892,7 +892,7 @@
     rdfs:label "urinary_system_test_numeric_result_in_standard_units_quantitative_value".
 :s_027 a rr:SubjectMap.
 :map_urinary_system_test_numeric_result_in_standard_units_quantitative_value_000 rr:subjectMap :s_027.
-:s_027 rr:termType rr:BlankNode.
+:s_027 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_{row_id}".
 :pom_075 a rr:PredicateObjectMap.
 :map_urinary_system_test_numeric_result_in_standard_units_quantitative_value_000 rr:predicateObjectMap :pom_075.
 :pm_075 a rr:PredicateMap.
@@ -929,7 +929,7 @@
     rdfs:label "urinary_system_test_numeric_result_in_original_units".
 :s_028 a rr:SubjectMap.
 :map_urinary_system_test_numeric_result_in_original_units_000 rr:subjectMap :s_028.
-:s_028 rr:termType rr:BlankNode.
+:s_028 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_{row_id}".
 :pom_078 a rr:PredicateObjectMap.
 :map_urinary_system_test_numeric_result_in_original_units_000 rr:predicateObjectMap :pom_078.
 :pm_078 a rr:PredicateMap.
@@ -954,7 +954,7 @@
     rdfs:label "urinary_system_test_numeric_result_in_original_units_attribute".
 :s_029 a rr:SubjectMap.
 :map_urinary_system_test_numeric_result_in_original_units_attribute_000 rr:subjectMap :s_029.
-:s_029 rr:termType rr:BlankNode.
+:s_029 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_attribute_{row_id}".
 :pom_080 a rr:PredicateObjectMap.
 :map_urinary_system_test_numeric_result_in_original_units_attribute_000 rr:predicateObjectMap :pom_080.
 :pm_080 a rr:PredicateMap.
@@ -979,7 +979,7 @@
     rdfs:label "urinary_system_test_numeric_result_in_original_units_quantitative_value".
 :s_030 a rr:SubjectMap.
 :map_urinary_system_test_numeric_result_in_original_units_quantitative_value_000 rr:subjectMap :s_030.
-:s_030 rr:termType rr:BlankNode.
+:s_030 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_{row_id}".
 :pom_082 a rr:PredicateObjectMap.
 :map_urinary_system_test_numeric_result_in_original_units_quantitative_value_000 rr:predicateObjectMap :pom_082.
 :pm_082 a rr:PredicateMap.
@@ -1016,7 +1016,7 @@
     rdfs:label "urinary_system_test_character_result_in_standard_format".
 :s_031 a rr:SubjectMap.
 :map_urinary_system_test_character_result_in_standard_format_000 rr:subjectMap :s_031.
-:s_031 rr:termType rr:BlankNode.
+:s_031 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_{row_id}".
 :pom_085 a rr:PredicateObjectMap.
 :map_urinary_system_test_character_result_in_standard_format_000 rr:predicateObjectMap :pom_085.
 :pm_085 a rr:PredicateMap.
@@ -1041,7 +1041,7 @@
     rdfs:label "urinary_system_test_character_result_in_standard_format_attribute".
 :s_032 a rr:SubjectMap.
 :map_urinary_system_test_character_result_in_standard_format_attribute_000 rr:subjectMap :s_032.
-:s_032 rr:termType rr:BlankNode.
+:s_032 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/ur_urinary_system_test_character_result_in_standard_format_attribute_{row_id}".
 :pom_087 a rr:PredicateObjectMap.
 :map_urinary_system_test_character_result_in_standard_format_attribute_000 rr:predicateObjectMap :pom_087.
 :pm_087 a rr:PredicateMap.
