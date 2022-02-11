@@ -277,6 +277,10 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 <https://w3id.org/biolink/part_of> rdf:type owl:AnnotationProperty .
 
 
+###  https://w3id.org/biolink/related_to
+<https://w3id.org/biolink/related_to> rdf:type owl:AnnotationProperty .
+
+
 ###  https://w3id.org/c-path/biolink_sdtm_owl/VISITNAME
 <https://w3id.org/c-path/biolink_sdtm_owl/VISITNAME> rdf:type owl:AnnotationProperty .
 
@@ -17721,6 +17725,28 @@ Previous. An information content entity is a non-realizable information entity t
                                                  <https://w3id.org/c-path/biolink_sdtm_owl/ARMCD> "0" .
 
 
+###  https://w3id.org/c-path/biolink_sdtm_owl/dm_age_1
+<https://w3id.org/c-path/biolink_sdtm_owl/dm_age_1> rdf:type owl:NamedIndividual ,
+                                                             owl:Thing ,
+                                                             <https://w3id.org/biolink/vocab/Annotation> ,
+                                                             <https://w3id.org/biolink/vocab/Attribute> ,
+                                                             <https://w3id.org/biolink/vocab/OntologyClass> ,
+                                                             <https://w3id.org/c-path/biolink_sdtm_owl/AGE> ,
+                                                             <https://w3id.org/linkml/mixin> ;
+                                                    <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_1> .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/dm_age_2
+<https://w3id.org/c-path/biolink_sdtm_owl/dm_age_2> rdf:type owl:NamedIndividual ,
+                                                             owl:Thing ,
+                                                             <https://w3id.org/biolink/vocab/Annotation> ,
+                                                             <https://w3id.org/biolink/vocab/Attribute> ,
+                                                             <https://w3id.org/biolink/vocab/OntologyClass> ,
+                                                             <https://w3id.org/c-path/biolink_sdtm_owl/AGE> ,
+                                                             <https://w3id.org/linkml/mixin> ;
+                                                    <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_2> .
+
+
 ###  https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_1
 <https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_1> rdf:type owl:NamedIndividual ,
                                                                                 owl:Thing ,
@@ -17735,6 +17761,30 @@ Previous. An information content entity is a non-realizable information entity t
                                                                                 <https://w3id.org/biolink/QuantityValue> ;
                                                                        <https://w3id.org/biolink/has_numeric_value> 50 ;
                                                                        <https://w3id.org/biolink/has_unit> "YEARS" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/dm_sex_1
+<https://w3id.org/c-path/biolink_sdtm_owl/dm_sex_1> rdf:type owl:NamedIndividual ,
+                                                             owl:Thing ,
+                                                             <https://w3id.org/biolink/vocab/Annotation> ,
+                                                             <https://w3id.org/biolink/vocab/Attribute> ,
+                                                             <https://w3id.org/biolink/vocab/BiologicalSex> ,
+                                                             <https://w3id.org/biolink/vocab/OntologyClass> ,
+                                                             <https://w3id.org/c-path/biolink_sdtm_owl/SEX> ,
+                                                             <https://w3id.org/linkml/mixin> ;
+                                                    <https://w3id.org/biolink/has_qualitative_value> "M" .
+
+
+###  https://w3id.org/c-path/biolink_sdtm_owl/dm_sex_2
+<https://w3id.org/c-path/biolink_sdtm_owl/dm_sex_2> rdf:type owl:NamedIndividual ,
+                                                             owl:Thing ,
+                                                             <https://w3id.org/biolink/vocab/Annotation> ,
+                                                             <https://w3id.org/biolink/vocab/Attribute> ,
+                                                             <https://w3id.org/biolink/vocab/BiologicalSex> ,
+                                                             <https://w3id.org/biolink/vocab/OntologyClass> ,
+                                                             <https://w3id.org/c-path/biolink_sdtm_owl/SEX> ,
+                                                             <https://w3id.org/linkml/mixin> ;
+                                                    <https://w3id.org/biolink/has_qualitative_value> "F" .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_1
@@ -17989,7 +18039,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                                  <https://w3id.org/biolink/vocab/SubjectOfInvestigation> ,
                                                                  <https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD> ,
                                                                  <https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC> ,
-                                                                 <https://w3id.org/linkml/mixin> .
+                                                                 <https://w3id.org/linkml/mixin> ;
+                                                        <https://w3id.org/biolink/related_to> <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_1_1> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/specimen_2_2
@@ -18007,7 +18058,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                                  <https://w3id.org/biolink/vocab/SubjectOfInvestigation> ,
                                                                  <https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD> ,
                                                                  <https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC> ,
-                                                                 <https://w3id.org/linkml/mixin> .
+                                                                 <https://w3id.org/linkml/mixin> ;
+                                                        <https://w3id.org/biolink/related_to> <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_2_2> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/specimen_collection_process_1_1
@@ -18066,8 +18118,9 @@ Previous. An information content entity is a non-realizable information entity t
                                                               <https://w3id.org/biolink/vocab/ThingWithTaxon> ,
                                                               <https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT> ,
                                                               <https://w3id.org/linkml/mixin> ;
-                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/dm_age$_(row_id)> ,
-                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/dm_sex$_(row_id)> ;
+                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/dm_age_1> ,
+                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/dm_sex_1> ;
+                                                     <https://w3id.org/biolink/related_to> <https://w3id.org/c-path/biolink_sdtm_owl/specimen_1_1> ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/USUBJID> "1" .
 
 
@@ -18083,8 +18136,9 @@ Previous. An information content entity is a non-realizable information entity t
                                                               <https://w3id.org/biolink/vocab/ThingWithTaxon> ,
                                                               <https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT> ,
                                                               <https://w3id.org/linkml/mixin> ;
-                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/dm_age$_(row_id)> ,
-                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/dm_sex$_(row_id)> ;
+                                                     <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/dm_age_2> ,
+                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/dm_sex_2> ;
+                                                     <https://w3id.org/biolink/related_to> <https://w3id.org/c-path/biolink_sdtm_owl/specimen_2_2> ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/USUBJID> "2" .
 
 
@@ -18607,31 +18661,6 @@ Previous. An information content entity is a non-realizable information entity t
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/VISITNAME> "visit_two" .
 
 
-###  https://w3id.org/c-path/biolink_sdtm_owl/dm_age$_(row_id)
-<https://w3id.org/c-path/biolink_sdtm_owl/dm_age$_(row_id)> rdf:type owl:NamedIndividual ,
-                                                                     owl:Thing ,
-                                                                     <https://w3id.org/biolink/vocab/Annotation> ,
-                                                                     <https://w3id.org/biolink/vocab/Attribute> ,
-                                                                     <https://w3id.org/biolink/vocab/OntologyClass> ,
-                                                                     <https://w3id.org/c-path/biolink_sdtm_owl/AGE> ,
-                                                                     <https://w3id.org/linkml/mixin> ;
-                                                            <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_1> ,
-                                                                                                              <https://w3id.org/c-path/biolink_sdtm_owl/dm_age_quantitative_value_2> .
-
-
-###  https://w3id.org/c-path/biolink_sdtm_owl/dm_sex$_(row_id)
-<https://w3id.org/c-path/biolink_sdtm_owl/dm_sex$_(row_id)> rdf:type owl:NamedIndividual ,
-                                                                     owl:Thing ,
-                                                                     <https://w3id.org/biolink/vocab/Annotation> ,
-                                                                     <https://w3id.org/biolink/vocab/Attribute> ,
-                                                                     <https://w3id.org/biolink/vocab/BiologicalSex> ,
-                                                                     <https://w3id.org/biolink/vocab/OntologyClass> ,
-                                                                     <https://w3id.org/c-path/biolink_sdtm_owl/SEX> ,
-                                                                     <https://w3id.org/linkml/mixin> ;
-                                                            <https://w3id.org/biolink/has_qualitative_value> "F" ,
-                                                                                                             "M" .
-
-
 [ owl:qualifiedCardinality 1
 ] .
 
@@ -18665,8 +18694,8 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> rdfs:label "has original unit"@en ;
-                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "LBORRESU"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "LB"^^xsd:string ;
+                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "LBORRESU"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "laboratory test results"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Original Units"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "URORRESU"^^xsd:string ;
@@ -18679,8 +18708,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Study Site Identifier"^^xsd:string ;
                                                   <http://purl.obolibrary.org/obo/IAO_0000115> "Unique identifier for a site within a study."@en ;
-                                                  rdfs:label "study site identifier"@en ;
-                                                  <http://purl.obolibrary.org/obo/IAO_0000119> "SDTM"^^xsd:string .
+                                                  <http://purl.obolibrary.org/obo/IAO_0000119> "SDTM"^^xsd:string ;
+                                                  rdfs:label "study site identifier"@en .
 
 
 <https://w3id.org/c-path/biolink_sdtm_owl/STRESU> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "UR"^^xsd:string ;
@@ -18697,8 +18726,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "Unique identifier for a study."@en ;
                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "STUDYID"^^xsd:string ;
                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "DM"^^xsd:string ;
-                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
                                                    rdfs:label "study identifier"@en ;
+                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000119> "SDTM"^^xsd:string .
 
 
@@ -18706,8 +18735,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "USUBJID"^^xsd:string ;
                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "DM"^^xsd:string ;
                                                    rdfs:label "unique subject identifier"@en ;
-                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Unique Subject Identifier"^^xsd:string ;
                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
+                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Unique Subject Identifier"^^xsd:string ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000119> "SDTM"^^xsd:string .
 
 

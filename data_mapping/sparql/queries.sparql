@@ -9,28 +9,88 @@ PREFIX sdtm: <https://w3id.org/c-path/biolink_sdtm_owl/>
 
 
 
-SELECT ?subject ?age ?age_unit ?sex
-{
-    # Querying for study subjects.
-	?subject a biolink_vocab:Case .
 
-	# That subject's age attribute.
+# Query for the demographics data, specific to the C-Path model.
+SELECT ?subject ?age ?age_unit ?sex WHERE
+{
+	?subject a biolink_vocab:Case .
 	?subject biolink:has_attribute ?age_attribute .
 	?age_attribute a sdtm:AGE .
 	?age_attribute biolink:has_quantitative_value ?qv . 
 	?qv biolink:has_numeric_value ?age .
 	?qv biolink:has_unit ?age_unit .
-
-	# That subject's sex attribute.
 	?subject biolink:has_attribute ?sex_attribute .
 	?sex_attribute a sdtm:SEX .
 	?sex_attribute biolink:has_qualitative_value ?sex .
-
-    # Filtering.
-	FILTER (?age >= 45)	
-	FILTER (?sex = "F")
 }
 
 
-https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT
-https://w3id.org/cpath/biolink_sdtm_owl/SUBJECT
+
+# Query for the demographics data (sex only), for both models.
+SELECT * WHERE
+{
+	?s a biolink_vocab:Case .
+	?s ?p ?o .
+	?o a biolink_vocab:BiologicalSex .
+	?o biolink:has_qualitative_value ?o2
+}
+
+
+
+# Query for the demographics data (sex only) and lab tests, for both models, like Table 3 in the paper.
+select * where { 
+    ?pat a biolink_vocab:Case . 
+    ?pat ?p1 ?o . 
+    ?o a biolink_vocab:BiologicalSex . 
+    ?pat ?p2 ?o2 .
+    ?o2 a biolink_vocab:MaterialSample .
+    ?o2 ?p3 ?o3 .
+    ?o3 a biolink_vocab:Procedure .
+    ?o3 ?p4 ?o4 .
+    ?o4 a biolink_vocab:InformationContentEntity .
+} 
+
+# That same query again, with the C-Path model way of retrieving the nuermical results from the biolink:InformationContentEntity.
+# Done this way because in biolink, the model is organized like [a InformationContentEntity] has_attribute [a Attribute], 
+#																[a Attribute] has_quantity_value [a QuantityValue],
+#															    [a QuantityValue] has_numeric_value [a float].
+#																[a QuantityValue] has_unit [a string].
+#
+# Is this different than how values need to be retrieved in the EJP model?
+select * where { 
+    ?pat a biolink_vocab:Case . 
+    ?pat ?p1 ?o . 
+    ?o a biolink_vocab:BiologicalSex . 
+    ?pat ?p2 ?o2 .
+    ?o2 a biolink_vocab:MaterialSample .
+    ?o2 ?p3 ?o3 .
+    ?o3 a biolink_vocab:Procedure .
+    ?o3 ?p4 ?o4 .
+    ?o4 a biolink_vocab:InformationContentEntity .
+    ?o4 ?p5 ?o5 .
+    ?o5 ?p6 ?o6 .
+    ?o6 biolink:has_numeric_value ?value .
+    ?o6 ?p7 ?unit .
+    ?p7 rdfs:subPropertyOf biolink_vocab:has_unit .
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

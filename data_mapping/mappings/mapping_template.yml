@@ -55,6 +55,17 @@ mappings:
               - [str2, $(subjid), o]
 
 
+      # Mapping from subject class to a specimen collected from this subject.
+      - p: biolink:related_to
+        o: 
+          mapping: specimen
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(subjid), s]
+              - [str2, $(usubjid), o]
+
+
 
 
 
@@ -112,7 +123,7 @@ mappings:
     sources:
       - ['data_mapping/sample_data/dm.csv~csv']
     #s: null
-    s: sdtm:dm_age$_(row_id)
+    s: sdtm:dm_age_$(row_id)
     po:
       - [a, sdtm:AGE] # Which is a biolink:Attribute. And biolink:Attribute biolink:has_quantitative_value biolink:Quantity Value.
 
@@ -147,7 +158,7 @@ mappings:
   sex:
     sources:
       - ['data_mapping/sample_data/dm.csv~csv']      
-    s: sdtm:dm_sex$_(row_id)  
+    s: sdtm:dm_sex_$(row_id)  
     po:
       - [a, sdtm:SEX]
       - [biolink:has_qualitative_value, $(sex)] 
@@ -294,6 +305,15 @@ mappings:
       # which subclass of sdtm:LSPEC (sdtm:LBBLOOD, sdmt:LBSERUM, etc.) this instance is a subclass of.
       - [a, $(lbspec_uri)~iri]
 
+      # This specimen is the input of a test.
+      - p: biolink:related_to
+        o:
+          mapping: lab_test
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
 
 
 
