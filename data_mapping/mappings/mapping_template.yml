@@ -433,7 +433,7 @@ mappings:
     s: sdtm:lb_lab_test_numeric_result_in_original_units_$(row_id)
     #s: null
     po:
-      - [a, sdtm::LBORRES] # Which is a sdtm:TSTRES, which is a biolink:InformationContentEntity.
+      - [a, sdtm:LBORRES] # Which is a sdtm:TSTRES, which is a biolink:InformationContentEntity.
       - p: biolink:has_attribute
         o:
           mapping: lab_test_numeric_result_in_original_units_attribute
@@ -447,7 +447,7 @@ mappings:
   lab_test_numeric_result_in_original_units_attribute:
     sources:
       - ['data_mapping/sample_data/lb.csv~csv']
-    s: sdtm:lb_lab_test_numeric_result_in_original_units_attribute$(row_id)
+    s: sdtm:lb_lab_test_numeric_result_in_original_units_attribute_$(row_id)
     #s: null
     po:
       - [a, biolink:Attribute]

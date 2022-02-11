@@ -8,8 +8,6 @@ PREFIX sdtm: <https://w3id.org/c-path/biolink_sdtm_owl/>
 
 
 
-
-
 # Query for the demographics data, specific to the C-Path model.
 SELECT ?subject ?age ?age_unit ?sex WHERE
 {
@@ -37,6 +35,9 @@ SELECT * WHERE
 
 
 
+
+
+
 # Query for the demographics data (sex only) and lab tests, for both models, like Table 3 in the paper.
 select * where { 
     ?pat a biolink_vocab:Case . 
@@ -50,13 +51,17 @@ select * where {
     ?o4 a biolink_vocab:InformationContentEntity .
 } 
 
+
+
+
 # That same query again, with the C-Path model way of retrieving the nuermical results from the biolink:InformationContentEntity.
-# Done this way because in biolink, the model is organized like [a InformationContentEntity] has_attribute [a Attribute], 
-#																[a Attribute] has_quantity_value [a QuantityValue],
-#															    [a QuantityValue] has_numeric_value [a float].
-#																[a QuantityValue] has_unit [a string].
-#
-# Is this different than how values need to be retrieved in the EJP model?
+# Done this way because in biolink, the model is organized like:
+# 		[a InformationContentEntity] has_attribute [a Attribute], 
+# 		[a Attribute] has_quantity_value [a QuantityValue],
+# 		[a QuantityValue] has_numeric_value [a float].
+# 		[a QuantityValue] has_unit [a string].
+# 
+# TODO this looks like it will be different than how values are currently obtained in the queries in Table 3, have to resolve this.
 select * where { 
     ?pat a biolink_vocab:Case . 
     ?pat ?p1 ?o . 
@@ -67,8 +72,8 @@ select * where {
     ?o3 a biolink_vocab:Procedure .
     ?o3 ?p4 ?o4 .
     ?o4 a biolink_vocab:InformationContentEntity .
-    ?o4 ?p5 ?o5 .
-    ?o5 ?p6 ?o6 .
+    ?o4 ?p5 ?o5 . # ?o5 is the biolink:Attribute.
+    ?o5 ?p6 ?o6 . # ?o6 is the biolink:QuantityValue.
     ?o6 biolink:has_numeric_value ?value .
     ?o6 ?p7 ?unit .
     ?p7 rdfs:subPropertyOf biolink_vocab:has_unit .

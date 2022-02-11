@@ -586,7 +586,7 @@
 :pm_049 rr:constant rdf:type.
 :pom_049 rr:objectMap :om_049.
 :om_049 a rr:ObjectMap;
-    rr:constant "https://w3id.org/c-path/biolink_sdtm_owl/";
+    rr:constant "https://w3id.org/c-path/biolink_sdtm_owl/LBORRES";
     rr:termType rr:IRI.
 :pom_050 a rr:PredicateObjectMap.
 :map_lab_test_numeric_result_in_original_units_000 rr:predicateObjectMap :pom_050.
@@ -603,7 +603,7 @@
     rdfs:label "lab_test_numeric_result_in_original_units_attribute".
 :s_017 a rr:SubjectMap.
 :map_lab_test_numeric_result_in_original_units_attribute_000 rr:subjectMap :s_017.
-:s_017 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute{row_id}".
+:s_017 rr:template "https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute_{row_id}".
 :pom_051 a rr:PredicateObjectMap.
 :map_lab_test_numeric_result_in_original_units_attribute_000 rr:predicateObjectMap :pom_051.
 :pm_051 a rr:PredicateMap.

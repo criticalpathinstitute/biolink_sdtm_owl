@@ -17789,30 +17789,46 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_1
 <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_1> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                   <http://purl.obolibrary.org/obo/IAO_0000030> ,
                                                                                                    owl:Thing ,
-                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/> ;
-                                                                                          <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute1> .
+                                                                                                   <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                   <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                   <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/LBORRES> ,
+                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/TSTRES> ;
+                                                                                          <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute_1> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_2
 <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_2> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                                                                   <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                                                                   <http://purl.obolibrary.org/obo/IAO_0000030> ,
                                                                                                    owl:Thing ,
-                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/> ;
-                                                                                          <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute2> .
+                                                                                                   <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                                   <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                                                                   <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/LBORRES> ,
+                                                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/TSTRES> ;
+                                                                                          <https://w3id.org/biolink/has_attribute> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute_2> .
 
 
-###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute1
-<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute1> rdf:type owl:NamedIndividual ,
-                                                                                                            owl:Thing ,
-                                                                                                            <https://w3id.org/biolink/Attribute> ;
-                                                                                                   <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_1> .
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute_1
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute_1> rdf:type owl:NamedIndividual ,
+                                                                                                             owl:Thing ,
+                                                                                                             <https://w3id.org/biolink/Attribute> ;
+                                                                                                    <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_1> .
 
 
-###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute2
-<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute2> rdf:type owl:NamedIndividual ,
-                                                                                                            owl:Thing ,
-                                                                                                            <https://w3id.org/biolink/Attribute> ;
-                                                                                                   <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_2> .
+###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute_2
+<https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_attribute_2> rdf:type owl:NamedIndividual ,
+                                                                                                             owl:Thing ,
+                                                                                                             <https://w3id.org/biolink/Attribute> ;
+                                                                                                    <https://w3id.org/biolink/has_quantitative_value> <https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_2> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/lb_lab_test_numeric_result_in_original_units_quantitative_value_1
@@ -18708,12 +18724,12 @@ Previous. An information content entity is a non-realizable information entity t
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Study Site Identifier"^^xsd:string ;
                                                   <http://purl.obolibrary.org/obo/IAO_0000115> "Unique identifier for a site within a study."@en ;
-                                                  <http://purl.obolibrary.org/obo/IAO_0000119> "SDTM"^^xsd:string ;
-                                                  rdfs:label "study site identifier"@en .
+                                                  rdfs:label "study site identifier"@en ;
+                                                  <http://purl.obolibrary.org/obo/IAO_0000119> "SDTM"^^xsd:string .
 
 
-<https://w3id.org/c-path/biolink_sdtm_owl/STRESU> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "UR"^^xsd:string ;
-                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "URSTRESU"^^xsd:string ;
+<https://w3id.org/c-path/biolink_sdtm_owl/STRESU> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "URSTRESU"^^xsd:string ;
+                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "UR"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Standard Units"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "LB"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "urniary system findings"^^xsd:string ;
@@ -18751,8 +18767,8 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 <https://w3id.org/c-path/biolink_sdtm_owl/VISITNUM> <http://purl.obolibrary.org/obo/IAO_0000115> "1. Clinical encounter number. 2. Numeric version of VISIT, used for sorting."@en ;
-                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "UR"^^xsd:string ;
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "urniary system findings"^^xsd:string ;
+                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "UR"^^xsd:string ;
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "VISITNUM"^^xsd:string ;
                                                     rdfs:label "visit number"@en ;
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Visit Number"^^xsd:string ;
