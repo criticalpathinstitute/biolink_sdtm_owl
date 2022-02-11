@@ -24,7 +24,7 @@ SELECT ?subject ?age ?age_unit ?sex WHERE
 
 
 
-# Query for the demographics data (sex only), for both models.
+# Query for the demographics data (sex only), for both models, like Table 3 in the paper.
 SELECT * WHERE
 {
 	?s a biolink_vocab:Case .
@@ -32,8 +32,6 @@ SELECT * WHERE
 	?o a biolink_vocab:BiologicalSex .
 	?o biolink:has_qualitative_value ?o2
 }
-
-
 
 
 
@@ -54,15 +52,15 @@ select * where {
 
 
 
-# That same query again, with the C-Path model way of retrieving the nuermical results from the biolink:InformationContentEntity.
+# That same query again, with the C-Path model-specific of retrieving the numerical results from the biolink:InformationContentEntity.
 # Done this way because in biolink, the model is organized like:
 # 		[a InformationContentEntity] has_attribute [a Attribute], 
 # 		[a Attribute] has_quantity_value [a QuantityValue],
 # 		[a QuantityValue] has_numeric_value [a float].
 # 		[a QuantityValue] has_unit [a string].
 # 
-# TODO this looks like it will be different than how values are currently obtained in the queries in Table 3, have to resolve this.
-select * where { 
+# TODO this looks like it will be different than how values are currently obtained in the queries in Table 3? Have to resolve this.
+select ?pat ?o4 ?value ?unit where { 
     ?pat a biolink_vocab:Case . 
     ?pat ?p1 ?o . 
     ?o a biolink_vocab:BiologicalSex . 
