@@ -13173,8 +13173,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/biolink/vocab/ChemicalFormulaValue
 <https://w3id.org/biolink/vocab/ChemicalFormulaValue> rdf:type owl:Class ;
-                                                      rdfs:subClassOf owl:Thing ,
-                                                                      [ rdf:type owl:Restriction ;
+                                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                         owl:onProperty <https://w3id.org/linkml/topValue> ;
                                                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                                         owl:onDataRange xsd:string
@@ -13736,8 +13735,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/biolink/vocab/Entity
 <https://w3id.org/biolink/vocab/Entity> rdf:type owl:Class ;
-                                        rdfs:subClassOf owl:Thing ,
-                                                        [ rdf:type owl:Restriction ;
+                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                           owl:onProperty <https://w3id.org/biolink/vocab/category> ;
                                                           owl:allValuesFrom <https://w3id.org/biolink/vocab/CategoryType>
                                                         ] ,
@@ -16806,6 +16804,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/BUN
 <https://w3id.org/c-path/biolink_sdtm_owl/BUN> rdf:type owl:Class ;
+                                               owl:equivalentClass <https://w3id.org/c-path/biolink_sdtm_owl/UUN> ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C74760> ,
                                                                <https://w3id.org/c-path/biolink_sdtm_owl/LBTEST> ;
                                                rdfs:label "blood urea nitrogen test"@en ;
@@ -17153,6 +17152,7 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME
 <https://w3id.org/c-path/biolink_sdtm_owl/LBVOLUME> rdf:type owl:Class ;
+                                                    owl:equivalentClass <https://w3id.org/c-path/biolink_sdtm_owl/LOCVOLUME> ;
                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C74957> ,
                                                                     <https://w3id.org/c-path/biolink_sdtm_owl/LBTEST> ,
                                                                     <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ;
@@ -17556,13 +17556,35 @@ Previous. An information content entity is a non-realizable information entity t
 #################################################################
 
 ###  http://purl.obolibrary.org/obo/IAO_0000002
-<http://purl.obolibrary.org/obo/IAO_0000002> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000002> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "example to be eventually removed"@en ;
                                              rdfs:label "example to be eventually removed"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000103
-<http://purl.obolibrary.org/obo/IAO_0000103> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000103> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "failed exploratory term"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Person:Alan Ruttenberg"@en ;
@@ -17570,76 +17592,197 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000120
-<http://purl.obolibrary.org/obo/IAO_0000120> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000120> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "metadata complete"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en ;
                                              rdfs:label "metadata complete"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000121
-<http://purl.obolibrary.org/obo/IAO_0000121> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000121> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "organizational term"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en ;
                                              rdfs:label "organizational term"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000122
-<http://purl.obolibrary.org/obo/IAO_0000122> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000122> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "ready for release"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking \"ready_for_release\" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed \"ready_for_release\" will also derived from a chain of ancestor classes that are also \"ready_for_release.\""@en ;
                                              rdfs:label "ready for release"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000123
-<http://purl.obolibrary.org/obo/IAO_0000123> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000123> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "metadata incomplete"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en ;
                                              rdfs:label "metadata incomplete"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000124
-<http://purl.obolibrary.org/obo/IAO_0000124> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000124> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "uncurated"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en ;
                                              rdfs:label "uncurated"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000125
-<http://purl.obolibrary.org/obo/IAO_0000125> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000125> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "pending final vetting"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor."@en ;
                                              rdfs:label "pending final vetting"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000226
-<http://purl.obolibrary.org/obo/IAO_0000226> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000226> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "placeholder removed"@en ;
                                              rdfs:label "placeholder removed"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000227
-<http://purl.obolibrary.org/obo/IAO_0000227> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000227> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "terms merged"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "An editor note should explain what were the merged terms and the reason for the merge."@en ;
                                              rdfs:label "terms merged"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000228
-<http://purl.obolibrary.org/obo/IAO_0000228> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000228> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "term imported"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use."@en ;
                                              rdfs:label "term imported"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000229
-<http://purl.obolibrary.org/obo/IAO_0000229> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000229> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000225> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "term split"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created."@en ;
                                              rdfs:label "term split"@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000410
-<http://purl.obolibrary.org/obo/IAO_0000410> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000410> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000409> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "universal"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
@@ -17648,7 +17791,18 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000420
-<http://purl.obolibrary.org/obo/IAO_0000420> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000420> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000409> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "defined class"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."@en ;
@@ -17657,7 +17811,18 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000421
-<http://purl.obolibrary.org/obo/IAO_0000421> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000421> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000409> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "named class expression"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A named class expression is a logical expression that is given a name. The name can be used in place of the expression."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000116> "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"@en ;
@@ -17666,7 +17831,18 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000423
-<http://purl.obolibrary.org/obo/IAO_0000423> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000423> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "to be replaced with external ontology term"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "Terms with this status should eventually replaced with a term from another ontology."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
@@ -17675,7 +17851,18 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000428
-<http://purl.obolibrary.org/obo/IAO_0000428> rdf:type owl:NamedIndividual ;
+<http://purl.obolibrary.org/obo/IAO_0000428> rdf:type owl:NamedIndividual ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000001> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000002> ,
+                                                      <http://purl.obolibrary.org/obo/BFO_0000031> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000030> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000078> ,
+                                                      <http://purl.obolibrary.org/obo/IAO_0000102> ,
+                                                      owl:Thing ,
+                                                      <https://w3id.org/biolink/vocab/Entity> ,
+                                                      <https://w3id.org/biolink/vocab/InformationContentEntity> ,
+                                                      <https://w3id.org/biolink/vocab/NamedThing> ;
                                              <http://purl.obolibrary.org/obo/IAO_0000111> "requires discussion"@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues."@en ;
                                              <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ;
@@ -17684,12 +17871,30 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY
-<https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY> rdf:type owl:NamedIndividual .
+<https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY> rdf:type owl:NamedIndividual ,
+                                                              owl:Thing ,
+                                                              <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                              <https://w3id.org/biolink/vocab/Entity> ,
+                                                              <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                              <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                              <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                              <https://w3id.org/biolink/vocab/Procedure> ,
+                                                              <https://w3id.org/c-path/biolink_sdtm_owl/LBCAT> ,
+                                                              <https://w3id.org/linkml/mixin> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/arm_0
 <https://w3id.org/c-path/biolink_sdtm_owl/arm_0> rdf:type owl:NamedIndividual ,
-                                                          <https://w3id.org/c-path/biolink_sdtm_owl/STUDYARM> ;
+                                                          owl:Thing ,
+                                                          <https://w3id.org/biolink/vocab/Activity> ,
+                                                          <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                          <https://w3id.org/biolink/vocab/Entity> ,
+                                                          <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                          <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                          <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                          <https://w3id.org/c-path/biolink_sdtm_owl/STUDYARM> ,
+                                                          <https://w3id.org/linkml/mixin> ;
+                                                 <http://purl.org/dc/terms/description> "NO DRUG" ;
                                                  <https://w3id.org/c-path/biolink_sdtm_owl/ARM> "NO DRUG" ;
                                                  <https://w3id.org/biolink/part_of> <https://w3id.org/c-path/biolink_sdtm_owl/study_10-12345> ;
                                                  <https://w3id.org/c-path/biolink_sdtm_owl/ARMCD> "0" .
@@ -17697,7 +17902,25 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/lbtest_1_1
 <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_1_1> rdf:type owl:NamedIndividual ,
-                                                               <https://w3id.org/c-path/biolink_sdtm_owl/ALB> ;
+                                                               <http://purl.obolibrary.org/obo/NCIT_C16203> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C25218> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C25294> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C43431> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C49237> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C64430> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C64431> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C74944> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C74954> ,
+                                                               owl:Thing ,
+                                                               <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                               <https://w3id.org/biolink/vocab/Entity> ,
+                                                               <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                               <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                               <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                               <https://w3id.org/biolink/vocab/Procedure> ,
+                                                               <https://w3id.org/c-path/biolink_sdtm_owl/ALB> ,
+                                                               <https://w3id.org/c-path/biolink_sdtm_owl/LBTEST> ,
+                                                               <https://w3id.org/linkml/mixin> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit> <https://w3id.org/c-path/biolink_sdtm_owl/visit_one> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/in_lb_cat> <https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY> ;
                                                       <https://w3id.org/biolink/has_input> <https://w3id.org/c-path/biolink_sdtm_owl/specimen_1_1> ;
@@ -17721,7 +17944,23 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/lbtest_2_2
 <https://w3id.org/c-path/biolink_sdtm_owl/lbtest_2_2> rdf:type owl:NamedIndividual ,
-                                                               <https://w3id.org/c-path/biolink_sdtm_owl/BICARB> ;
+                                                               <http://purl.obolibrary.org/obo/NCIT_C16203> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C25218> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C25294> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C43431> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C49237> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C74667> ,
+                                                               <http://purl.obolibrary.org/obo/NCIT_C74944> ,
+                                                               owl:Thing ,
+                                                               <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                               <https://w3id.org/biolink/vocab/Entity> ,
+                                                               <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                               <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                               <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                               <https://w3id.org/biolink/vocab/Procedure> ,
+                                                               <https://w3id.org/c-path/biolink_sdtm_owl/BICARB> ,
+                                                               <https://w3id.org/c-path/biolink_sdtm_owl/LBTEST> ,
+                                                               <https://w3id.org/linkml/mixin> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit> <https://w3id.org/c-path/biolink_sdtm_owl/visit_two> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/in_lb_cat> <https://w3id.org/c-path/biolink_sdtm_owl/CHEMISTRY> ;
                                                       <https://w3id.org/biolink/has_input> <https://w3id.org/c-path/biolink_sdtm_owl/specimen_2_2> ;
@@ -17745,43 +17984,107 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/site_9999
 <https://w3id.org/c-path/biolink_sdtm_owl/site_9999> rdf:type owl:NamedIndividual ,
+                                                              owl:Thing ,
+                                                              <https://w3id.org/biolink/vocab/Entity> ,
+                                                              <https://w3id.org/biolink/vocab/GeographicLocation> ,
+                                                              <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                              <https://w3id.org/biolink/vocab/PlanetaryEntity> ,
                                                               <https://w3id.org/c-path/biolink_sdtm_owl/STUDYSITE> ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/SITEID> "9999" .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/specimen_1_1
 <https://w3id.org/c-path/biolink_sdtm_owl/specimen_1_1> rdf:type owl:NamedIndividual ,
-                                                                 <https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD> .
+                                                                 <http://purl.obolibrary.org/obo/NCIT_C12219> ,
+                                                                 <http://purl.obolibrary.org/obo/NCIT_C12434> ,
+                                                                 <http://purl.obolibrary.org/obo/NCIT_C13236> ,
+                                                                 owl:Thing ,
+                                                                 <https://w3id.org/biolink/vocab/Entity> ,
+                                                                 <https://w3id.org/biolink/vocab/MaterialSample> ,
+                                                                 <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                 <https://w3id.org/biolink/vocab/PhysicalEntity> ,
+                                                                 <https://w3id.org/biolink/vocab/PhysicalEssence> ,
+                                                                 <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                 <https://w3id.org/biolink/vocab/SubjectOfInvestigation> ,
+                                                                 <https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD> ,
+                                                                 <https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC> ,
+                                                                 <https://w3id.org/linkml/mixin> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/specimen_2_2
 <https://w3id.org/c-path/biolink_sdtm_owl/specimen_2_2> rdf:type owl:NamedIndividual ,
-                                                                 <https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD> .
+                                                                 <http://purl.obolibrary.org/obo/NCIT_C12219> ,
+                                                                 <http://purl.obolibrary.org/obo/NCIT_C12434> ,
+                                                                 <http://purl.obolibrary.org/obo/NCIT_C13236> ,
+                                                                 owl:Thing ,
+                                                                 <https://w3id.org/biolink/vocab/Entity> ,
+                                                                 <https://w3id.org/biolink/vocab/MaterialSample> ,
+                                                                 <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                 <https://w3id.org/biolink/vocab/PhysicalEntity> ,
+                                                                 <https://w3id.org/biolink/vocab/PhysicalEssence> ,
+                                                                 <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                 <https://w3id.org/biolink/vocab/SubjectOfInvestigation> ,
+                                                                 <https://w3id.org/c-path/biolink_sdtm_owl/LBBLOOD> ,
+                                                                 <https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC> ,
+                                                                 <https://w3id.org/linkml/mixin> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/specimen_collection_process_1_1
 <https://w3id.org/c-path/biolink_sdtm_owl/specimen_collection_process_1_1> rdf:type owl:NamedIndividual ,
-                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL> ;
+                                                                                    owl:Thing ,
+                                                                                    <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                                                    <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                    <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                    <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                                                    <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                    <https://w3id.org/biolink/vocab/Procedure> ,
+                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL> ,
+                                                                                    <https://w3id.org/linkml/mixin> ;
                                                                            <https://w3id.org/biolink/has_input> <https://w3id.org/c-path/biolink_sdtm_owl/subject_1> ;
                                                                            <https://w3id.org/biolink/has_output> <https://w3id.org/c-path/biolink_sdtm_owl/specimen_1_1> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/specimen_collection_process_2_2
 <https://w3id.org/c-path/biolink_sdtm_owl/specimen_collection_process_2_2> rdf:type owl:NamedIndividual ,
-                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL> ;
+                                                                                    owl:Thing ,
+                                                                                    <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                                                    <https://w3id.org/biolink/vocab/Entity> ,
+                                                                                    <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                                    <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                                                    <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                                    <https://w3id.org/biolink/vocab/Procedure> ,
+                                                                                    <https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL> ,
+                                                                                    <https://w3id.org/linkml/mixin> ;
                                                                            <https://w3id.org/biolink/has_input> <https://w3id.org/c-path/biolink_sdtm_owl/subject_2> ;
                                                                            <https://w3id.org/biolink/has_output> <https://w3id.org/c-path/biolink_sdtm_owl/specimen_2_2> .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/study_10-12345
 <https://w3id.org/c-path/biolink_sdtm_owl/study_10-12345> rdf:type owl:NamedIndividual ,
-                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/CLINSTUDY> ;
+                                                                   owl:Thing ,
+                                                                   <https://w3id.org/biolink/vocab/Activity> ,
+                                                                   <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                                   <https://w3id.org/biolink/vocab/Entity> ,
+                                                                   <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                                   <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                                   <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/CLINSTUDY> ,
+                                                                   <https://w3id.org/linkml/mixin> ;
                                                           <https://w3id.org/c-path/biolink_sdtm_owl/STUDYID> "10-12345" .
 
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/subject_1
 <https://w3id.org/c-path/biolink_sdtm_owl/subject_1> rdf:type owl:NamedIndividual ,
-                                                              <https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT> ;
+                                                              owl:Thing ,
+                                                              <https://w3id.org/biolink/vocab/BiologicalEntity> ,
+                                                              <https://w3id.org/biolink/vocab/Case> ,
+                                                              <https://w3id.org/biolink/vocab/Entity> ,
+                                                              <https://w3id.org/biolink/vocab/IndividualOrganism> ,
+                                                              <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                              <https://w3id.org/biolink/vocab/OrganismalEntity> ,
+                                                              <https://w3id.org/biolink/vocab/ThingWithTaxon> ,
+                                                              <https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT> ,
+                                                              <https://w3id.org/linkml/mixin> ;
                                                      <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/AGE> ;
                                                                                                 <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
                                                                                                                                                     <https://w3id.org/biolink/has_numeric_value> 40 ;
@@ -17796,7 +18099,16 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/subject_2
 <https://w3id.org/c-path/biolink_sdtm_owl/subject_2> rdf:type owl:NamedIndividual ,
-                                                              <https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT> ;
+                                                              owl:Thing ,
+                                                              <https://w3id.org/biolink/vocab/BiologicalEntity> ,
+                                                              <https://w3id.org/biolink/vocab/Case> ,
+                                                              <https://w3id.org/biolink/vocab/Entity> ,
+                                                              <https://w3id.org/biolink/vocab/IndividualOrganism> ,
+                                                              <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                              <https://w3id.org/biolink/vocab/OrganismalEntity> ,
+                                                              <https://w3id.org/biolink/vocab/ThingWithTaxon> ,
+                                                              <https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT> ,
+                                                              <https://w3id.org/linkml/mixin> ;
                                                      <https://w3id.org/biolink/has_attribute> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/AGE> ;
                                                                                                 <https://w3id.org/biolink/has_quantitative_value> [ rdf:type <https://w3id.org/biolink/QuantityValue> ;
                                                                                                                                                     <https://w3id.org/biolink/has_numeric_value> 50 ;
@@ -17811,7 +18123,15 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/urtest_1_1
 <https://w3id.org/c-path/biolink_sdtm_owl/urtest_1_1> rdf:type owl:NamedIndividual ,
-                                                               <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ;
+                                                               owl:Thing ,
+                                                               <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                               <https://w3id.org/biolink/vocab/Entity> ,
+                                                               <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                               <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                               <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                               <https://w3id.org/biolink/vocab/Procedure> ,
+                                                               <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ,
+                                                               <https://w3id.org/linkml/mixin> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/METHOD> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/MRI>
                                                                                                         ] ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit> <https://w3id.org/c-path/biolink_sdtm_owl/visit_one> ;
@@ -17846,7 +18166,15 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/urtest_2_2
 <https://w3id.org/c-path/biolink_sdtm_owl/urtest_2_2> rdf:type owl:NamedIndividual ,
-                                                               <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ;
+                                                               owl:Thing ,
+                                                               <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                               <https://w3id.org/biolink/vocab/Entity> ,
+                                                               <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                               <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                               <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                               <https://w3id.org/biolink/vocab/Procedure> ,
+                                                               <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ,
+                                                               <https://w3id.org/linkml/mixin> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/METHOD> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/MRI>
                                                                                                         ] ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit> <https://w3id.org/c-path/biolink_sdtm_owl/visit_one> ;
@@ -17881,7 +18209,15 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/urtest_2_3
 <https://w3id.org/c-path/biolink_sdtm_owl/urtest_2_3> rdf:type owl:NamedIndividual ,
-                                                               <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ;
+                                                               owl:Thing ,
+                                                               <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                               <https://w3id.org/biolink/vocab/Entity> ,
+                                                               <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                               <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                               <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                               <https://w3id.org/biolink/vocab/Procedure> ,
+                                                               <https://w3id.org/c-path/biolink_sdtm_owl/URTEST> ,
+                                                               <https://w3id.org/linkml/mixin> ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/METHOD> [ rdf:type <https://w3id.org/c-path/biolink_sdtm_owl/MRI>
                                                                                                         ] ;
                                                       <https://w3id.org/c-path/biolink_sdtm_owl/associated_with_visit> <https://w3id.org/c-path/biolink_sdtm_owl/visit_one> ;
@@ -17916,7 +18252,16 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/visit_one
 <https://w3id.org/c-path/biolink_sdtm_owl/visit_one> rdf:type owl:NamedIndividual ,
-                                                              <https://w3id.org/c-path/biolink_sdtm_owl/VISIT> ;
+                                                              owl:Thing ,
+                                                              <https://w3id.org/biolink/vocab/Activity> ,
+                                                              <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                              <https://w3id.org/biolink/vocab/Entity> ,
+                                                              <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                              <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                              <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                              <https://w3id.org/biolink/vocab/Procedure> ,
+                                                              <https://w3id.org/c-path/biolink_sdtm_owl/VISIT> ,
+                                                              <https://w3id.org/linkml/mixin> ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/DTC> "10" ,
                                                                                                     "11" ,
                                                                                                     "12" ;
@@ -17926,7 +18271,16 @@ Previous. An information content entity is a non-realizable information entity t
 
 ###  https://w3id.org/c-path/biolink_sdtm_owl/visit_two
 <https://w3id.org/c-path/biolink_sdtm_owl/visit_two> rdf:type owl:NamedIndividual ,
-                                                              <https://w3id.org/c-path/biolink_sdtm_owl/VISIT> ;
+                                                              owl:Thing ,
+                                                              <https://w3id.org/biolink/vocab/Activity> ,
+                                                              <https://w3id.org/biolink/vocab/ActivityAndBehavior> ,
+                                                              <https://w3id.org/biolink/vocab/Entity> ,
+                                                              <https://w3id.org/biolink/vocab/NamedThing> ,
+                                                              <https://w3id.org/biolink/vocab/Occurrent> ,
+                                                              <https://w3id.org/biolink/vocab/PhysicalEssenceOrOccurrent> ,
+                                                              <https://w3id.org/biolink/vocab/Procedure> ,
+                                                              <https://w3id.org/c-path/biolink_sdtm_owl/VISIT> ,
+                                                              <https://w3id.org/linkml/mixin> ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/DTC> "11" ;
                                                      <https://w3id.org/c-path/biolink_sdtm_owl/VISITNAME> "visit_two" .
 
@@ -17968,15 +18322,15 @@ Previous. An information content entity is a non-realizable information entity t
 
 <https://w3id.org/c-path/biolink_sdtm_owl/ARM> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Description of Planned Arm"^^xsd:string ;
                                                <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "DM"^^xsd:string ;
-                                               <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "ARM"^^xsd:string ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "Name of the Arm to which the subject was assigned. If the subject was not assigned to an Arm, ARM is null and ARMNRS is populated.With the exception of studies which use multi-stage Arm assignments, must be a value of ARM in the Trial Arms Dataset."@en ;
+                                               <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "ARM"^^xsd:string ;
                                                <http://purl.obolibrary.org/obo/IAO_0000119> "SDTM"^^xsd:string ;
                                                <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
                                                rdfs:label "description of planned arm"@en .
 
 
-<https://w3id.org/c-path/biolink_sdtm_owl/ARMCD> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "ARMCD"^^xsd:string ;
-                                                 <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
+<https://w3id.org/c-path/biolink_sdtm_owl/ARMCD> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
+                                                 <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "ARMCD"^^xsd:string ;
                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Planned Arm Code"^^xsd:string ;
                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "DM"^^xsd:string ;
                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "ARMCD is limited to 20 characters. It is not subject to the character restrictions that apply to TESTCD.The maximum length of ARMCD is longer than for other \"short\" variables to accommodate the kind of values that are likely to be needed for crossover trials. For example, if ARMCD values for a seven-period crossover were constructed using two-character abbreviations for each treatment and separating hyphens, the length of ARMCD values would be 20. If the subject was not assigned to an Arm, ARMCD is null and ARMNRS is populated.With the exception of studies which use multi-stage Arm assignments, must be a value of ARMCD in the Trial Arms Dataset."@en ;
@@ -17988,8 +18342,8 @@ Previous. An information content entity is a non-realizable information entity t
 
 
 <https://w3id.org/c-path/biolink_sdtm_owl/ORRESU> rdfs:label "has original unit"@en ;
-                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "LB"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "LBORRESU"^^xsd:string ;
+                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "LB"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "laboratory test results"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Original Units"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "URORRESU"^^xsd:string ;
@@ -18000,14 +18354,14 @@ Previous. An information content entity is a non-realizable information entity t
 <https://w3id.org/c-path/biolink_sdtm_owl/SITEID> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "DM"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "SITEID"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
-                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "Unique identifier for a site within a study."@en ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Study Site Identifier"^^xsd:string ;
-                                                  <http://purl.obolibrary.org/obo/IAO_0000119> "SDTM"^^xsd:string ;
-                                                  rdfs:label "study site identifier"@en .
+                                                  <http://purl.obolibrary.org/obo/IAO_0000115> "Unique identifier for a site within a study."@en ;
+                                                  rdfs:label "study site identifier"@en ;
+                                                  <http://purl.obolibrary.org/obo/IAO_0000119> "SDTM"^^xsd:string .
 
 
-<https://w3id.org/c-path/biolink_sdtm_owl/STRESU> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "URSTRESU"^^xsd:string ;
-                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "UR"^^xsd:string ;
+<https://w3id.org/c-path/biolink_sdtm_owl/STRESU> <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "UR"^^xsd:string ;
+                                                  <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "URSTRESU"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Standard Units"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "LB"^^xsd:string ;
                                                   <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "urniary system findings"^^xsd:string ;
@@ -18020,8 +18374,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                    <http://purl.obolibrary.org/obo/IAO_0000115> "Unique identifier for a study."@en ;
                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "STUDYID"^^xsd:string ;
                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "DM"^^xsd:string ;
-                                                   rdfs:label "study identifier"@en ;
                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "demographics"^^xsd:string ;
+                                                   rdfs:label "study identifier"@en ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000119> "SDTM"^^xsd:string .
 
 
@@ -18049,8 +18403,8 @@ Previous. An information content entity is a non-realizable information entity t
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_var_id> "VISITNUM"^^xsd:string ;
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "urniary system findings"^^xsd:string ;
                                                     rdfs:label "visit number"@en ;
-                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Visit Number"^^xsd:string ;
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_code> "LB"^^xsd:string ;
+                                                    <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_label> "Visit Number"^^xsd:string ;
                                                     <https://w3id.org/c-path/biolink_sdtm_owl/sdtm_domain_name> "laboratory test results"^^xsd:string .
 
 
