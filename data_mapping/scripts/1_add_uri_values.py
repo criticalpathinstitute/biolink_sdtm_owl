@@ -46,26 +46,3 @@ for domain, input_path, output_path in zip(domains, input_paths, output_paths):
     if subset:
         df = df[df["usubjid"].isin(usubjids_to_retain)]
     df.to_csv(output_path, index=False)
-
-
-
-
-
-
-# # Subsetting.
-# dm_df = pd.read_csv(os.path.join(data_dir, "dm_modified.csv"))
-# lb_df = pd.read_csv(os.path.join(data_dir, "lb_modified.csv"))
-# ur_df = pd.read_csv(os.path.join(data_dir, "ur_modified.csv"))
-
-# n = 100
-# usubjids_to_retain = dm_df["usubjid"].unique().tolist()[:n]
-
-
-# dm_df[dm_df["usubjid"].isin(usubjids_to_retain)].to_csv(os.path.join(data_dir, "dm_modified.csv"), index=False)
-# lb_df[lb_df["usubjid"].isin(usubjids_to_retain)].to_csv(os.path.join(data_dir, "dm_modified.csv"), index=False)
-# ur_df[ur_df["usubjid"].isin(usubjids_to_retain)].to_csv(os.path.join(data_dir, "dm_modified.csv"), index=False)
-
-# dm_df.to_csv()
-
-
-# print(usubjids_to_retain)
