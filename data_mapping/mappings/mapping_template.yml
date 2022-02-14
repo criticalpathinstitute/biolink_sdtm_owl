@@ -25,7 +25,7 @@ mappings:
   # Class representing individuals in the dataset. Identified using SDTM variables USUBJID and SUBJID.
   subject:
     sources:
-      - ['data_mapping/sample_data/dm.csv~csv']
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
     s: sdtm:subject_$(usubjid)
     po:
       - [a, sdtm:SUBJECT]
@@ -40,8 +40,8 @@ mappings:
           condition:
             function: equal
             parameters:
-              - [str1, $(subjid), s]
-              - [str2, $(subjid), o]
+              - [str1, $(usubjid), s]
+              - [str2, $(usubjid), o]
 
 
       # Mappping from subject class to sex class through property biolink:has_attribute.
@@ -51,8 +51,8 @@ mappings:
           condition:
             function: equal
             parameters:
-              - [str1, $(subjid), s]
-              - [str2, $(subjid), o]
+              - [str1, $(usubjid), s]
+              - [str2, $(usubjid), o]
 
 
       # Mapping from subject class to a specimen collected from this subject.
@@ -62,7 +62,7 @@ mappings:
           condition:
             function: equal
             parameters:
-              - [str1, $(subjid), s]
+              - [str1, $(usubjid), s]
               - [str2, $(usubjid), o]
 
 
@@ -72,7 +72,7 @@ mappings:
   # Class representing study sites in the dataset. Identified using SDTM variable SITEID.
   study_site:
     sources:
-      - ['data_mapping/sample_data/dm.csv~csv']
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
     s: sdtm:site_$(siteid)
     po:
       - [a, sdtm:STUDYSITE]
@@ -84,7 +84,7 @@ mappings:
   # Class representing the study as a whole. Identified using the SDTM variable STUDYID.
   study:
     source:
-      - ['data_mapping/sample_data/dm.csv~csv']
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
     s: sdtm:study_$(studyid)
     po:
       - [a, sdtm:CLINSTUDY]
@@ -96,7 +96,7 @@ mappings:
   # Class for the arm, contains the arm code and the arm description. From the SDTM variables ARMCD and ARM.
   study_arm:
     source:
-      - ['data_mapping/sample_data/dm.csv~csv']
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
     s: sdtm:arm_$(armcd)
     po:
       - [a, sdtm:STUDYARM]
@@ -121,7 +121,7 @@ mappings:
   # Class representing the subject's age. Contains information from AGE and AGEU.
   age:
     sources:
-      - ['data_mapping/sample_data/dm.csv~csv']
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
     #s: null
     s: sdtm:dm_age_$(row_id)
     po:
@@ -134,14 +134,14 @@ mappings:
           condition:
             function: equal
             parameters:
-              - [str1, $(subjid), s]
-              - [str2, $(subjid), o]
+              - [str1, $(usubjid), s]
+              - [str2, $(usubjid), o]
 
 
   # Class representing the quantity value that contains the actual unit and value of the subject's age.
   age_quantitative_value:
     sources:
-      - ['data_mapping/sample_data/dm.csv~csv']
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
     # s: null
     s: sdtm:dm_age_quantitative_value_$(row_id)  
     po:
@@ -157,7 +157,7 @@ mappings:
   # Class representing the subject's biological sex. Contains information from SDTM variable SEX.
   sex:
     sources:
-      - ['data_mapping/sample_data/dm.csv~csv']      
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']      
     s: sdtm:dm_sex_$(row_id)  
     po:
       - [a, sdtm:SEX]
@@ -202,7 +202,7 @@ mappings:
   # Lab test.
   lab_test:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     s: sdtm:lbtest_$(usubjid)_$(row_id)
     po:
       - [a, $(lbtest_uri)~iri]
@@ -252,7 +252,7 @@ mappings:
   # Visit.
   visit_from_lb_source:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     s: sdtm:$(visit)                              # Uses the unique visit name value for each visit as the identifier.
     po:
       - [a, sdtm:VISIT]                           # sdtm:VISIT is a subclass of biolink:Activity.
@@ -265,7 +265,7 @@ mappings:
   # The specimen collection process (the procedure involved in obtaining the specimen).
   specimen_collection_process:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     s: sdtm:specimen_collection_process_$(usubjid)_$(row_id)
     po:
       # This is a subclass of biolink:Procedure.
@@ -298,7 +298,7 @@ mappings:
   # The specimen itself (the material collected and analyzed in this lab test).
   specimen:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     s: sdtm:specimen_$(usubjid)_$(row_id)
     po:
       # Rather than putting the string literal somewhere in the model, the identity of the specimen is represented as 
@@ -322,7 +322,7 @@ mappings:
   # Reference value range (original units).
   lab_test_reference_range_in_original_units:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     # s: null
     s: sdtm:lb_lab_test_reference_range_in_original_units_$(row_id)
     po:
@@ -346,7 +346,7 @@ mappings:
   # Reference value range (standard units).
   lab_test_reference_range_in_standard_units:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     #s: null
     s: sdtm:lb_lab_test_reference_range_in_standard_units_$(row_id)
     po:
@@ -373,7 +373,7 @@ mappings:
   # Lab test numeric result in standard units.
   lab_test_numeric_result_in_standard_units:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     #s: null
     s: sdtm:lb_lab_test_numeric_result_in_standard_units_$(row_id)
     po:
@@ -390,7 +390,7 @@ mappings:
   # ... and the attribute object for that biolink:InformationContentEntity.
   lab_test_numeric_result_in_standard_units_attribute:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     #s: null
     s: sdtm:lb_lab_test_numeric_result_in_standard_units_attribute_$(row_id)
     po:
@@ -407,7 +407,7 @@ mappings:
   # ... and the quantity value object for that biolink:Attribute.
   lab_test_numeric_result_in_standard_units_quantitative_value:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     #s: null
     s: sdtm:lb_lab_test_numeric_result_in_standard_units_quantitative_value_$(row_id)
     po:
@@ -429,7 +429,7 @@ mappings:
   # Lab test numeric result in original units.
   lab_test_numeric_result_in_original_units:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     s: sdtm:lb_lab_test_numeric_result_in_original_units_$(row_id)
     #s: null
     po:
@@ -446,7 +446,7 @@ mappings:
   # ... and the attribute object for that biolink:InformationContentEntity.
   lab_test_numeric_result_in_original_units_attribute:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     s: sdtm:lb_lab_test_numeric_result_in_original_units_attribute_$(row_id)
     #s: null
     po:
@@ -463,7 +463,7 @@ mappings:
   # ... and the quantity value object for that biolink:Attribute.
   lab_test_numeric_result_in_original_units_quantitative_value:
     sources:
-      - ['data_mapping/sample_data/lb.csv~csv']
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
     s: sdtm:lb_lab_test_numeric_result_in_original_units_quantitative_value_$(row_id)
     #s: null
     po:
@@ -499,7 +499,7 @@ mappings:
   # Urinary system test.
   urinary_system_test:
     sources:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:urtest_$(usubjid)_$(row_id)
     po:
       - [a, sdtm:URTEST]            # This is a subclass of biolink:Procedure.
@@ -586,7 +586,7 @@ mappings:
   # Visit.
   visit_from_ur_source:
     sources:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:$(visit)                              # Uses the unique visit name value for each visit as the identifier.
     po:
       - [a, sdtm:VISIT]                           # sdtm:VISIT is a subclass of biolink:Activity.
@@ -601,7 +601,7 @@ mappings:
   # Urinary system test, the measurement from that test.
   urinary_system_test_measurement:
     source:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_measurement_$(row_id)
     #s: null
     po:
@@ -613,7 +613,7 @@ mappings:
   # Urinary system test location.
   urinary_system_test_location:
     source:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_location_$(row_id)
     #s: null
     po:
@@ -627,7 +627,7 @@ mappings:
   # Urinary system test laterality of anatomical location.
   urinary_system_test_laterality_of_anatomical_location:
     source:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_laterality_of_anatomical_location_$(row_id)
     #s: null
     po:
@@ -637,7 +637,7 @@ mappings:
   # Urinary system test method.
   urinary_system_test_method:
     source:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_method_$(row_id)
     #s: null
     po:
@@ -649,7 +649,7 @@ mappings:
   # Urinary system test numeric result in standard units.
   urinary_system_test_numeric_result_in_standard_units:
     sources:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_numeric_result_in_standard_units_$(row_id)
     #s: null
     po:
@@ -666,7 +666,7 @@ mappings:
   # ... and the attribute object for that biolink:InformationContentEntity.
   urinary_system_test_numeric_result_in_standard_units_attribute:
     sources:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_numeric_result_in_standard_units_attribute_$(row_id)
     #s: null
     po:
@@ -683,7 +683,7 @@ mappings:
   # ... and the quantity value object for that biolink:Attribute.
   urinary_system_test_numeric_result_in_standard_units_quantitative_value:
     sources:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_$(row_id)
     #s: null
     po:
@@ -702,7 +702,7 @@ mappings:
   # Urinary system test numeric result in original units.
   urinary_system_test_numeric_result_in_original_units:
     sources:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_numeric_result_in_original_units_$(row_id)
     #s: null
     po:
@@ -719,7 +719,7 @@ mappings:
   # ... and the attribute object for that biolink:InformationContentEntity.
   urinary_system_test_numeric_result_in_original_units_attribute:
     sources:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_numeric_result_in_original_units_attribute_$(row_id)
     #s: null
     po:
@@ -736,7 +736,7 @@ mappings:
   # ... and the quantity value object for that biolink:Attribute.
   urinary_system_test_numeric_result_in_original_units_quantitative_value:
     sources:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_$(row_id)
     #s: null
     po:
@@ -754,7 +754,7 @@ mappings:
   # Urinary system test character result in standard format.
   urinary_system_test_character_result_in_standard_format:
     sources:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_character_result_in_standard_format_$(row_id)
     #s: null
     po:
@@ -771,7 +771,7 @@ mappings:
   # ... and the attribute object for that biolink:InformationContentEntity.
   urinary_system_test_character_result_in_standard_format_attribute:
     sources:
-      - ['data_mapping/sample_data/ur.csv~csv']
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
     s: sdtm:ur_urinary_system_test_character_result_in_standard_format_attribute_$(row_id)
     #s: null
     po:

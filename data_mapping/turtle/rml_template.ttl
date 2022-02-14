@@ -18,7 +18,7 @@
     void:exampleResource :map_subject_000.
 :map_subject_000 rml:logicalSource :source_000.
 :source_000 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/dm.csv";
+    rml:source "data_mapping/synthetic_data/dm_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_subject_000 a rr:TriplesMap;
     rdfs:label "subject".
@@ -64,7 +64,7 @@
 :rules_000 void:exampleResource :map_study_site_000.
 :map_study_site_000 rml:logicalSource :source_001.
 :source_001 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/dm.csv";
+    rml:source "data_mapping/synthetic_data/dm_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_study_site_000 a rr:TriplesMap;
     rdfs:label "study_site".
@@ -92,7 +92,7 @@
 :rules_000 void:exampleResource :map_study_000.
 :map_study_000 rml:logicalSource :source_002.
 :source_002 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/dm.csv";
+    rml:source "data_mapping/synthetic_data/dm_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_study_000 a rr:TriplesMap;
     rdfs:label "study".
@@ -120,7 +120,7 @@
 :rules_000 void:exampleResource :map_study_arm_000.
 :map_study_arm_000 rml:logicalSource :source_003.
 :source_003 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/dm.csv";
+    rml:source "data_mapping/synthetic_data/dm_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_study_arm_000 a rr:TriplesMap;
     rdfs:label "study_arm".
@@ -163,7 +163,7 @@
 :rules_000 void:exampleResource :map_age_000.
 :map_age_000 rml:logicalSource :source_004.
 :source_004 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/dm.csv";
+    rml:source "data_mapping/synthetic_data/dm_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_age_000 a rr:TriplesMap;
     rdfs:label "age".
@@ -188,7 +188,7 @@
 :rules_000 void:exampleResource :map_age_quantitative_value_000.
 :map_age_quantitative_value_000 rml:logicalSource :source_005.
 :source_005 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/dm.csv";
+    rml:source "data_mapping/synthetic_data/dm_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_age_quantitative_value_000 a rr:TriplesMap;
     rdfs:label "age_quantitative_value".
@@ -226,7 +226,7 @@
 :rules_000 void:exampleResource :map_sex_000.
 :map_sex_000 rml:logicalSource :source_006.
 :source_006 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/dm.csv";
+    rml:source "data_mapping/synthetic_data/dm_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_sex_000 a rr:TriplesMap;
     rdfs:label "sex".
@@ -254,7 +254,7 @@
 :rules_000 void:exampleResource :map_lab_test_000.
 :map_lab_test_000 rml:logicalSource :source_007.
 :source_007 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_lab_test_000 a rr:TriplesMap;
     rdfs:label "lab_test".
@@ -306,7 +306,7 @@
 :rules_000 void:exampleResource :map_visit_from_lb_source_000.
 :map_visit_from_lb_source_000 rml:logicalSource :source_008.
 :source_008 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_visit_from_lb_source_000 a rr:TriplesMap;
     rdfs:label "visit_from_lb_source".
@@ -343,7 +343,7 @@
 :rules_000 void:exampleResource :map_specimen_collection_process_000.
 :map_specimen_collection_process_000 rml:logicalSource :source_009.
 :source_009 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_specimen_collection_process_000 a rr:TriplesMap;
     rdfs:label "specimen_collection_process".
@@ -374,7 +374,7 @@
 :rules_000 void:exampleResource :map_specimen_000.
 :map_specimen_000 rml:logicalSource :source_010.
 :source_010 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_specimen_000 a rr:TriplesMap;
     rdfs:label "specimen".
@@ -399,7 +399,7 @@
 :rules_000 void:exampleResource :map_lab_test_reference_range_in_original_units_000.
 :map_lab_test_reference_range_in_original_units_000 rml:logicalSource :source_011.
 :source_011 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_lab_test_reference_range_in_original_units_000 a rr:TriplesMap;
     rdfs:label "lab_test_reference_range_in_original_units".
@@ -442,7 +442,7 @@
 :rules_000 void:exampleResource :map_lab_test_reference_range_in_standard_units_000.
 :map_lab_test_reference_range_in_standard_units_000 rml:logicalSource :source_012.
 :source_012 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_lab_test_reference_range_in_standard_units_000 a rr:TriplesMap;
     rdfs:label "lab_test_reference_range_in_standard_units".
@@ -485,7 +485,7 @@
 :rules_000 void:exampleResource :map_lab_test_numeric_result_in_standard_units_000.
 :map_lab_test_numeric_result_in_standard_units_000 rml:logicalSource :source_013.
 :source_013 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_lab_test_numeric_result_in_standard_units_000 a rr:TriplesMap;
     rdfs:label "lab_test_numeric_result_in_standard_units".
@@ -510,7 +510,7 @@
 :rules_000 void:exampleResource :map_lab_test_numeric_result_in_standard_units_attribute_000.
 :map_lab_test_numeric_result_in_standard_units_attribute_000 rml:logicalSource :source_014.
 :source_014 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_lab_test_numeric_result_in_standard_units_attribute_000 a rr:TriplesMap;
     rdfs:label "lab_test_numeric_result_in_standard_units_attribute".
@@ -535,7 +535,7 @@
 :rules_000 void:exampleResource :map_lab_test_numeric_result_in_standard_units_quantitative_value_000.
 :map_lab_test_numeric_result_in_standard_units_quantitative_value_000 rml:logicalSource :source_015.
 :source_015 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_lab_test_numeric_result_in_standard_units_quantitative_value_000 a rr:TriplesMap;
     rdfs:label "lab_test_numeric_result_in_standard_units_quantitative_value".
@@ -572,7 +572,7 @@
 :rules_000 void:exampleResource :map_lab_test_numeric_result_in_original_units_000.
 :map_lab_test_numeric_result_in_original_units_000 rml:logicalSource :source_016.
 :source_016 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_lab_test_numeric_result_in_original_units_000 a rr:TriplesMap;
     rdfs:label "lab_test_numeric_result_in_original_units".
@@ -597,7 +597,7 @@
 :rules_000 void:exampleResource :map_lab_test_numeric_result_in_original_units_attribute_000.
 :map_lab_test_numeric_result_in_original_units_attribute_000 rml:logicalSource :source_017.
 :source_017 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_lab_test_numeric_result_in_original_units_attribute_000 a rr:TriplesMap;
     rdfs:label "lab_test_numeric_result_in_original_units_attribute".
@@ -622,7 +622,7 @@
 :rules_000 void:exampleResource :map_lab_test_numeric_result_in_original_units_quantitative_value_000.
 :map_lab_test_numeric_result_in_original_units_quantitative_value_000 rml:logicalSource :source_018.
 :source_018 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/lb.csv";
+    rml:source "data_mapping/synthetic_data/lb_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_lab_test_numeric_result_in_original_units_quantitative_value_000 a rr:TriplesMap;
     rdfs:label "lab_test_numeric_result_in_original_units_quantitative_value".
@@ -659,7 +659,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_000.
 :map_urinary_system_test_000 rml:logicalSource :source_019.
 :source_019 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test".
@@ -726,7 +726,7 @@
 :rules_000 void:exampleResource :map_visit_from_ur_source_000.
 :map_visit_from_ur_source_000 rml:logicalSource :source_020.
 :source_020 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_visit_from_ur_source_000 a rr:TriplesMap;
     rdfs:label "visit_from_ur_source".
@@ -772,7 +772,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_measurement_000.
 :map_urinary_system_test_measurement_000 rml:logicalSource :source_021.
 :source_021 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_measurement_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_measurement".
@@ -791,7 +791,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_location_000.
 :map_urinary_system_test_location_000 rml:logicalSource :source_022.
 :source_022 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_location_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_location".
@@ -810,7 +810,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_laterality_of_anatomical_location_000.
 :map_urinary_system_test_laterality_of_anatomical_location_000 rml:logicalSource :source_023.
 :source_023 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_laterality_of_anatomical_location_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_laterality_of_anatomical_location".
@@ -829,7 +829,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_method_000.
 :map_urinary_system_test_method_000 rml:logicalSource :source_024.
 :source_024 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_method_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_method".
@@ -848,7 +848,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_numeric_result_in_standard_units_000.
 :map_urinary_system_test_numeric_result_in_standard_units_000 rml:logicalSource :source_025.
 :source_025 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_numeric_result_in_standard_units_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_numeric_result_in_standard_units".
@@ -873,7 +873,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_numeric_result_in_standard_units_attribute_000.
 :map_urinary_system_test_numeric_result_in_standard_units_attribute_000 rml:logicalSource :source_026.
 :source_026 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_numeric_result_in_standard_units_attribute_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_numeric_result_in_standard_units_attribute".
@@ -898,7 +898,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_numeric_result_in_standard_units_quantitative_value_000.
 :map_urinary_system_test_numeric_result_in_standard_units_quantitative_value_000 rml:logicalSource :source_027.
 :source_027 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_numeric_result_in_standard_units_quantitative_value_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_numeric_result_in_standard_units_quantitative_value".
@@ -935,7 +935,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_numeric_result_in_original_units_000.
 :map_urinary_system_test_numeric_result_in_original_units_000 rml:logicalSource :source_028.
 :source_028 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_numeric_result_in_original_units_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_numeric_result_in_original_units".
@@ -960,7 +960,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_numeric_result_in_original_units_attribute_000.
 :map_urinary_system_test_numeric_result_in_original_units_attribute_000 rml:logicalSource :source_029.
 :source_029 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_numeric_result_in_original_units_attribute_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_numeric_result_in_original_units_attribute".
@@ -985,7 +985,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_numeric_result_in_original_units_quantitative_value_000.
 :map_urinary_system_test_numeric_result_in_original_units_quantitative_value_000 rml:logicalSource :source_030.
 :source_030 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_numeric_result_in_original_units_quantitative_value_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_numeric_result_in_original_units_quantitative_value".
@@ -1022,7 +1022,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_character_result_in_standard_format_000.
 :map_urinary_system_test_character_result_in_standard_format_000 rml:logicalSource :source_031.
 :source_031 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_character_result_in_standard_format_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_character_result_in_standard_format".
@@ -1047,7 +1047,7 @@
 :rules_000 void:exampleResource :map_urinary_system_test_character_result_in_standard_format_attribute_000.
 :map_urinary_system_test_character_result_in_standard_format_attribute_000 rml:logicalSource :source_032.
 :source_032 a rml:LogicalSource;
-    rml:source "data_mapping/sample_data/ur.csv";
+    rml:source "data_mapping/synthetic_data/ur_modified.csv";
     rml:referenceFormulation ql:CSV.
 :map_urinary_system_test_character_result_in_standard_format_attribute_000 a rr:TriplesMap;
     rdfs:label "urinary_system_test_character_result_in_standard_format_attribute".
@@ -1075,17 +1075,17 @@
 :om_002 a rr:ObjectMap;
     rr:parentTriplesMap :map_age_000;
     rr:joinCondition :jc_000.
-:jc_000 rr:child "subjid";
-    rr:parent "subjid".
+:jc_000 rr:child "usubjid";
+    rr:parent "usubjid".
 :om_003 a rr:ObjectMap;
     rr:parentTriplesMap :map_sex_000;
     rr:joinCondition :jc_001.
-:jc_001 rr:child "subjid";
-    rr:parent "subjid".
+:jc_001 rr:child "usubjid";
+    rr:parent "usubjid".
 :om_004 a rr:ObjectMap;
     rr:parentTriplesMap :map_specimen_000;
     rr:joinCondition :jc_002.
-:jc_002 rr:child "subjid";
+:jc_002 rr:child "usubjid";
     rr:parent "usubjid".
 :om_012 a rr:ObjectMap;
     rr:parentTriplesMap :map_study_000;
@@ -1095,8 +1095,8 @@
 :om_014 a rr:ObjectMap;
     rr:parentTriplesMap :map_age_quantitative_value_000;
     rr:joinCondition :jc_004.
-:jc_004 rr:child "subjid";
-    rr:parent "subjid".
+:jc_004 rr:child "usubjid";
+    rr:parent "usubjid".
 :om_022 a rr:ObjectMap;
     rr:parentTriplesMap :map_visit_from_lb_source_000;
     rr:joinCondition :jc_005.

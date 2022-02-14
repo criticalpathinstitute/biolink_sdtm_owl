@@ -32,16 +32,17 @@ lb,lbtestcd,SODIUM,lbtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,SODIUM
 lb,lbtestcd,TRIG,lbtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,TRIG
 lb,lbtestcd,URATE,lbtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,URATE
 lb,lbtestcd,UUN,lbtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,UUN
-lb,lbtestcd,LBVOLUME,lbtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LBVOLUME
+lb,lbtestcd,VOLUME,lbtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LBVOLUME
 lb,lbcat,HEMATOLOGY,lbcat_uri,https://w3id.org/c-path/biolink_sdtm_owl/,HEMATOLOGY
 lb,lbcat,CHEMISTRY,lbcat_uri,https://w3id.org/c-path/biolink_sdtm_owl/,CHEMISTRY
 lb,lbcat,URINALYSIS,lbcat_uri,https://w3id.org/c-path/biolink_sdtm_owl/,URINALYSIS
-lb,lbspec,LBBLOOD,lbspec_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LBBLOOD
-lb,lbspec,LBSERUM,lbspec_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LBSERUM
-lb,lbspec,LBURINE,lbspec_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LBURINE
+lb,lbspec,BLOOD,lbspec_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LBBLOOD
+lb,lbspec,SERUM,lbspec_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LBSERUM
+lb,lbspec,URINE,lbspec_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LBURINE
 ur,urtestcd,VOLUME,urtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LOCVOLUME
 ur,urtestcd,DEPTH,urtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LOCDEPTH
 ur,urtestcd,LENGTH,urtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LOCLENGTH
+ur,urtestcd,WIDTH,urtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,LOCWIDTH
 ur,urtestcd,NCPRMVOL,urtest_uri,https://w3id.org/c-path/biolink_sdtm_owl/,NCPRMVOL
 ur,urloc,"HEART, LEFT VENTRICLE",urloc_uri,https://w3id.org/c-path/biolink_sdtm_owl/,HEARTLV
 ur,urloc,KIDNEY,urloc_uri,https://w3id.org/c-path/biolink_sdtm_owl/,KIDNEY
