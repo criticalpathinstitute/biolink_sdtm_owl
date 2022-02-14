@@ -17,7 +17,7 @@ output_paths = [os.path.join(data_dir, f"{domain}_modified.csv") for domain in d
 
 # Optional subsetting, input_paths[0] should be the path for the dm file.
 subset = True
-n = 10
+n = 100
 usubjids_to_retain = pd.read_csv(input_paths[0])["usubjid"].unique().tolist()[:n]
 
 
