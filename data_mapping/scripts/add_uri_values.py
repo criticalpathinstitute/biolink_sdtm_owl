@@ -1,49 +1,71 @@
 import pandas as pd
 import os
 
-# TODO Rewrite to edit arbitrary number of files instead of copying the code for one.
-
 
 mapping_df = pd.read_csv(os.path.join("data_mapping", "mappings", "uri_mappings.csv"))
 
-data_dir = os.path.join("data_mapping", "sample_data")
-
-input_lb_path = os.path.join(data_dir, "lb_original.csv")
-output_lb_path = os.path.join(data_dir, "lb.csv")
-
-input_ur_path = os.path.join(data_dir, "ur_original.csv")
-output_ur_path = os.path.join(data_dir, "ur.csv")
+data_dir = os.path.join("data_mapping", "synthetic_data")
 
 
-
-# Edit the LB dataset, adding the uri columms specified in the mapping file.
-mapping_df_subset = mapping_df.loc[mapping_df["domain"]=="lb"]
-df = pd.read_csv(input_lb_path)
-for _,source_col,target_col in mapping_df_subset[["source_col","target_col"]].drop_duplicates().itertuples():
-    cols_to_keep = df.columns.to_list()
-    df = df.merge(
-        right=mapping_df_subset, 
-        how="left", 
-        left_on=["domain",source_col],
-        right_on=["domain","source_value"],
-        )
-    df[target_col] = df.apply(lambda row: f"{row.target_prefix}{row.target_curie}", axis=1)
-    df = df[cols_to_keep+[target_col]]
-df.to_csv(output_lb_path, index=False)
+# Define domain strings and file paths for the each domain.
+domains = ["dm", "lb", "ur"]
+input_paths = [os.path.join(data_dir, f"{domain}.csv") for domain in domains]
+output_paths = [os.path.join(data_dir, f"{domain}_modified.csv") for domain in domains]
 
 
 
-# Edit the UR dataset, adding the URI columns specified in the mapping file.
-mapping_df_subset = mapping_df.loc[mapping_df["domain"]=="ur"]
-df = pd.read_csv(input_ur_path)
-for _,source_col,target_col in mapping_df_subset[["source_col","target_col"]].drop_duplicates().itertuples():
-    cols_to_keep = df.columns.to_list()
-    df = df.merge(
-        right=mapping_df_subset, 
-        how="left", 
-        left_on=["domain",source_col],
-        right_on=["domain","source_value"],
-        )
-    df[target_col] = df.apply(lambda row: f"{row.target_prefix}{row.target_curie}", axis=1)
-    df = df[cols_to_keep+[target_col]]
-df.to_csv(output_ur_path, index=False)
+
+# Optional subsetting, input_paths[0] should be the path for the dm file.
+subset = True
+n = 10
+usubjids_to_retain = pd.read_csv(input_paths[0])["usubjid"].unique().tolist()[:n]
+
+
+
+# Loop through the two domains.
+for domain, input_path, output_path in zip(domains, input_paths, output_paths):
+
+    # Edit the dataset, adding the uri columms specified in the mapping file.
+    mapping_df_subset = mapping_df.loc[mapping_df["domain"]==domain]
+    df = pd.read_csv(input_path)
+    df.drop(["domain"], axis=1, inplace=True, errors="ignore")
+    df.insert(0, "row_id", range(1,1+len(df)))
+    df.insert(0, "domain", domain)
+    for _,source_col,target_col in mapping_df_subset[["source_col","target_col"]].drop_duplicates().itertuples():
+        cols_to_keep = df.columns.to_list()
+        df = df.merge(
+            right=mapping_df_subset, 
+            how="left", 
+            left_on=["domain",source_col],
+            right_on=["domain","source_value"],
+            )
+        df[target_col] = df.apply(lambda row: f"{row.target_prefix}{row.target_curie}", axis=1)
+        df = df[cols_to_keep+[target_col]]
+
+
+    if subset:
+        df = df[df["usubjid"].isin(usubjids_to_retain)]
+    df.to_csv(output_path, index=False)
+
+
+
+
+
+
+# # Subsetting.
+# dm_df = pd.read_csv(os.path.join(data_dir, "dm_modified.csv"))
+# lb_df = pd.read_csv(os.path.join(data_dir, "lb_modified.csv"))
+# ur_df = pd.read_csv(os.path.join(data_dir, "ur_modified.csv"))
+
+# n = 100
+# usubjids_to_retain = dm_df["usubjid"].unique().tolist()[:n]
+
+
+# dm_df[dm_df["usubjid"].isin(usubjids_to_retain)].to_csv(os.path.join(data_dir, "dm_modified.csv"), index=False)
+# lb_df[lb_df["usubjid"].isin(usubjids_to_retain)].to_csv(os.path.join(data_dir, "dm_modified.csv"), index=False)
+# ur_df[ur_df["usubjid"].isin(usubjids_to_retain)].to_csv(os.path.join(data_dir, "dm_modified.csv"), index=False)
+
+# dm_df.to_csv()
+
+
+# print(usubjids_to_retain)
