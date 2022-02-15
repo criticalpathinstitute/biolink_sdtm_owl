@@ -2,8 +2,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX biolink: <https://w3id.org/biolink/>
-PREFIX biolink_vocab: <https://w3id.org/biolink/vocab/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
 PREFIX sdtm: <https://w3id.org/c-path/biolink_sdtm_owl/>
 
 
@@ -16,18 +15,18 @@ PREFIX sdtm: <https://w3id.org/c-path/biolink_sdtm_owl/>
 # 
 # TODO this looks like it will be different than how values are currently obtained in the queries in Table 3? Have to resolve this.
 select ?pat ?o4 ?value ?unit where { 
-    ?pat a biolink_vocab:Case . 
+    ?pat a biolink:Case . 
     ?pat ?p1 ?o . 
-    ?o a biolink_vocab:BiologicalSex . 
+    ?o a biolink:BiologicalSex . 
     ?pat ?p2 ?o2 .
-    ?o2 a biolink_vocab:MaterialSample .
+    ?o2 a biolink:MaterialSample .
     ?o2 ?p3 ?o3 .
-    ?o3 a biolink_vocab:Procedure .
+    ?o3 a biolink:Procedure .
     ?o3 ?p4 ?o4 .
-    ?o4 a biolink_vocab:InformationContentEntity .
+    ?o4 a biolink:InformationContentEntity .
     ?o4 ?p5 ?o5 . # ?o5 is the biolink:Attribute.
     ?o5 ?p6 ?o6 . # ?o6 is the biolink:QuantityValue.
     ?o6 biolink:has_numeric_value ?value .
     ?o6 ?p7 ?unit .
-    ?p7 rdfs:subPropertyOf biolink_vocab:has_unit .
+    ?p7 rdfs:subPropertyOf biolink:has_unit .
 } 

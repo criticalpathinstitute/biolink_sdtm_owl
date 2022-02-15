@@ -1,6 +1,6 @@
 prefixes:
   sdtm: https://w3id.org/c-path/biolink_sdtm_owl/
-  biolink: https://w3id.org/biolink/
+  biolink: https://w3id.org/biolink/vocab/
   dc: http://purl.org/dc/terms/ 
   obo: http://purl.obolibrary.org/obo/
 

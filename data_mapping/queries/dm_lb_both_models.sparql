@@ -2,21 +2,21 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX biolink: <https://w3id.org/biolink/>
-PREFIX biolink_vocab: <https://w3id.org/biolink/vocab/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
 PREFIX sdtm: <https://w3id.org/c-path/biolink_sdtm_owl/>
+
 
 
 # Query for the demographics data (sex only) and lab tests, for both models, like Table 3 in the paper.
 select * where { 
-    ?pat a biolink_vocab:Case . 
+    ?pat a biolink:Case . 
     ?pat ?p1 ?o . 
-    ?o a biolink_vocab:BiologicalSex . 
+    ?o a biolink:BiologicalSex . 
     ?pat ?p2 ?o2 .
-    ?o2 a biolink_vocab:MaterialSample .
+    ?o2 a biolink:MaterialSample .
     ?o2 ?p3 ?o3 .
-    ?o3 a biolink_vocab:Procedure .
+    ?o3 a biolink:Procedure .
     ?o3 ?p4 ?o4 .
-    ?o4 a biolink_vocab:InformationContentEntity .
+    ?o4 a biolink:InformationContentEntity .
 } 
 
