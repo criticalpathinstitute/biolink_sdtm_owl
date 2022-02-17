@@ -11,14 +11,14 @@
 @prefix linkml: <https://w3id.org/linkml/> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @prefix biolink_sdtm_owl: <https://w3id.org/c-path/biolink_sdtm_owl/> .
-@base <https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl-full.owl> .
+@base <https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl.owl> .
 
-<https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl-full.owl> rdf:type owl:Ontology ;
-                                                                      owl:versionIRI <https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-16/biolink_sdtm_owl-full.owl> ;
-                                                                      dc:description "An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model." ;
-                                                                      dc:title "SDTM BioLink Mapping Ontology" ;
-                                                                      terms:license obo:CC-BY ;
-                                                                      owl:versionInfo "2022-02-16"^^xsd:string .
+<https://w3id.org/c-path/biolink_sdtm_owl/biolink_sdtm_owl.owl> rdf:type owl:Ontology ;
+                                                                 owl:versionIRI <https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-16/biolink_sdtm_owl.owl> ;
+                                                                 dc:description "An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model." ;
+                                                                 dc:title "SDTM BioLink Mapping Ontology" ;
+                                                                 terms:license obo:CC-BY ;
+                                                                 owl:versionInfo "2022-02-16"^^xsd:string .
 
 #################################################################
 #    Annotation properties
