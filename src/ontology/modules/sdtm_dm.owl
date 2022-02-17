@@ -228,6 +228,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16576 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16576">
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/FEMALE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20197 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20197">
+        <owl:equivalentClass rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/MALE"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/biolink/vocab/Activity -->
 
     <owl:Class rdf:about="https://w3id.org/biolink/vocab/Activity"/>
@@ -320,6 +336,30 @@
     
 
 
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/FEMALE -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/FEMALE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/SEX"/>
+        <rdfs:label xml:lang="en">female</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/c-path/biolink_sdtm_owl/MALE -->
+
+    <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/MALE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/SEX"/>
+        <rdfs:label xml:lang="en">male</rdfs:label>
+        <biolink_sdtm_owl:sdtm_domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DM</biolink_sdtm_owl:sdtm_domain_code>
+        <biolink_sdtm_owl:sdtm_domain_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demographics</biolink_sdtm_owl:sdtm_domain_name>
+        <biolink_sdtm_owl:sdtm_var_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</biolink_sdtm_owl:sdtm_var_id>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/c-path/biolink_sdtm_owl/RACE -->
 
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/RACE">
@@ -355,7 +395,7 @@
     <owl:Class rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/STUDYARM">
         <rdfs:subClassOf rdf:resource="https://w3id.org/biolink/vocab/Activity"/>
         <obo:IAO_0000115 xml:lang="en">An arm within a study.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RW</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R+J17:M20W</obo:IAO_0000119>
         <rdfs:label xml:lang="en">study arm</rdfs:label>
     </owl:Class>
     

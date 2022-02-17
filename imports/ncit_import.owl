@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/c-path/biolink_sdtm_owl/imports/ncit_import.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-10/imports/ncit_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-10</owl:versionInfo>
+        <owl:versionIRI rdf:resource="https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-16/imports/ncit_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2231,6 +2231,206 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16576 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16576">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <obo:IAO_0000115>A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.</obo:IAO_0000115>
+        <obo:NCIT_A24 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A28 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177622"/>
+        <obo:NCIT_A33 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A35 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_NHC0>C16576</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108>Female</obo:NCIT_P108>
+        <obo:NCIT_P207>C0015780</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>CTDC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P322>GDC</obo:NCIT_P322>
+        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
+        <obo:NCIT_P322>PCDC</obo:NCIT_P322>
+        <obo:NCIT_P325>A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P366>Female</obo:NCIT_P366>
+        <obo:NCIT_P375>female</obo:NCIT_P375>
+        <oboInOwl:hasExactSynonym>F</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FEMALE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Female</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>female</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C113350"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C159043"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C159101"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173073"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173230"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174019"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174237"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174243"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177383"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177390"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177537"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178115"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178122"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19752"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54447"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66731"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66732"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C88088"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89506"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
+        <rdfs:label>Female</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both. (NCI)</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>female</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>gender</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>female</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>relationship_gender</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>F</owl:annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>F</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>F</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>FEMALE</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CTDC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>FEMALE</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Female</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Female</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Female</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NICHD</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Female</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>ALL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Female</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>AML</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Female</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>EWS</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Female</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>GCT</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Female</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Female</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>female</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>GDC</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C16809 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16809">
@@ -3267,6 +3467,214 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20197 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20197">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <obo:IAO_0000115>A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.</obo:IAO_0000115>
+        <obo:NCIT_A24 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A28 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177622"/>
+        <obo:NCIT_A33 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A35 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_NHC0>C20197</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108>Male</obo:NCIT_P108>
+        <obo:NCIT_P207>C0086582</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322>CTDC</obo:NCIT_P322>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P322>GDC</obo:NCIT_P322>
+        <obo:NCIT_P322>NICHD</obo:NCIT_P322>
+        <obo:NCIT_P322>PCDC</obo:NCIT_P322>
+        <obo:NCIT_P325>A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P366>Male</obo:NCIT_P366>
+        <obo:NCIT_P375>male</obo:NCIT_P375>
+        <oboInOwl:hasExactSynonym>Human, Male</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>M</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MALE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Male</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>male</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C113350"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C159043"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C159101"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173073"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173230"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174019"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174237"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174243"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177383"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177390"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177537"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178115"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178122"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19752"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54447"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66731"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66732"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C88088"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89506"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
+        <rdfs:label>Male</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both. (NCI)</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>male</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>gender</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget>male</owl:annotatedTarget>
+        <obo:NCIT_P393>Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394>PT</obo:NCIT_P394>
+        <obo:NCIT_P395>relationship_gender</obo:NCIT_P395>
+        <obo:NCIT_P396>GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Human, Male</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>M</owl:annotatedTarget>
+        <obo:NCIT_P383>AB</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>M</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>M</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>MALE</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CTDC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>MALE</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>SPL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Male</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>FDA</obo:NCIT_P384>
+        <obo:NCIT_P386>ICSR-CVM</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Male</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Male</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NICHD</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Male</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>ALL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Male</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>AML</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Male</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>EWS</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Male</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386>GCT</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Male</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Male</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>male</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>GDC</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C25218 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C25218">
@@ -4033,6 +4441,51 @@
         <owl:annotatedTarget>Creatinine Clearance</owl:annotatedTarget>
         <obo:NCIT_P383>SY</obo:NCIT_P383>
         <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C27993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C27993">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41009"/>
+        <obo:IAO_0000115>A term that helps define and render another concept unique.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C27993</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>General Qualifier</obo:NCIT_P108>
+        <obo:NCIT_P207>C1517500</obo:NCIT_P207>
+        <obo:NCIT_P366>General_Modifier</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>General Modifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>General Qualifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>General Qualifiers</oboInOwl:hasExactSynonym>
+        <rdfs:label>General Qualifier</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A term that helps define and render another concept unique.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>General Modifier</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>General Qualifier</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>General Qualifiers</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
     </owl:Axiom>
     
 

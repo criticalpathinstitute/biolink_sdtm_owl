@@ -39,3 +39,5 @@ http://purl.obolibrary.org/obo/NCIT_C17230	#ultrasound
 http://purl.obolibrary.org/obo/NCIT_C25229	#left
 http://purl.obolibrary.org/obo/NCIT_C25228	#right
 http://purl.obolibrary.org/obo/NCIT_C13332	#bilateral
+http://purl.obolibrary.org/obo/NCIT_C16576	#female
+http://purl.obolibrary.org/obo/NCIT_C20197	#male

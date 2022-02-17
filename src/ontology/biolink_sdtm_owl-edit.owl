@@ -1,55 +1,35 @@
-Prefix(:=<http://purl.obolibrary.org/obo/biolink_sdtm_owl.owl#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dcterms:=<http://purl.org/dc/terms/>)
+@prefix : <http://purl.obolibrary.org/obo/biolink_sdtm_owl.owl#> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://purl.obolibrary.org/obo/biolink_sdtm_owl.owl> .
+
+<http://purl.obolibrary.org/obo/biolink_sdtm_owl.owl> rdf:type owl:Ontology ;
+                                                       owl:imports <https://w3id.org/biolink/biolink-model> ,
+                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/modules/core_terms.owl> ,
+                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_dm.owl> ,
+                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_lb.owl> ,
+                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_ur.owl> ,
+                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-16/imports/ncit_import.owl> ,
+                                                                   <https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-17/imports/iao_import.owl> ;
+                                                       dce:description "An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model." ;
+                                                       dce:title "SDTM BioLink Mapping Ontology" ;
+                                                       dcterms:license <http://purl.obolibrary.org/obo/CC-BY> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dce:description rdf:type owl:AnnotationProperty .
 
 
-Ontology(<https://w3id.org/c-path/biolink_sdtm_owl.owl>
-Import(<https://w3id.org/biolink/biolink-model>)
-Import(<https://w3id.org/c-path/biolink_sdtm_owl/modules/core_terms.owl>)
-Import(<https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_dm.owl>)
-Import(<https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_lb.owl>)
-Import(<https://w3id.org/c-path/biolink_sdtm_owl/modules/sdtm_ur.owl>)
-Import(<https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-10/imports/iao_import.owl>)
-Import(<https://w3id.org/c-path/biolink_sdtm_owl/releases/2022-02-10/imports/ncit_import.owl>)
-Annotation(dce:description "An ontology for a proof of concept mapping of PKD data in the SDTM format to the Biolink Model.")
-Annotation(dce:title "BioCollections Ontology")
-Annotation(dcterms:license <Unspecified>)
-
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
-Declaration(AnnotationProperty(dce:description))
-Declaration(AnnotationProperty(dce:title))
-Declaration(AnnotationProperty(dcterms:license))
-Declaration(AnnotationProperty(<https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_code>))
-Declaration(AnnotationProperty(<https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_name>))
-Declaration(AnnotationProperty(<https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id>))
+###  http://purl.org/dc/elements/1.1/title
+dce:title rdf:type owl:AnnotationProperty .
 
 
-
-############################
-#   Classes
-############################
-
-# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
-
-EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000030> <https://w3id.org/biolink/vocab/InformationContentEntity>)
-
-# Class: <https://w3id.org/c-path/biolink_sdtm_owl/LBTEST> (laboratory test)
-
-SubClassOf(<https://w3id.org/c-path/biolink_sdtm_owl/LBTEST> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/has_input> <https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC>))
-SubClassOf(<https://w3id.org/c-path/biolink_sdtm_owl/LBTEST> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/has_output> <https://w3id.org/c-path/biolink_sdtm_owl/TSTRES>))
-
-# Class: <https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL> (specimen collection process)
-
-SubClassOf(<https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/has_input> <https://w3id.org/c-path/biolink_sdtm_owl/SUBJECT>))
-SubClassOf(<https://w3id.org/c-path/biolink_sdtm_owl/SPCCOL> ObjectSomeValuesFrom(<https://w3id.org/biolink/vocab/has_output> <https://w3id.org/c-path/biolink_sdtm_owl/LBSPEC>))
-
-
-AnnotationAssertion(<https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_code> <https://w3id.org/cpath/biolink_sdtm_owl/DTC> "UR")
-AnnotationAssertion(<https://w3id.org/cpath/biolink_sdtm_owl/sdtm_domain_name> <https://w3id.org/cpath/biolink_sdtm_owl/DTC> "urniary system findings")
-AnnotationAssertion(<https://w3id.org/cpath/biolink_sdtm_owl/sdtm_var_id> <https://w3id.org/cpath/biolink_sdtm_owl/DTC> "URDTC")
-)
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
