@@ -1,0 +1,23 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX sdtm: <https://w3id.org/c-path/biolink_sdtm_owl/>
+
+
+
+# Query for the demographics data, specific to the C-Path model.
+SELECT ?subject ?age ?age_unit ?sex WHERE
+{
+	?subject a biolink:Case .
+	?subject biolink:has_attribute ?age_attribute .
+	?age_attribute a sdtm:AGE .
+	?age_attribute biolink:has_quantitative_value ?qv . 
+	?qv biolink:has_numeric_value ?age .
+	?qv biolink:has_unit ?age_unit .
+	?subject biolink:has_attribute ?sex_attribute .
+	?sex_attribute a sdtm:SEX .
+	?sex_attribute biolink:has_qualitative_value ?sex .
+}
+

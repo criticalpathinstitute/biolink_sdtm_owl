@@ -1,0 +1,779 @@
+prefixes:
+  sdtm: https://w3id.org/c-path/biolink_sdtm_owl/
+  biolink: https://w3id.org/biolink/vocab/
+  dc: http://purl.org/dc/terms/ 
+  obo: http://purl.obolibrary.org/obo/
+
+
+
+mappings:
+
+
+
+                                                                                          
+#####   ######  #    #   ####    ####   #####     ##    #####   #    #  #   ####    ####  
+#    #  #       ##  ##  #    #  #    #  #    #   #  #   #    #  #    #  #  #    #  #      
+#    #  #####   # ## #  #    #  #       #    #  #    #  #    #  ######  #  #        ####  
+#    #  #       #    #  #    #  #  ###  #####   ######  #####   #    #  #  #            # 
+#    #  #       #    #  #    #  #    #  #   #   #    #  #       #    #  #  #    #  #    # 
+#####   ######  #    #   ####    ####   #    #  #    #  #       #    #  #   ####    ####  
+                                                                                          
+
+
+
+
+  # Class representing individuals in the dataset. Identified using SDTM variables USUBJID and SUBJID.
+  subject:
+    sources:
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
+    s: sdtm:subject_$(usubjid)
+    po:
+      - [a, sdtm:SUBJECT]
+      - [sdtm:USUBJID, $(usubjid)]
+
+    
+
+      # Mapping from subject class to age class through property biolink:has_attribute.
+      - p: biolink:has_attribute
+        o:
+          mapping: age
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(usubjid), s]
+              - [str2, $(usubjid), o]
+
+
+      # Mappping from subject class to sex class through property biolink:has_attribute.
+      - p: biolink:has_attribute
+        o: 
+          mapping: sex
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(usubjid), s]
+              - [str2, $(usubjid), o]
+
+
+      # Mapping from subject class to a specimen collected from this subject.
+      - p: biolink:related_to
+        o: 
+          mapping: specimen
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(usubjid), s]
+              - [str2, $(usubjid), o]
+
+
+
+
+
+  # Class representing study sites in the dataset. Identified using SDTM variable SITEID.
+  study_site:
+    sources:
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
+    s: sdtm:site_$(siteid)
+    po:
+      - [a, sdtm:STUDYSITE]
+      - [sdtm:SITEID, $(siteid)]
+
+
+
+
+  # Class representing the study as a whole. Identified using the SDTM variable STUDYID.
+  study:
+    source:
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
+    s: sdtm:study_$(studyid)
+    po:
+      - [a, sdtm:CLINSTUDY]
+      - [sdtm:STUDYID, $(studyid)]
+
+
+
+
+  # Class for the arm, contains the arm code and the arm description. From the SDTM variables ARMCD and ARM.
+  study_arm:
+    source:
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
+    s: sdtm:arm_$(armcd)
+    po:
+      - [a, sdtm:STUDYARM]
+      - [sdtm:ARMCD, $(armcd)]
+      - [sdtm:ARM, $(arm)]
+
+      # Map this study arm to the study that it is part of.
+      - p: biolink:part_of
+        o: 
+          mapping: study
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(studyid), s]
+              - [str2, $(studyid), o]
+
+
+
+
+  
+
+  # Class representing the subject's age. Contains information from AGE and AGEU.
+  age:
+    sources:
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
+    #s: null
+    s: sdtm:dm_age_$(row_id)
+    po:
+      - [a, sdtm:AGE] # Which is a biolink:Attribute. And biolink:Attribute biolink:has_quantitative_value biolink:Quantity Value.
+
+      # Associate each instances of this biolink:Attribute with an instance of the child class biolink:QuantityValue, which stores the value and unit literals.
+      - p: biolink:has_quantitative_value
+        o: 
+          mapping: age_quantitative_value
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(usubjid), s]
+              - [str2, $(usubjid), o]
+
+
+  # Class representing the quantity value that contains the actual unit and value of the subject's age.
+  age_quantitative_value:
+    sources:
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']
+    # s: null
+    s: sdtm:dm_age_quantitative_value_$(row_id)  
+    po:
+      - [a, biolink:QuantityValue]
+      - [biolink:has_unit, $(ageu)]
+      - [biolink:has_numeric_value, $(age), xsd:integer]
+
+
+
+
+
+
+  # Class representing the subject's biological sex. Contains information from SDTM variable SEX.
+  sex:
+    sources:
+      - ['data_mapping/synthetic_data/dm_modified.csv~csv']      
+    s: sdtm:dm_sex_$(row_id)  
+    po:
+      - [a, sdtm:SEX]
+      - [biolink:has_qualitative_value, $(sex)] 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     
+                                                                  
+#         ##    #####       #####  ######   ####   #####   ####  
+#        #  #   #    #        #    #       #         #    #      
+#       #    #  #####         #    #####    ####     #     ####  
+#       ######  #    #        #    #            #    #         # 
+#       #    #  #    #        #    #       #    #    #    #    # 
+######  #    #  #####         #    ######   ####     #     ####  
+
+
+
+# Note that for the ranges, data properties were created to map reference range objects (which are subclasses of biolink:InformationContentEntity) 
+# to the literal values for the lower and upper limits of the range. This is not the case for the numerical findings of the each lab test, which are
+# also subclasses of biolink:InformationContentEntity, but are mapped to their quantitative values through the existing biolink classes and properties
+# (i.e., Attribute and QuantityValue). This is so that the queries that use those values take the shared biolink model components into account?
+
+
+
+
+
+
+  # Lab test.
+  lab_test:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    s: sdtm:lbtest_$(usubjid)_$(row_id)
+    po:
+      - [a, $(lbtest_uri)~iri]
+      - [sdtm:in_lb_cat, $(lbcat_uri)~iri]
+
+
+      # Mapping a lab test to the visit that it is associated with.
+      - p: sdtm:associated_with_visit
+        o: 
+          mapping: visit_from_lb_source
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+      # The input of the lab test is the specimen.
+      - p: biolink:has_input
+        o:
+          mapping: specimen
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+      # The outputs of the lab test are the numerical findings.
+      - p: biolink:has_output
+        o:
+          mapping: lab_test_numeric_result_in_standard_units
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+      - p: biolink:has_output
+        o:
+          mapping: lab_test_numeric_result_in_original_units
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+
+
+  # Visit.
+  visit_from_lb_source:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    s: sdtm:$(visit)                              # Uses the unique visit name value for each visit as the identifier.
+    po:
+      - [a, sdtm:VISIT]                           # sdtm:VISIT is a subclass of biolink:Activity.
+      - [sdtm:VISITNAME, $(visit)]                # sdtm:VISITNAME is a subproperty of biolink:ID.
+      - [sdtm:DTC, $(lbdy)]                       # sdmt:DTC is a data property with a domain of the visit class and a label of 'date of lab visit'.
+
+      
+
+
+  # The specimen collection process (the procedure involved in obtaining the specimen).
+  specimen_collection_process:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    s: sdtm:specimen_collection_process_$(usubjid)_$(row_id)
+    po:
+      # This is a subclass of biolink:Procedure.
+      - [a, sdtm:SPCCOL]
+      
+      # The output of this process is the specimen.
+      - p: biolink:has_output
+        o:
+          mapping: specimen
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+      
+      # The input of this process is the subject.
+      - p: biolink:has_input
+        o:
+          mapping: subject
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(usubjid), s]
+              - [str2, $(usubjid), o]
+
+
+
+
+
+  # The specimen itself (the material collected and analyzed in this lab test).
+  specimen:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    s: sdtm:specimen_$(usubjid)_$(row_id)
+    po:
+      # Rather than putting the string literal somewhere in the model, the identity of the specimen is represented as 
+      # which subclass of sdtm:LSPEC (sdtm:LBBLOOD, sdmt:LBSERUM, etc.) this instance is a subclass of.
+      - [a, $(lbspec_uri)~iri]
+
+      # This specimen is the input of a test.
+      - p: biolink:related_to
+        o:
+          mapping: lab_test
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+
+
+
+
+  # Reference value range (original units).
+  lab_test_reference_range_in_original_units:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    # s: null
+    s: sdtm:lb_lab_test_reference_range_in_original_units_$(row_id)
+    po:
+      - [a, sdtm:LBORRNG]             # This is an instance of our class for ref ranges in original units.
+      - [sdtm:LBORNRLO, $(lbornrlo)]  # Data property for the lower value in the original units.
+      - [sdtm:LBORNRHI, $(lbornrhi)]  # Data property for the upper value in the original units.
+
+      # Mapping this reference range to the lab test it's about.
+      - p: obo:IAO_0000136
+        o: 
+          mapping: lab_test
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+
+
+
+  # Reference value range (standard units).
+  lab_test_reference_range_in_standard_units:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    #s: null
+    s: sdtm:lb_lab_test_reference_range_in_standard_units_$(row_id)
+    po:
+      - [a, sdtm:LBSTRNG]             # This is an instance of our class for ref ranges in standard units.
+      - [sdtm:LBSTNRLO, $(lbstnrlo)]  # Data property for the lower value in standard units.
+      - [sdtm:LBSTNRHI, $(lbstnrhi)]  # Data property for the upper value in standard units.
+
+      # Mapping this reference range to the lab test it's about.
+      - p: obo:IAO_0000136
+        o: 
+          mapping: lab_test
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  
+
+
+
+
+
+  # Lab test numeric result in standard units.
+  lab_test_numeric_result_in_standard_units:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    #s: null
+    s: sdtm:lb_lab_test_numeric_result_in_standard_units_$(row_id)
+    po:
+      - [a, sdtm:LBSTRESN] # Which is a sdtm:TSTRES, which is a biolink:InformationContentEntity.
+      - p: biolink:has_attribute
+        o:
+          mapping: lab_test_numeric_result_in_standard_units_attribute
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  # ... and the attribute object for that biolink:InformationContentEntity.
+  lab_test_numeric_result_in_standard_units_attribute:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    #s: null
+    s: sdtm:lb_lab_test_numeric_result_in_standard_units_attribute_$(row_id)
+    po:
+      - [a, biolink:Attribute]
+      - p: biolink:has_quantitative_value
+        o:
+          mapping: lab_test_numeric_result_in_standard_units_quantitative_value
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  # ... and the quantity value object for that biolink:Attribute.
+  lab_test_numeric_result_in_standard_units_quantitative_value:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    #s: null
+    s: sdtm:lb_lab_test_numeric_result_in_standard_units_quantitative_value_$(row_id)
+    po:
+      - [a, biolink:QuantityValue]
+      # The sdtm:STRESU is an object property with label 'has_standard_unit', subproperty of biolink:has_unit.
+      # The range of biolink:has_unit is biolink:unit, which is a class but that class is subclass of string.
+      # So biolink:has_unit is an object property but is being used as a data property? Double check this use.
+      - [sdtm:STRESU, $(lbstresu)] 
+      - [biolink:has_numeric_value, $(lbstresn)]
+
+
+
+
+
+
+
+
+
+  # Lab test numeric result in original units.
+  lab_test_numeric_result_in_original_units:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    s: sdtm:lb_lab_test_numeric_result_in_original_units_$(row_id)
+    #s: null
+    po:
+      - [a, sdtm:LBORRES] # Which is a sdtm:TSTRES, which is a biolink:InformationContentEntity.
+      - p: biolink:has_attribute
+        o:
+          mapping: lab_test_numeric_result_in_original_units_attribute
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  # ... and the attribute object for that biolink:InformationContentEntity.
+  lab_test_numeric_result_in_original_units_attribute:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    s: sdtm:lb_lab_test_numeric_result_in_original_units_attribute_$(row_id)
+    #s: null
+    po:
+      - [a, biolink:Attribute]
+      - p: biolink:has_quantitative_value
+        o:
+          mapping: lab_test_numeric_result_in_original_units_quantitative_value
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  # ... and the quantity value object for that biolink:Attribute.
+  lab_test_numeric_result_in_original_units_quantitative_value:
+    sources:
+      - ['data_mapping/synthetic_data/lb_modified.csv~csv']
+    s: sdtm:lb_lab_test_numeric_result_in_original_units_quantitative_value_$(row_id)
+    #s: null
+    po:
+      - [a, biolink:QuantityValue]
+      # The sdtm:ORRESU is an object property with label 'has_original_unit', subproperty of biolink:has_unit.
+      # The range of biolink:has_unit is biolink:unit, which is a class but that class is subclass of string.
+      # So biolink:has_unit is an object property but is being used as a data property? Double check this use.
+      - [sdtm:ORRESU, $(lborresu)] 
+      - [biolink:has_numeric_value, $(lbstresn)]
+
+
+
+
+
+
+
+
+
+
+
+
+ #     #  ######  
+ #     #  #     # 
+ #     #  #     # 
+ #     #  ######  
+ #     #  #   #   
+ #     #  #    #  
+  #####   #     # 
+
+
+
+
+  # Urinary system test.
+  urinary_system_test:
+    sources:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:urtest_$(usubjid)_$(row_id)
+    po:
+      - [a, sdtm:URTEST]            # This is a subclass of biolink:Procedure.
+
+      # Mapping a urinary system test to the visit that it is associated with.
+      - p: sdtm:associated_with_visit
+        o: 
+          mapping: visit_from_ur_source
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+      # The output of this procedure is the measurement.
+      - p: biolink:has_output
+        o:
+          mapping: urinary_system_test_measurement
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+      # Mapping this procedure to the anatomical location of it.
+      - p: sdtm:has_anatomical_location
+        o:
+          mapping: urinary_system_test_location
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+      # Mapping this procedure to the laterality of the location of it.
+      - p: sdtm:has_anatomical_location
+        o:
+          mapping: urinary_system_test_laterality_of_anatomical_location
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+      # Mapping this procedure to the method used. In biolink terms, the method used is also a procedure.
+      - p: sdtm:METHOD  # This is a subproperty of the object property biolink:has_procedure.
+        o:
+          mapping: urinary_system_test_method
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+      # The outputs of the urinary system test are the numerical findings (or findings in character format).
+      - p: biolink:has_output
+        o:
+          mapping: urinary_system_test_numeric_result_in_standard_units
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+      - p: biolink:has_output
+        o:
+          mapping: urinary_system_test_numeric_result_in_original_units
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+      - p: biolink:has_output
+        o:
+          mapping: urinary_system_test_character_result_in_standard_format
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+
+
+
+  # Visit.
+  visit_from_ur_source:
+    sources:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:$(visit)                              # Uses the unique visit name value for each visit as the identifier.
+    po:
+      - [a, sdtm:VISIT]                           # sdtm:VISIT is a subclass of biolink:Activity.
+      - [sdtm:VISITNAME, $(visit)]                # sdtm:VISITNAME is a subproperty of biolink:ID.
+      - [sdtm:VISITNUM, $(visitnum)]              # sdtm:VISITNUM is a subproperty of biolink:ID.
+      - [sdtm:DTC, $(urdy)]                       # sdmt:DTC is a data property with a domain of the visit class and a label of 'date of lab visit'.
+
+
+
+
+
+  # Urinary system test, the measurement from that test.
+  urinary_system_test_measurement:
+    source:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_measurement_$(row_id)
+    #s: null
+    po:
+      - [a, $(urtest_uri)~iri] # The URI's referenced here are for classes that are subclasses of biolink:ClinicalMeasurement.
+
+
+
+
+  # Urinary system test location.
+  urinary_system_test_location:
+    source:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_location_$(row_id)
+    #s: null
+    po:
+      # Note the string value of the location from the source data is not represented in the triples.
+      # The location concept is instead represented as the identity of the parent class for this instance.
+      - [a, $(urloc_uri)~iri] # The URI's referenced here are for classes that are subclasses of biolink:AnatomicalEntity.
+
+
+
+
+  # Urinary system test laterality of anatomical location.
+  urinary_system_test_laterality_of_anatomical_location:
+    source:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_laterality_of_anatomical_location_$(row_id)
+    #s: null
+    po:
+      - [a, $(urlat_uri)~iri]
+
+
+  # Urinary system test method.
+  urinary_system_test_method:
+    source:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_method_$(row_id)
+    #s: null
+    po:
+      - [a, $(urmethod_uri)~iri] # The classes selected from here (sdtm:CT, sdtm:MRI, etc.), are subclasses of biolink:Procedure.
+
+
+
+
+  # Urinary system test numeric result in standard units.
+  urinary_system_test_numeric_result_in_standard_units:
+    sources:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_numeric_result_in_standard_units_$(row_id)
+    #s: null
+    po:
+      - [a, sdtm:URSTRESN] # Which is a sdtm:TSTRES, which is a biolink:InformationContentEntity.
+      - p: biolink:has_attribute
+        o:
+          mapping: urinary_system_test_numeric_result_in_standard_units_attribute
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  # ... and the attribute object for that biolink:InformationContentEntity.
+  urinary_system_test_numeric_result_in_standard_units_attribute:
+    sources:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_numeric_result_in_standard_units_attribute_$(row_id)
+    #s: null
+    po:
+      - [a, biolink:Attribute]
+      - p: biolink:has_quantitative_value
+        o:
+          mapping: urinary_system_test_numeric_result_in_standard_units_quantitative_value
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  # ... and the quantity value object for that biolink:Attribute.
+  urinary_system_test_numeric_result_in_standard_units_quantitative_value:
+    sources:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_numeric_result_in_standard_units_quantitative_value_$(row_id)
+    #s: null
+    po:
+      - [a, biolink:QuantityValue]
+      # The sdtm:STRESU is an object property with label 'has_standard_unit', subproperty of biolink:has_unit.
+      # The range of biolink:has_unit is biolink:unit, which is a class but that class is subclass of string.
+      # So biolink:has_unit is an object property but is being used as a data property? Double check this use.
+      - [sdtm:STRESU, $(urstresu)] 
+      - [biolink:has_numeric_value, $(urstresn)]
+
+
+
+
+
+
+  # Urinary system test numeric result in original units.
+  urinary_system_test_numeric_result_in_original_units:
+    sources:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_numeric_result_in_original_units_$(row_id)
+    #s: null
+    po:
+      - [a, sdtm::URORRES] # Which is a sdtm:TSTRES, which is a biolink:InformationContentEntity.
+      - p: biolink:has_attribute
+        o:
+          mapping: urinary_system_test_numeric_result_in_original_units_attribute
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  # ... and the attribute object for that biolink:InformationContentEntity.
+  urinary_system_test_numeric_result_in_original_units_attribute:
+    sources:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_numeric_result_in_original_units_attribute_$(row_id)
+    #s: null
+    po:
+      - [a, biolink:Attribute]
+      - p: biolink:has_quantitative_value
+        o:
+          mapping: urinary_system_test_numeric_result_in_original_units_quantitative_value
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  # ... and the quantity value object for that biolink:Attribute.
+  urinary_system_test_numeric_result_in_original_units_quantitative_value:
+    sources:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_numeric_result_in_original_units_quantitative_value_$(row_id)
+    #s: null
+    po:
+      - [a, biolink:QuantityValue]
+      # The sdtm:ORRESU is an object property with label 'has_original_unit', subproperty of biolink:has_unit.
+      # The range of biolink:has_unit is biolink:unit, which is a class but that class is subclass of string.
+      # So biolink:has_unit is an object property but is being used as a data property? Double check this use.
+      - [sdtm:ORRESU, $(urorresu)] 
+      - [biolink:has_numeric_value, $(urorres)]
+
+
+
+
+
+  # Urinary system test character result in standard format.
+  urinary_system_test_character_result_in_standard_format:
+    sources:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_character_result_in_standard_format_$(row_id)
+    #s: null
+    po:
+      - [a, sdtm::URSTRESC] # Which is a sdtm:TSTRES, which is a biolink:InformationContentEntity.
+      - p: biolink:has_attribute
+        o:
+          mapping: urinary_system_test_character_result_in_standard_format_attribute
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(row_id), s]
+              - [str2, $(row_id), o]
+
+  # ... and the attribute object for that biolink:InformationContentEntity.
+  urinary_system_test_character_result_in_standard_format_attribute:
+    sources:
+      - ['data_mapping/synthetic_data/ur_modified.csv~csv']
+    s: sdtm:ur_urinary_system_test_character_result_in_standard_format_attribute_$(row_id)
+    #s: null
+    po:
+      - [a, biolink:Attribute]
+      - [biolink:has_qualitative_value, $(urstresc)]
